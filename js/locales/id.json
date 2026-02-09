@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Pemeriksaan Tingkat Stres - Berapa banyak stres yang Anda alami?",
+    "description": "Ukur tingkat stres Anda saat ini dengan 15 pertanyaan. Analisis stres dari pekerjaan, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari, dapatkan tips relief yang dipersonalisasi!",
+    "loading": "Memuat..."
+  },
+  "intro": {
+    "title": "Pemeriksaan Tingkat Stres",
+    "subtitle": "Pahami kondisi stres Anda",
+    "description": "Dengan 15 pertanyaan tentang pekerjaan, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari, ukur tingkat stres Anda dan dapatkan strategi relief yang dipersonalisasi!",
+    "questions": "15 pertanyaan",
+    "time": "Sekitar 3 menit",
+    "free": "Gratis",
+    "users": "orang telah menyelesaikan tes ini"
+  },
+  "button": {
+    "start": "Mulai",
+    "retry": "🔄 Coba Lagi",
+    "share": "📤 Bagikan",
+    "saveImage": "📥 Simpan Gambar",
+    "unlockPremium": "🔓 Lihat Analisis Mendalam AI",
+    "close": "Tutup"
+  },
+  "questions": {
+    "workStudy": "Pekerjaan/Studi",
+    "relationships": "Hubungan",
+    "health": "Kesehatan",
+    "finance": "Keuangan",
+    "dailyLife": "Kehidupan sehari-hari",
+    "q1": "Saya merasa stres karena deadline pekerjaan/studi.",
+    "q2": "Saya kesulitan menyeimbangkan pekerjaan dan waktu pribadi.",
+    "q3": "Saya khawatir tentang performa pekerjaan/studi saya.",
+    "q4": "Saya memiliki konflik dengan keluarga atau teman.",
+    "q5": "Saya merasa kesepian atau terisolasi.",
+    "q6": "Mempertahankan hubungan membuat saya kelelahan.",
+    "q7": "Saya mengalami kurang tidur atau kualitas tidur yang buruk.",
+    "q8": "Saya mengalami kelelahan fisik atau nyeri.",
+    "q9": "Saya khawatir atau cemas tentang kesehatan saya.",
+    "q10": "Saya mengalami kesulitan keuangan.",
+    "q11": "Saya merasa cemas tentang situasi keuangan masa depan saya.",
+    "q12": "Saya khawatir tentang pengeluaran yang tidak terduga.",
+    "q13": "Menangani tugas sehari-hari adalah beban bagi saya.",
+    "q14": "Saya tidak dapat mendapatkan istirahat yang cukup.",
+    "q15": "Saya merasa stres bahkan saat waktu luang."
+  },
+  "options": {
+    "notAtAll": "Tidak sama sekali",
+    "rarely": "Jarang",
+    "sometimes": "Kadang-kadang",
+    "often": "Sering",
+    "veryMuch": "Sangat"
+  },
+  "loading": {
+    "analyzing": "Menganalisis..."
+  },
+  "result": {
+    "title": "Tingkat stres Anda",
+    "stressLevel": "Tingkat Stres",
+    "categoryAnalysis": "Analisis Berdasarkan Kategori",
+    "reliefTips": "Tips Relief Stres",
+    "aiAnalysis": "Analisis Mendalam AI",
+    "recommendedApps": "Aplikasi yang Direkomendasikan"
+  },
+  "categories": {
+    "workStudy": "Pekerjaan/Studi",
+    "relationships": "Hubungan",
+    "health": "Kesehatan",
+    "finance": "Keuangan",
+    "dailyLife": "Kehidupan sehari-hari"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Sangat Rendah",
+      "subtitle": "Stres Anda sangat rendah",
+      "description": "Selamat! Tingkat stres Anda saat ini sangat rendah. Pikiran dan tubuh Anda dalam keseimbangan yang baik. Lanjutkan merawat diri sendiri."
+    },
+    "low": {
+      "title": "Rendah",
+      "subtitle": "Stres Anda rendah",
+      "description": "Tingkat stres Anda rendah. Anda menangani sebagian besar situasi dengan baik. Pertahankan sikap positif Anda."
+    },
+    "moderate": {
+      "title": "Sedang",
+      "subtitle": "Stres Anda sedang",
+      "description": "Tingkat stres Anda sedang. Stres mungkin menumpuk di area tertentu. Identifikasi penyebabnya."
+    },
+    "high": {
+      "title": "Tinggi",
+      "subtitle": "Stres Anda tinggi",
+      "description": "Tingkat stres Anda tinggi. Atur prioritas dan lakukan aktivitas relief secara teratur."
+    },
+    "veryHigh": {
+      "title": "Sangat Tinggi",
+      "subtitle": "Stres Anda sangat tinggi",
+      "description": "Tingkat stres Anda sangat tinggi. Disarankan untuk berkonsultasi dengan profesional kesehatan mental segera."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Lanjutkan olahraga teratur",
+      "Praktikkan meditasi dan istirahat",
+      "Perkuat hubungan Anda",
+      "Nikmati hobi Anda"
+    ],
+    "low": [
+      "Pertahankan sikap positif Anda",
+      "Berolahraga 3-4 kali seminggu",
+      "Deteksi stres lebih awal",
+      "Tidur 7-8 jam"
+    ],
+    "moderate": [
+      "Identifikasi penyebab stres",
+      "Berolahraga 4-5+ kali seminggu",
+      "Meditasi atau yoga 20-30 menit",
+      "Konsultasi dengan profesional"
+    ],
+    "high": [
+      "Perlambat dan prioritaskan istirahat",
+      "Lakukan 30+ menit aktivitas setiap hari",
+      "Ubah pikiran negatif menjadi positif",
+      "Bicaralah dengan orang kepercayaan",
+      "Cari konseling profesional"
+    ],
+    "veryHigh": [
+      "Cari bantuan dari profesional kesehatan mental",
+      "Hapus sumber stres utama",
+      "Tidur 8+ jam setiap hari",
+      "Lakukan olahraga intensif secara teratur",
+      "Gabungkan terapi dengan CBT",
+      "Praktikkan pernapasan dalam setiap hari"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Kemampuan manajemen stres Anda sangat baik. Terus pertahankan kondisi ini.",
+    "low": "Tingkat stres Anda dapat dikelola. Gunakan strategi positif.",
+    "moderate": "Stres menumpuk di area tertentu. Temukan solusinya.",
+    "high": "Anda mengalami stres yang cukup. Cari bantuan profesional.",
+    "veryHigh": "Tingkat stres Anda kritis. Cari bantuan dari spesialis."
+  },
+  "apps": {
+    "detoxTimer": "Timer Detoks Digital",
+    "detoxTimerDesc": "Kelola waktu penggunaan ponsel Anda",
+    "whiteNoise": "White Noise",
+    "whiteNoiseDesc": "Suara untuk tidur dan relaksasi",
+    "dailyAffirmation": "Afirmasi Harian",
+    "dailyAffirmationDesc": "Pesan positif setiap hari",
+    "meditationGuide": "Panduan Meditasi",
+    "meditationGuideDesc": "Temukan kedamaian batin"
+  },
+  "ad": {
+    "watchVideo": "Tonton video untuk membuka analisis AI!"
+  },
+  "message": {
+    "copiedToClipboard": "Disalin ke clipboard!"
+  }
+}

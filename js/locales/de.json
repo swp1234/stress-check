@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Stressabbau-Check - Wie viel Stress haben Sie?",
+    "description": "Messen Sie Ihr aktuelles Stressniveau mit 15 Fragen. Analysieren Sie Stress von Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag, erhalten Sie personalisierte Entspannungstipps!",
+    "loading": "Wird geladen..."
+  },
+  "intro": {
+    "title": "Stressabbau-Check",
+    "subtitle": "Verstehen Sie Ihren Stresszustand",
+    "description": "Mit 15 Fragen zu Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag messen Sie Ihr Stressniveau und erhalten personalisierte Entspannungsstrategien!",
+    "questions": "15 Fragen",
+    "time": "Etwa 3 Minuten",
+    "free": "Kostenlos",
+    "users": "Menschen haben diesen Test abgeschlossen"
+  },
+  "button": {
+    "start": "Beginnen",
+    "retry": "🔄 Nochmal versuchen",
+    "share": "📤 Teilen",
+    "saveImage": "📥 Bild speichern",
+    "unlockPremium": "🔓 AI-Tiefenanalyse anzeigen",
+    "close": "Schließen"
+  },
+  "questions": {
+    "workStudy": "Arbeit/Studium",
+    "relationships": "Beziehungen",
+    "health": "Gesundheit",
+    "finance": "Finanzen",
+    "dailyLife": "Alltag",
+    "q1": "Ich fühle mich gestresst durch Arbeit-/Studiumsfristen.",
+    "q2": "Ich finde es schwierig, Arbeit und Freizeit auszugleichen.",
+    "q3": "Ich mache mir Sorgen um meine Arbeits-/Studienleistung.",
+    "q4": "Ich habe Konflikte mit Familie oder Freunden.",
+    "q5": "Ich fühle mich einsam oder isoliert.",
+    "q6": "Beziehungen zu pflegen erschöpft mich.",
+    "q7": "Ich leide unter Schlafmangel oder schlechter Schlafqualität.",
+    "q8": "Ich empfinde körperliche Ermüdung oder Schmerzen.",
+    "q9": "Ich mache mir Sorgen um meine Gesundheit oder bin deswegen angespannt.",
+    "q10": "Ich habe finanzielle Schwierigkeiten.",
+    "q11": "Ich bin angespannt wegen meiner zukünftigen finanziellen Situation.",
+    "q12": "Ich mache mir Sorgen um unerwartete Ausgaben.",
+    "q13": "Alltägliche Aufgaben sind für mich belastend.",
+    "q14": "Ich kann nicht ausreichend entspannen.",
+    "q15": "Ich fühle mich auch in meiner Freizeit gestresst."
+  },
+  "options": {
+    "notAtAll": "Überhaupt nicht",
+    "rarely": "Selten",
+    "sometimes": "Manchmal",
+    "often": "Oft",
+    "veryMuch": "Sehr viel"
+  },
+  "loading": {
+    "analyzing": "Wird analysiert..."
+  },
+  "result": {
+    "title": "Ihr Stressniveau",
+    "stressLevel": "Stressniveau",
+    "categoryAnalysis": "Kategorieanalyse",
+    "reliefTips": "Entspannungstipps",
+    "aiAnalysis": "AI-Tiefenanalyse",
+    "recommendedApps": "Empfohlene Apps"
+  },
+  "categories": {
+    "workStudy": "Arbeit/Studium",
+    "relationships": "Beziehungen",
+    "health": "Gesundheit",
+    "finance": "Finanzen",
+    "dailyLife": "Alltag"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Sehr niedrig",
+      "subtitle": "Ihr Stress ist sehr gering",
+      "description": "Glückwunsch! Ihr Stressniveau ist derzeit sehr niedrig. Geist und Körper sind im Gleichgewicht. Pflegen Sie weiterhin Selbstfürsorge."
+    },
+    "low": {
+      "title": "Niedrig",
+      "subtitle": "Ihr Stress ist gering",
+      "description": "Ihr Stressniveau ist niedrig. Sie gehen gut mit den meisten Situationen um. Bewahren Sie Ihre positive Einstellung."
+    },
+    "moderate": {
+      "title": "Moderat",
+      "subtitle": "Ihr Stress ist gemäßigt",
+      "description": "Ihr Stressniveau ist moderat. Stress kann sich in bestimmten Bereichen ansammeln. Identifizieren Sie die Ursachen."
+    },
+    "high": {
+      "title": "Hoch",
+      "subtitle": "Ihr Stress ist hoch",
+      "description": "Ihr Stressniveau ist hoch. Organisieren Sie Ihre Prioritäten und praktizieren Sie regelmäßig Entspannungsaktivitäten."
+    },
+    "veryHigh": {
+      "title": "Sehr hoch",
+      "subtitle": "Ihr Stress ist sehr hoch",
+      "description": "Ihr Stressniveau ist sehr hoch. Es wird empfohlen, sofort einen Fachmann für psychische Gesundheit zu konsultieren."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Fortlaufende regelmäßige Bewegung",
+      "Regelmäßiges Meditieren und Ausruhen",
+      "Beziehungen vertiefen",
+      "Hobbys genießen"
+    ],
+    "low": [
+      "Behalten Sie Ihre positive Einstellung",
+      "3-4 Mal pro Woche trainieren",
+      "Stresszeichen früh erkennen",
+      "7-8 Stunden Schlaf"
+    ],
+    "moderate": [
+      "Stressquellen identifizieren",
+      "4-5+ Mal pro Woche trainieren",
+      "20-30 Minuten tägliche Meditation",
+      "Mit einem Fachmann sprechen"
+    ],
+    "high": [
+      "Verlangsamen Sie und priorisieren Sie Ruhe",
+      "30+ Minuten tägliche Aktivität",
+      "Wandeln Sie negative Gedanken um",
+      "Mit vertrauten Personen sprechen",
+      "Professionelle Hilfe suchen"
+    ],
+    "veryHigh": [
+      "Sofort Hilfe von einem Fachmann suchen",
+      "Hauptstressquellen beseitigen",
+      "8+ Stunden täglicher Schlaf",
+      "Regelmäßig intensives Training",
+      "Therapie mit CBT kombinieren",
+      "Tägliche Atemübungen"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Ihre Stressbewältigungsfähigkeit ist hervorragend. Bewahren Sie diesen Zustand.",
+    "low": "Ihr Stressniveau ist beherrschbar. Verwenden Sie positive Strategien.",
+    "moderate": "Stress sammelt sich in bestimmten Bereichen an. Finden Sie Lösungen.",
+    "high": "Sie erleben erheblichen Stress. Suchen Sie professionelle Hilfe.",
+    "veryHigh": "Ihr Stressniveau ist kritisch. Suchen Sie Hilfe von einem Spezialisten."
+  },
+  "apps": {
+    "detoxTimer": "Digital-Detox-Timer",
+    "detoxTimerDesc": "Verwalten Sie Ihre Bildschirmzeit",
+    "whiteNoise": "Weißes Rauschen",
+    "whiteNoiseDesc": "Sounds zum Schlafen und Entspannen",
+    "dailyAffirmation": "Tägliche Affirmation",
+    "dailyAffirmationDesc": "Tägliche positive Botschaften",
+    "meditationGuide": "Meditationsleitfaden",
+    "meditationGuideDesc": "Finden Sie inneren Frieden"
+  },
+  "ad": {
+    "watchVideo": "Video ansehen, um AI-Analyse freizuschalten!"
+  },
+  "message": {
+    "copiedToClipboard": "In Zwischenablage kopiert!"
+  }
+}

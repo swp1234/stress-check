@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Verificación de Nivel de Estrés - ¿Cuánto estrés tienes?",
+    "description": "Mide tu nivel de estrés actual con 15 preguntas. Analiza el estrés en el trabajo, relaciones, salud, finanzas y vida diaria, ¡obtén consejos personalizados de alivio!",
+    "loading": "Cargando..."
+  },
+  "intro": {
+    "title": "Verificación de Nivel de Estrés",
+    "subtitle": "Comprende tu estado de estrés",
+    "description": "Con 15 preguntas sobre trabajo, relaciones, salud, finanzas y vida diaria, mide tu nivel de estrés y obtén estrategias personalizadas de alivio!",
+    "questions": "15 preguntas",
+    "time": "Aproximadamente 3 minutos",
+    "free": "Gratis",
+    "users": "personas han completado este test"
+  },
+  "button": {
+    "start": "Comenzar",
+    "retry": "🔄 Intentar de nuevo",
+    "share": "📤 Compartir",
+    "saveImage": "📥 Guardar imagen",
+    "unlockPremium": "🔓 Ver análisis profundo de IA",
+    "close": "Cerrar"
+  },
+  "questions": {
+    "workStudy": "Trabajo/Estudio",
+    "relationships": "Relaciones",
+    "health": "Salud",
+    "finance": "Finanzas",
+    "dailyLife": "Vida diaria",
+    "q1": "Siento estrés debido a los plazos de trabajo/estudio.",
+    "q2": "Me resulta difícil equilibrar el trabajo y el tiempo personal.",
+    "q3": "Me preocupa mi desempeño en el trabajo/estudio.",
+    "q4": "Tengo conflictos con familia o amigos.",
+    "q5": "Me siento solo o aislado.",
+    "q6": "Mantener relaciones me causa agotamiento.",
+    "q7": "Sufro de falta de sueño o mala calidad de sueño.",
+    "q8": "Experimento fatiga física o dolor.",
+    "q9": "Me preocupa mi salud o siento ansiedad al respecto.",
+    "q10": "Estoy experimentando dificultades financieras.",
+    "q11": "Me siento ansioso sobre mi situación financiera futura.",
+    "q12": "Me preocupan los gastos inesperados.",
+    "q13": "Manejar tareas diarias me resulta una carga.",
+    "q14": "No puedo obtener suficiente descanso.",
+    "q15": "Siento estrés incluso durante el tiempo libre."
+  },
+  "options": {
+    "notAtAll": "Nada",
+    "rarely": "Rara vez",
+    "sometimes": "A veces",
+    "often": "A menudo",
+    "veryMuch": "Mucho"
+  },
+  "loading": {
+    "analyzing": "Analizando..."
+  },
+  "result": {
+    "title": "Tu nivel de estrés",
+    "stressLevel": "Nivel de estrés",
+    "categoryAnalysis": "Análisis por categoría",
+    "reliefTips": "Consejos de alivio del estrés",
+    "aiAnalysis": "Análisis profundo de IA",
+    "recommendedApps": "Aplicaciones recomendadas"
+  },
+  "categories": {
+    "workStudy": "Trabajo/Estudio",
+    "relationships": "Relaciones",
+    "health": "Salud",
+    "finance": "Finanzas",
+    "dailyLife": "Vida diaria"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Muy bajo",
+      "subtitle": "Tu estrés es muy bajo",
+      "description": "¡Felicidades! Tu nivel de estrés actual es muy bajo. Tu mente y cuerpo están en equilibrio. Continúa cuidándote y descansando."
+    },
+    "low": {
+      "title": "Bajo",
+      "subtitle": "Tu estrés es bajo",
+      "description": "Tu nivel de estrés es bajo. Estás manejando bien la mayoría de situaciones. Mantén tu actitud positiva."
+    },
+    "moderate": {
+      "title": "Moderado",
+      "subtitle": "Tu estrés es moderado",
+      "description": "Tu nivel de estrés es moderado. El estrés puede estar acumulándose en áreas específicas. Identifica las causas."
+    },
+    "high": {
+      "title": "Alto",
+      "subtitle": "Tu estrés es alto",
+      "description": "Tu nivel de estrés es alto. Organiza prioridades y practica actividades de alivio regularmente."
+    },
+    "veryHigh": {
+      "title": "Muy alto",
+      "subtitle": "Tu estrés es muy alto",
+      "description": "Tu nivel de estrés es muy alto. Se recomienda consultar con un profesional de salud mental inmediatamente."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Continúa con ejercicio regular",
+      "Practica meditación y descanso",
+      "Fortalece tus relaciones",
+      "Disfruta tus pasatiempos"
+    ],
+    "low": [
+      "Mantén tu actitud positiva",
+      "Ejercítate 3-4 veces por semana",
+      "Detecta estrés tempranamente",
+      "Duerme 7-8 horas"
+    ],
+    "moderate": [
+      "Identifica causas de estrés",
+      "Ejercítate 4-5+ veces por semana",
+      "Medita o practica yoga 20-30 minutos",
+      "Consulta con un profesional"
+    ],
+    "high": [
+      "Ralentiza y prioriza descanso",
+      "Realiza 30+ minutos de actividad diaria",
+      "Transforma pensamientos negativos",
+      "Habla con personas de confianza",
+      "Busca asesoramiento profesional"
+    ],
+    "veryHigh": [
+      "Busca ayuda de un profesional de salud mental",
+      "Elimina fuentes principales de estrés",
+      "Duerme 8+ horas diarias",
+      "Realiza ejercicio intenso regularmente",
+      "Combina terapia con TCC",
+      "Practica respiración profunda diariamente"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Tu capacidad de manejo del estrés es excelente. Continúa manteniendo este estado.",
+    "low": "Tu nivel de estrés es manejable. Usa estrategias positivas.",
+    "moderate": "El estrés se acumula en áreas específicas. Encuentra soluciones.",
+    "high": "Estás experimentando estrés considerable. Busca ayuda profesional.",
+    "veryHigh": "Tu nivel de estrés es crítico. Busca ayuda de un especialista."
+  },
+  "apps": {
+    "detoxTimer": "Temporizador de Desintoxicación Digital",
+    "detoxTimerDesc": "Gestiona tu tiempo de teléfono",
+    "whiteNoise": "Ruido Blanco",
+    "whiteNoiseDesc": "Sonidos para dormir y relajarse",
+    "dailyAffirmation": "Afirmación Diaria",
+    "dailyAffirmationDesc": "Mensajes positivos diarios",
+    "meditationGuide": "Guía de Meditación",
+    "meditationGuideDesc": "Encuentra paz interior"
+  },
+  "ad": {
+    "watchVideo": "¡Mira un video para desbloquear análisis de IA!"
+  },
+  "message": {
+    "copiedToClipboard": "¡Copiado al portapapeles!"
+  }
+}

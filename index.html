@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+    <meta name="robots" content="max-image-preview:large">
+    <title data-i18n="app.title">스트레스 레벨 체크 - 당신의 스트레스 얼마나?</title>
+    <meta name="description" data-i18n="app.description" content="15가지 질문으로 현재 스트레스 레벨을 측정하세요. 직장, 인간관계, 건강, 재정, 일상에서의 스트레스를 분석하고 맞춤형 해소법을 받아보세요!">
+    <meta name="keywords" content="스트레스 테스트, 스트레스 체크, 스트레스 측정, 심리테스트, 감정 분석, 스트레스 해소">
+    <meta name="theme-color" content="#e74c3c">
+    <link rel="canonical" href="https://dopabrain.com/stress-check/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="스트레스 레벨 체크 - 당신의 스트레스는 몇 단계?">
+    <meta property="og:description" content="15개 질문으로 당신의 스트레스 레벨을 측정하세요! 카테고리별 분석 + 맞춤형 스트레스 해소법 제공">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dopabrain.com/stress-check/">
+    <meta property="og:image" content="https://dopabrain.com/stress-check/icon-512.svg">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" data-i18n="app.title">
+    <meta name="twitter:description" data-i18n="app.description">
+    <meta name="twitter:image" content="https://dopabrain.com/stress-check/icon-512.svg">
+    <meta name="twitter:site" content="@dopabrain">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "스트레스 레벨 체크",
+        "applicationCategory": "HealthApplication",
+        "description": "15가지 질문으로 당신의 스트레스 레벨을 측정하고 카테고리별 분석 및 맞춤형 스트레스 해소법을 제공합니다.",
+        "url": "https://dopabrain.com/stress-check/",
+        "image": "https://dopabrain.com/stress-check/icon-512.svg",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
+        "author": {
+            "@type": "Organization",
+            "name": "DopaBrain",
+            "url": "https://dopabrain.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "DopaBrain",
+            "url": "https://dopabrain.com/"
+        },
+        "inLanguage": ["ko", "en", "zh", "hi", "ru", "ja", "es", "pt", "id", "tr", "de", "fr"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "KRW",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.6",
+            "ratingCount": "320",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "featureList": "15가지 질문, 5단계 스트레스 측정, 카테고리별 분석, 맞춤형 해소법, 결과 이미지 저장, SNS 공유"
+    }
+    </script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.svg">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-loader" id="app-loader">
+        <div class="loader-content">
+            <div class="loader-emoji">😰</div>
+            <div class="loader-spinner"></div>
+            <div class="loader-text" data-i18n="app.loading">로딩 중...</div>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button id="lang-toggle" class="lang-btn">🌐</button>
+        <div id="lang-menu" class="lang-menu hidden">
+            <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+            <button class="lang-option" data-lang="en">🇺🇸 English</button>
+            <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
+            <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+            <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+            <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+            <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+            <button class="lang-option" data-lang="id">🇮🇩 Indonesia</button>
+            <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+            <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Top Ad Banner -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="6470814389" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
+        <!-- Intro Screen -->
+        <div class="screen intro-screen active" id="intro-screen">
+            <div class="intro-icon">😰</div>
+            <h1 class="intro-title" data-i18n="intro.title">스트레스 레벨 체크</h1>
+            <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 스트레스 상태를 알아보세요</p>
+            <p class="intro-desc" data-i18n="intro.description">15개 질문으로 직장, 인간관계, 건강, 재정, 일상의 스트레스 레벨을 측정하고 맞춤형 해소법을 받으세요!</p>
+
+            <div class="intro-meta">
+                <span data-i18n="intro.questions">15개 질문</span>
+                <span data-i18n="intro.time">약 3분</span>
+                <span data-i18n="intro.free">무료</span>
+            </div>
+
+            <button class="btn-start" id="btn-start" data-i18n="button.start">시작하기</button>
+            <div class="social-proof">
+                <div><span class="count">5,000+</span> <span data-i18n="intro.users">사람이 테스트했습니다</span></div>
+            </div>
+        </div>
+
+        <!-- Question Screen -->
+        <div class="screen question-screen" id="question-screen">
+            <div class="progress-area">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">1 / 15</div>
+            </div>
+
+            <div class="question-card">
+                <div class="q-text" id="question-text">질문이 로드됩니다...</div>
+                <div class="q-category" id="q-category">직장/학업</div>
+                <div class="q-options" id="q-options"></div>
+            </div>
+        </div>
+
+        <!-- Loading Screen -->
+        <div class="screen loading-screen" id="loading-screen">
+            <div class="loading-icon">🧠</div>
+            <div class="loading-bar">
+                <div class="loading-fill" id="loading-fill"></div>
+            </div>
+            <div class="loading-text" data-i18n="loading.analyzing">분석 중...</div>
+        </div>
+
+        <!-- Result Screen -->
+        <div class="screen result-screen" id="result-screen">
+            <h2 class="result-title" data-i18n="result.title">당신의 스트레스 레벨</h2>
+
+            <!-- Stress Level Gauge -->
+            <div class="gauge-area">
+                <div id="gauge-fill" class="gauge-ring"></div>
+            </div>
+
+            <div class="result-emoji" id="result-emoji">😰</div>
+            <div class="result-level-title" id="result-level-title">보통</div>
+            <div class="result-level-subtitle" id="result-level-subtitle">스트레스 설명</div>
+            <div class="result-desc" id="result-desc">스트레스 분석 결과</div>
+
+            <!-- Category Analysis -->
+            <div class="detail-section">
+                <h3 data-i18n="result.categoryAnalysis">카테고리별 분석</h3>
+                <div class="radar-list" id="radar-list"></div>
+            </div>
+
+            <!-- Stress Relief Tips -->
+            <div class="detail-section">
+                <h3 data-i18n="result.reliefTips">스트레스 해소 팁</h3>
+                <ul id="relief-tips-list"></ul>
+            </div>
+
+            <!-- Premium Content Button -->
+            <button class="btn-premium" id="btn-premium-unlock" data-i18n="button.unlockPremium">🔓 AI 심층 분석 보기 (광고 시청 필요)</button>
+            <div id="premium-content" style="display: none; width: 100%; max-width: 480px;">
+                <div class="detail-section">
+                    <h3 data-i18n="result.aiAnalysis">AI 심층 분석</h3>
+                    <p id="ai-analysis-content">AI 분석 결과...</p>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <button class="btn-save-image" id="btn-save-image" data-i18n="button.saveImage">📥 이미지 저장</button>
+                <button class="btn-share" id="btn-share" data-i18n="button.share">📤 공유</button>
+                <button class="btn-retry" id="btn-retry" data-i18n="button.retry">🔄 다시하기</button>
+            </div>
+
+            <!-- Recommendations -->
+            <div class="recommendations-section">
+                <div class="rec-title" data-i18n="result.recommendedApps">추천 앱</div>
+                <div class="rec-grid" id="rec-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ad Overlay -->
+    <div class="ad-overlay" id="ad-overlay">
+        <div class="ad-modal">
+            <p data-i18n="ad.watchVideo">영상을 시청하고 AI 분석을 해제하세요!</p>
+            <div class="ad-placeholder">광고 로딩 중...</div>
+            <div id="ad-countdown">5</div>
+            <button id="ad-close" data-i18n="button.close">닫기</button>
+        </div>
+    </div>
+
+    <!-- Bottom Ad Banner -->
+    <div class="ad-banner">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="3295820393" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').catch(() => {});
+        }
+    </script>
+
+    <!-- i18n & App -->
+    <script src="js/i18n.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

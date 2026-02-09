@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Vérification du Niveau de Stress - Quel est votre niveau de stress?",
+    "description": "Mesurez votre niveau de stress actuel avec 15 questions. Analysez le stress au travail, dans les relations, la santé, les finances et la vie quotidienne, obtenez des conseils de soulagement personnalisés!",
+    "loading": "Chargement..."
+  },
+  "intro": {
+    "title": "Vérification du Niveau de Stress",
+    "subtitle": "Comprenez votre état de stress",
+    "description": "Avec 15 questions sur le travail, les relations, la santé, les finances et la vie quotidienne, mesurez votre niveau de stress et obtenez des stratégies de soulagement personnalisées!",
+    "questions": "15 questions",
+    "time": "Environ 3 minutes",
+    "free": "Gratuit",
+    "users": "personnes ont complété ce test"
+  },
+  "button": {
+    "start": "Commencer",
+    "retry": "🔄 Réessayer",
+    "share": "📤 Partager",
+    "saveImage": "📥 Enregistrer l'image",
+    "unlockPremium": "🔓 Voir l'analyse approfondie de l'IA",
+    "close": "Fermer"
+  },
+  "questions": {
+    "workStudy": "Travail/Études",
+    "relationships": "Relations",
+    "health": "Santé",
+    "finance": "Finances",
+    "dailyLife": "Vie quotidienne",
+    "q1": "Je ressens du stress en raison des délais de travail/d'études.",
+    "q2": "J'ai du mal à équilibrer travail et temps personnel.",
+    "q3": "Je m'inquiète de mes performances au travail/aux études.",
+    "q4": "J'ai des conflits avec la famille ou les amis.",
+    "q5": "Je me sens seul ou isolé.",
+    "q6": "Maintenir les relations m'épuise.",
+    "q7": "Je souffre du manque de sommeil ou d'une mauvaise qualité de sommeil.",
+    "q8": "J'éprouve une fatigue physique ou des douleurs.",
+    "q9": "Je m'inquiète ou ressens de l'anxiété au sujet de ma santé.",
+    "q10": "Je rencontre des difficultés financières.",
+    "q11": "Je ressens de l'anxiété concernant ma situation financière future.",
+    "q12": "Je m'inquiète des dépenses imprévues.",
+    "q13": "Gérer les tâches quotidiennes est une charge pour moi.",
+    "q14": "Je ne peux pas me reposer suffisamment.",
+    "q15": "Je ressens du stress même pendant mon temps libre."
+  },
+  "options": {
+    "notAtAll": "Pas du tout",
+    "rarely": "Rarement",
+    "sometimes": "Parfois",
+    "often": "Souvent",
+    "veryMuch": "Beaucoup"
+  },
+  "loading": {
+    "analyzing": "Analyse en cours..."
+  },
+  "result": {
+    "title": "Votre niveau de stress",
+    "stressLevel": "Niveau de stress",
+    "categoryAnalysis": "Analyse par catégorie",
+    "reliefTips": "Conseils de soulagement du stress",
+    "aiAnalysis": "Analyse approfondie de l'IA",
+    "recommendedApps": "Applications recommandées"
+  },
+  "categories": {
+    "workStudy": "Travail/Études",
+    "relationships": "Relations",
+    "health": "Santé",
+    "finance": "Finances",
+    "dailyLife": "Vie quotidienne"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Très faible",
+      "subtitle": "Votre stress est très faible",
+      "description": "Félicitations! Votre niveau de stress actuel est très faible. Votre esprit et votre corps sont en bon équilibre. Continuez à prendre soin de vous."
+    },
+    "low": {
+      "title": "Faible",
+      "subtitle": "Votre stress est faible",
+      "description": "Votre niveau de stress est faible. Vous gérez bien la plupart des situations. Conservez votre attitude positive."
+    },
+    "moderate": {
+      "title": "Modéré",
+      "subtitle": "Votre stress est modéré",
+      "description": "Votre niveau de stress est modéré. Le stress peut s'accumuler dans certains domaines. Identifiez les causes."
+    },
+    "high": {
+      "title": "Élevé",
+      "subtitle": "Votre stress est élevé",
+      "description": "Votre niveau de stress est élevé. Organisez vos priorités et pratiquez régulièrement des activités de soulagement."
+    },
+    "veryHigh": {
+      "title": "Très élevé",
+      "subtitle": "Votre stress est très élevé",
+      "description": "Votre niveau de stress est très élevé. Il est recommandé de consulter un professionnel de la santé mentale immédiatement."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Continuez l'exercice régulier",
+      "Pratiquez la méditation et le repos",
+      "Renforcez vos relations",
+      "Profitez de vos loisirs"
+    ],
+    "low": [
+      "Maintenez votre attitude positive",
+      "Faites de l'exercice 3-4 fois par semaine",
+      "Détectez le stress tôt",
+      "Dormez 7-8 heures"
+    ],
+    "moderate": [
+      "Identifiez les causes du stress",
+      "Faites de l'exercice 4-5+ fois par semaine",
+      "Méditez ou pratiquez le yoga 20-30 minutes",
+      "Consultez un professionnel"
+    ],
+    "high": [
+      "Ralentissez et priorisez le repos",
+      "Faites 30+ minutes d'activité quotidienne",
+      "Transformez les pensées négatives",
+      "Parlez à des personnes de confiance",
+      "Cherchez une aide professionnelle"
+    ],
+    "veryHigh": [
+      "Cherchez l'aide d'un professionnel de la santé mentale",
+      "Éliminez les principales sources de stress",
+      "Dormez 8+ heures par jour",
+      "Faites de l'exercice intensif régulièrement",
+      "Combinez la thérapie avec la TCC",
+      "Pratiquez la respiration profonde quotidiennement"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Votre capacité à gérer le stress est excellente. Continuez à maintenir cet état.",
+    "low": "Votre niveau de stress est gérable. Utilisez des stratégies positives.",
+    "moderate": "Le stress s'accumule dans certains domaines. Trouvez des solutions.",
+    "high": "Vous éprouvez un stress considérable. Cherchez une aide professionnelle.",
+    "veryHigh": "Votre niveau de stress est critique. Cherchez l'aide d'un spécialiste."
+  },
+  "apps": {
+    "detoxTimer": "Minuteur de Détox Numérique",
+    "detoxTimerDesc": "Gérez votre temps d'écran",
+    "whiteNoise": "Bruit Blanc",
+    "whiteNoiseDesc": "Sons pour dormir et se détendre",
+    "dailyAffirmation": "Affirmation Quotidienne",
+    "dailyAffirmationDesc": "Messages positifs quotidiens",
+    "meditationGuide": "Guide de Méditation",
+    "meditationGuideDesc": "Trouvez la paix intérieure"
+  },
+  "ad": {
+    "watchVideo": "Regardez une vidéo pour déverrouiller l'analyse IA!"
+  },
+  "message": {
+    "copiedToClipboard": "Copié dans le presse-papiers!"
+  }
+}

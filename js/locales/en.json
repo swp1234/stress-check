@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Stress Level Check - How Stressed Are You?",
+    "description": "Measure your current stress level with 15 questions. Analyze stress from work, relationships, health, finance, and daily life, and receive personalized relief tips!",
+    "loading": "Loading..."
+  },
+  "intro": {
+    "title": "Stress Level Check",
+    "subtitle": "Understand your stress status",
+    "description": "With 15 questions about work, relationships, health, finance, and daily life, measure your stress level and get personalized relief strategies!",
+    "questions": "15 questions",
+    "time": "About 3 minutes",
+    "free": "Free",
+    "users": "people have taken this test"
+  },
+  "button": {
+    "start": "Start",
+    "retry": "🔄 Try Again",
+    "share": "📤 Share",
+    "saveImage": "📥 Save Image",
+    "unlockPremium": "🔓 AI Deep Analysis (Requires Watching Ad)",
+    "close": "Close"
+  },
+  "questions": {
+    "workStudy": "Work/Study",
+    "relationships": "Relationships",
+    "health": "Health",
+    "finance": "Finance",
+    "dailyLife": "Daily Life",
+    "q1": "I feel stressed due to work/study deadlines.",
+    "q2": "I find it difficult to balance work and personal time.",
+    "q3": "I worry about my work/study performance.",
+    "q4": "I have conflicts with family or friends.",
+    "q5": "I feel lonely or isolated.",
+    "q6": "Maintaining relationships feels exhausting.",
+    "q7": "I suffer from lack of sleep or poor sleep quality.",
+    "q8": "I experience physical fatigue or pain.",
+    "q9": "I worry or feel anxious about my health.",
+    "q10": "I am experiencing financial difficulties.",
+    "q11": "I feel anxious about my future financial situation.",
+    "q12": "I worry about unexpected expenses.",
+    "q13": "Handling daily tasks feels burdensome.",
+    "q14": "I am unable to get sufficient rest.",
+    "q15": "I feel stressed even during leisure time."
+  },
+  "options": {
+    "notAtAll": "Not at all",
+    "rarely": "Rarely",
+    "sometimes": "Sometimes",
+    "often": "Often",
+    "veryMuch": "Very much"
+  },
+  "loading": {
+    "analyzing": "Analyzing..."
+  },
+  "result": {
+    "title": "Your Stress Level",
+    "stressLevel": "Stress Level",
+    "categoryAnalysis": "Category Analysis",
+    "reliefTips": "Stress Relief Tips",
+    "aiAnalysis": "AI Deep Analysis",
+    "recommendedApps": "Recommended Apps"
+  },
+  "categories": {
+    "workStudy": "Work/Study",
+    "relationships": "Relationships",
+    "health": "Health",
+    "finance": "Finance",
+    "dailyLife": "Daily Life"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Very Low (Breathing Easily)",
+      "subtitle": "You have very little stress",
+      "description": "Congratulations! Your current stress level is very low. Your mind and body are in good balance, and you're managing your daily life well. Continue with your consistent self-care and rest to maintain this state."
+    },
+    "low": {
+      "title": "Low (Healthy)",
+      "subtitle": "You have little stress",
+      "description": "Your stress level is low. You're managing most situations well and maintaining a positive mindset. Continue maintaining your current lifestyle while practicing preventive stress management."
+    },
+    "moderate": {
+      "title": "Moderate (Attention Needed)",
+      "subtitle": "You have moderate stress",
+      "description": "Your stress level is moderate. Stress may be accumulating in specific areas. Identify the causes and systematically find solutions. Regular exercise and rest will be helpful."
+    },
+    "high": {
+      "title": "High (Caution Required)",
+      "subtitle": "Your stress is high",
+      "description": "Your stress level is high. Physical and emotional fatigue may be accumulating. Organize your priorities, regularly practice stress-relief activities, and consider professional help if needed."
+    },
+    "veryHigh": {
+      "title": "Very High (Urgent Management Needed)",
+      "subtitle": "Your stress is very high",
+      "description": "Your stress level is very high. You may be under serious physical and emotional strain. Start stress management immediately and strongly recommend visiting a mental health professional if needed."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Continue regular exercise to maintain your current healthy state",
+      "Protect your peace of mind through regular rest and meditation",
+      "Deepen relationships with friends and family",
+      "Enhance your quality of life through hobbies"
+    ],
+    "low": [
+      "Continue maintaining your current positive mindset",
+      "Exercise 3-4 times per week to maintain physical health",
+      "Detect and address stress signals early",
+      "Ensure adequate sleep (7-8 hours)"
+    ],
+    "moderate": [
+      "Clearly identify the causes of stress and prioritize them",
+      "Exercise regularly 4-5+ times per week",
+      "Try 20-30 minute daily meditation or yoga",
+      "Share stress concerns with a professional counselor"
+    ],
+    "high": [
+      "Immediately slow down and prioritize rest",
+      "Engage in 30+ minutes of physical activity daily",
+      "Practice converting negative thoughts to positive ones",
+      "Talk with family or trusted people",
+      "Consider professional psychological counseling"
+    ],
+    "veryHigh": [
+      "Seek immediate help from a mental health professional",
+      "Remove or reduce major stress factors in your life",
+      "Ensure adequate sleep (8+ hours daily)",
+      "Engage in regular, intense exercise (walking, swimming, yoga)",
+      "Combine professional counseling with cognitive behavioral therapy (CBT)",
+      "Practice deep breathing and progressive muscle relaxation daily"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Your stress management ability is excellent and your daily adaptation is outstanding. Since you're maintaining a stable state, it's important to continue this. Also consider sharing your current stress management methods (exercise, meditation, hobbies) with others.",
+    "low": "Your stress level is within manageable range and you're using positive coping strategies. Maintain your current lifestyle while developing the habit of sensitively detecting and quickly responding to early stress signals.",
+    "moderate": "Stress is currently accumulating in specific areas (work/study, relationships, health, finance, daily life). Refer to the category analysis to systematically address the highest stress factor first. Lifestyle improvements and professional advice will be helpful.",
+    "high": "You're currently experiencing considerable stress. Watch for physical and emotional symptoms. Immediately identify and plan to remove or reduce stress causes. Seeking professional counseling is recommended to develop personalized coping strategies.",
+    "veryHigh": "Your stress level is critical. This level of stress can negatively impact your physical and mental health. Strongly recommend immediate visit to a mental health professional (psychiatry clinic, psychological counseling). Also inform those around you of your situation and ask for support."
+  },
+  "apps": {
+    "detoxTimer": "Digital Detox Timer",
+    "detoxTimerDesc": "Manage your smartphone usage time",
+    "whiteNoise": "White Noise",
+    "whiteNoiseDesc": "Soothing sounds for better sleep and focus",
+    "dailyAffirmation": "Daily Affirmation",
+    "dailyAffirmationDesc": "Start each morning with positive messages",
+    "meditationGuide": "Meditation Guide",
+    "meditationGuideDesc": "Find inner peace through guided meditation"
+  },
+  "ad": {
+    "watchVideo": "Watch a video to unlock AI analysis!"
+  },
+  "message": {
+    "copiedToClipboard": "Copied to clipboard!"
+  }
+}

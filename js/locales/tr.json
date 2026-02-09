@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Stres Seviyesi Kontrolü - Stressiniz Ne Kadar?",
+    "description": "15 soru ile mevcut stres seviyenizi ölçün. İş, ilişkiler, sağlık, finans ve günlük yaşamdan kaynaklanan stresi analiz edin, kişiselleştirilmiş rahatlama ipuçları alın!",
+    "loading": "Yükleniyor..."
+  },
+  "intro": {
+    "title": "Stres Seviyesi Kontrolü",
+    "subtitle": "Stres durumunuzu anlayın",
+    "description": "İş, ilişkiler, sağlık, finans ve günlük yaşam hakkında 15 soru ile stres seviyenizi ölçün ve kişiselleştirilmiş rahatlama stratejileri alın!",
+    "questions": "15 soru",
+    "time": "Yaklaşık 3 dakika",
+    "free": "Ücretsiz",
+    "users": "kişi bu testi tamamladı"
+  },
+  "button": {
+    "start": "Başla",
+    "retry": "🔄 Tekrar Dene",
+    "share": "📤 Paylaş",
+    "saveImage": "📥 Görüntüyü Kaydet",
+    "unlockPremium": "🔓 AI Derin Analiz Görüntüle",
+    "close": "Kapat"
+  },
+  "questions": {
+    "workStudy": "İş/Çalışma",
+    "relationships": "İlişkiler",
+    "health": "Sağlık",
+    "finance": "Finans",
+    "dailyLife": "Günlük Yaşam",
+    "q1": "İş/çalışma son tarihlerinden dolayı stres hissediyorum.",
+    "q2": "İş ve kişisel zaman arasında denge kurmakta zorlanıyorum.",
+    "q3": "İş/çalışma performansımdan endişe duyuyorum.",
+    "q4": "Aile veya arkadaşlarla çatışmalarım var.",
+    "q5": "Kendimi yalnız veya izole hissediyorum.",
+    "q6": "İlişkiler sürdürmek beni yoruyor.",
+    "q7": "Uyku eksikliği veya kötü uyku kalitesi yaşıyorum.",
+    "q8": "Fiziksel yorgunluk veya ağrı hissediyorum.",
+    "q9": "Sağlığım hakkında endişe veya kaygı duyuyorum.",
+    "q10": "Mali zorluklar yaşıyorum.",
+    "q11": "Gelecekteki mali durumum hakkında kaygılıyım.",
+    "q12": "Beklenmedik harcamalardan endişe duyuyorum.",
+    "q13": "Günlük görevleri yerine getirmek bana bir yük.",
+    "q14": "Yeterli dinlenme alamıyorum.",
+    "q15": "Boş zamanlarımda bile stres hissediyorum."
+  },
+  "options": {
+    "notAtAll": "Hiç",
+    "rarely": "Nadiren",
+    "sometimes": "Bazen",
+    "often": "Sık sık",
+    "veryMuch": "Çok"
+  },
+  "loading": {
+    "analyzing": "Analiz ediliyor..."
+  },
+  "result": {
+    "title": "Stres seviyeniz",
+    "stressLevel": "Stres Seviyesi",
+    "categoryAnalysis": "Kategori Analizi",
+    "reliefTips": "Stres Rahatlama İpuçları",
+    "aiAnalysis": "AI Derin Analizi",
+    "recommendedApps": "Önerilen Uygulamalar"
+  },
+  "categories": {
+    "workStudy": "İş/Çalışma",
+    "relationships": "İlişkiler",
+    "health": "Sağlık",
+    "finance": "Finans",
+    "dailyLife": "Günlük Yaşam"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Çok Düşük",
+      "subtitle": "Stressiniz çok düşük",
+      "description": "Tebrikler! Mevcut stres seviyeniz çok düşün. Akılınız ve bedeniniz iyi dengelededir. Kendinize bakımını sürdürün."
+    },
+    "low": {
+      "title": "Düşük",
+      "subtitle": "Stressiniz düşük",
+      "description": "Stres seviyeniz düşük. Çoğu durumu iyi yönetiyorsunuz. Pozitif tutumunuzu koruyun."
+    },
+    "moderate": {
+      "title": "Orta",
+      "subtitle": "Stressiniz orta düzeyde",
+      "description": "Stres seviyeniz orta düzeydedir. Stres belirli alanlarda birikebilir. Nedenleri belirleyin."
+    },
+    "high": {
+      "title": "Yüksek",
+      "subtitle": "Stressiniz yüksek",
+      "description": "Stres seviyeniz yüksektir. Öncelikleri düzenleyin ve düzenli olarak rahatlama aktiviteleri yapın."
+    },
+    "veryHigh": {
+      "title": "Çok Yüksek",
+      "subtitle": "Stressiniz çok yüksek",
+      "description": "Stres seviyeniz çok yüksektir. Hemen bir ruh sağlığı profesyoneline başvurmanız önerilir."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Düzenli egzersiz yapmaya devam edin",
+      "Meditasyon ve dinlenme yapın",
+      "İlişkilerinizi güçlendirin",
+      "Hobi ve ilgi alanlarınızı yapın"
+    ],
+    "low": [
+      "Pozitif tutumunuzu koruyun",
+      "Haftada 3-4 kez egzersiz yapın",
+      "Stresi erken tespit edin",
+      "7-8 saat uyuyun"
+    ],
+    "moderate": [
+      "Stres nedenlerini belirleyin",
+      "Haftada 4-5+ kez egzersiz yapın",
+      "Günde 20-30 dakika meditasyon yapın",
+      "Bir profesyonelle danışın"
+    ],
+    "high": [
+      "Yavaşlayın ve dinlenmeyi öncelik verin",
+      "Günde 30+ dakika aktivite yapın",
+      "Olumsuz düşünceleri olumluya çevirin",
+      "Güvendiğiniz kişilerle konuşun",
+      "Profesyonel yardım alın"
+    ],
+    "veryHigh": [
+      "Ruh sağlığı profesyonelinden yardım alın",
+      "Ana stres kaynaklarını ortadan kaldırın",
+      "Günde 8+ saat uyuyun",
+      "Düzenli olarak yoğun egzersiz yapın",
+      "Terapiyi CBT ile birleştirin",
+      "Günde derin nefes alıştırması yapın"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Stres yönetim yeteneğiniz mükemmeldir. Bu durumu korumaya devam edin.",
+    "low": "Stres seviyeniz yönetilebilir. Pozitif stratejiler kullanın.",
+    "moderate": "Stres belirli alanlarda birikıyor. Çözüm bulun.",
+    "high": "Önemli miktarda stres yaşıyorsunuz. Profesyonel yardım alın.",
+    "veryHigh": "Stres seviyeniz kritiktir. Bir uzmanın yardımını alın."
+  },
+  "apps": {
+    "detoxTimer": "Dijital Detoks Zamanlayıcı",
+    "detoxTimerDesc": "Akıllı telefon kullanım sürenizi yönetin",
+    "whiteNoise": "Beyaz Gürültü",
+    "whiteNoiseDesc": "Uyku ve rahatlama için sesler",
+    "dailyAffirmation": "Günlük Onaylama",
+    "dailyAffirmationDesc": "Günlük pozitif mesajlar",
+    "meditationGuide": "Meditasyon Rehberi",
+    "meditationGuideDesc": "İç huzuru bulun"
+  },
+  "ad": {
+    "watchVideo": "AI analizi açmak için video izleyin!"
+  },
+  "message": {
+    "copiedToClipboard": "Panoya kopyalandı!"
+  }
+}

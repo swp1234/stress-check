@@ -1,0 +1,156 @@
+{
+  "app": {
+    "title": "Verificação de Nível de Estresse - Quanto estresse você tem?",
+    "description": "Meça seu nível de estresse atual com 15 perguntas. Analise o estresse no trabalho, relacionamentos, saúde, finanças e vida diária, obtenha dicas personalizadas de alívio!",
+    "loading": "Carregando..."
+  },
+  "intro": {
+    "title": "Verificação de Nível de Estresse",
+    "subtitle": "Compreenda seu estado de estresse",
+    "description": "Com 15 perguntas sobre trabalho, relacionamentos, saúde, finanças e vida diária, meça seu nível de estresse e obtenha estratégias personalizadas de alívio!",
+    "questions": "15 perguntas",
+    "time": "Aproximadamente 3 minutos",
+    "free": "Grátis",
+    "users": "pessoas completaram este teste"
+  },
+  "button": {
+    "start": "Começar",
+    "retry": "🔄 Tentar novamente",
+    "share": "📤 Compartilhar",
+    "saveImage": "📥 Salvar imagem",
+    "unlockPremium": "🔓 Ver análise profunda de IA",
+    "close": "Fechar"
+  },
+  "questions": {
+    "workStudy": "Trabalho/Estudo",
+    "relationships": "Relacionamentos",
+    "health": "Saúde",
+    "finance": "Finanças",
+    "dailyLife": "Vida diária",
+    "q1": "Sinto estresse devido aos prazos de trabalho/estudo.",
+    "q2": "Acho difícil equilibrar trabalho e tempo pessoal.",
+    "q3": "Fico preocupado com meu desempenho no trabalho/estudo.",
+    "q4": "Tenho conflitos com família ou amigos.",
+    "q5": "Sinto-me solitário ou isolado.",
+    "q6": "Manter relacionamentos me causa esgotamento.",
+    "q7": "Sofro de falta de sono ou má qualidade de sono.",
+    "q8": "Experimento fadiga física ou dor.",
+    "q9": "Preocupo-me ou sinto ansiedade sobre minha saúde.",
+    "q10": "Estou enfrentando dificuldades financeiras.",
+    "q11": "Sinto ansiedade sobre minha situação financeira futura.",
+    "q12": "Preocupo-me com despesas inesperadas.",
+    "q13": "Lidar com tarefas diárias é uma carga para mim.",
+    "q14": "Não consigo descansar o suficiente.",
+    "q15": "Sinto estresse mesmo durante o tempo livre."
+  },
+  "options": {
+    "notAtAll": "Nada",
+    "rarely": "Raramente",
+    "sometimes": "Às vezes",
+    "often": "Frequentemente",
+    "veryMuch": "Muito"
+  },
+  "loading": {
+    "analyzing": "Analisando..."
+  },
+  "result": {
+    "title": "Seu nível de estresse",
+    "stressLevel": "Nível de estresse",
+    "categoryAnalysis": "Análise por categoria",
+    "reliefTips": "Dicas de alívio do estresse",
+    "aiAnalysis": "Análise profunda de IA",
+    "recommendedApps": "Aplicativos recomendados"
+  },
+  "categories": {
+    "workStudy": "Trabalho/Estudo",
+    "relationships": "Relacionamentos",
+    "health": "Saúde",
+    "finance": "Finanças",
+    "dailyLife": "Vida diária"
+  },
+  "results": {
+    "veryLow": {
+      "title": "Muito baixo",
+      "subtitle": "Seu estresse é muito baixo",
+      "description": "Parabéns! Seu nível de estresse atual é muito baixo. Sua mente e corpo estão em bom equilíbrio. Continue cuidando de si mesmo."
+    },
+    "low": {
+      "title": "Baixo",
+      "subtitle": "Seu estresse é baixo",
+      "description": "Seu nível de estresse é baixo. Você está lidando bem com a maioria das situações. Mantenha sua atitude positiva."
+    },
+    "moderate": {
+      "title": "Moderado",
+      "subtitle": "Seu estresse é moderado",
+      "description": "Seu nível de estresse é moderado. O estresse pode estar se acumulando em áreas específicas. Identifique as causas."
+    },
+    "high": {
+      "title": "Alto",
+      "subtitle": "Seu estresse é alto",
+      "description": "Seu nível de estresse é alto. Organize suas prioridades e pratique atividades de alívio regularmente."
+    },
+    "veryHigh": {
+      "title": "Muito alto",
+      "subtitle": "Seu estresse é muito alto",
+      "description": "Seu nível de estresse é muito alto. É recomendado consultar um profissional de saúde mental imediatamente."
+    }
+  },
+  "tips": {
+    "veryLow": [
+      "Continue com exercício regular",
+      "Pratique meditação e descanso",
+      "Fortaleça seus relacionamentos",
+      "Aproveite seus hobbies"
+    ],
+    "low": [
+      "Mantenha sua atitude positiva",
+      "Exercite-se 3-4 vezes por semana",
+      "Detecte o estresse cedo",
+      "Durma 7-8 horas"
+    ],
+    "moderate": [
+      "Identifique causas de estresse",
+      "Exercite-se 4-5+ vezes por semana",
+      "Medite ou faça yoga 20-30 minutos",
+      "Consulte um profissional"
+    ],
+    "high": [
+      "Reduza o ritmo e priorize descanso",
+      "Faça 30+ minutos de atividade diária",
+      "Transforme pensamentos negativos",
+      "Fale com pessoas de confiança",
+      "Procure aconselhamento profissional"
+    ],
+    "veryHigh": [
+      "Procure ajuda de um profissional de saúde mental",
+      "Elimine principais fontes de estresse",
+      "Durma 8+ horas diariamente",
+      "Faça exercício intenso regularmente",
+      "Combine terapia com TCC",
+      "Pratique respiração profunda diariamente"
+    ]
+  },
+  "analysis": {
+    "veryLow": "Sua capacidade de gerenciar o estresse é excelente. Continue mantendo este estado.",
+    "low": "Seu nível de estresse é gerenciável. Use estratégias positivas.",
+    "moderate": "O estresse se acumula em áreas específicas. Encontre soluções.",
+    "high": "Você está experimentando estresse considerável. Procure ajuda profissional.",
+    "veryHigh": "Seu nível de estresse é crítico. Procure ajuda de um especialista."
+  },
+  "apps": {
+    "detoxTimer": "Temporizador de Desintoxicação Digital",
+    "detoxTimerDesc": "Gerencie seu tempo de telefone",
+    "whiteNoise": "Ruído Branco",
+    "whiteNoiseDesc": "Sons para dormir e relaxar",
+    "dailyAffirmation": "Afirmação Diária",
+    "dailyAffirmationDesc": "Mensagens positivas diárias",
+    "meditationGuide": "Guia de Meditação",
+    "meditationGuideDesc": "Encontre paz interior"
+  },
+  "ad": {
+    "watchVideo": "Assista a um vídeo para desbloquear análise de IA!"
+  },
+  "message": {
+    "copiedToClipboard": "Copiado para a área de transferência!"
+  }
+}
