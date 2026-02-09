@@ -209,7 +209,7 @@ function calculateCategoryScores(answers) {
     return scores;
 }
 
-function getRelieefTips(stressLevel) {
+function getReliefTips(stressLevel) {
     const tipsMap = {
         'veryLow': 'tips.veryLow',
         'low': 'tips.low',
@@ -220,7 +220,7 @@ function getRelieefTips(stressLevel) {
     return tipsMap[stressLevel];
 }
 
-function getAIAnalysis(stressLevel, categoryScores) {
+function getAIAnalysis(stressLevel) {
     const analysisMap = {
         'veryLow': 'analysis.veryLow',
         'low': 'analysis.low',

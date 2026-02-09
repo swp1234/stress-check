@@ -196,7 +196,7 @@ class StressCheckApp {
         const tipsList = document.getElementById('relief-tips-list');
         tipsList.innerHTML = '';
 
-        const tipsKey = getRelieefTips(this.stressLevel.level);
+        const tipsKey = getReliefTips(this.stressLevel.level);
         const tips = i18n.t(tipsKey);
 
         if (Array.isArray(tips)) {
