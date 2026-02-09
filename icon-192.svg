@@ -1,32 +1,20 @@
-<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background -->
-    <rect width="192" height="192" fill="#e74c3c" rx="40"/>
-
-    <!-- Head -->
-    <circle cx="96" cy="80" r="35" fill="#fff" opacity="0.95"/>
-
-    <!-- Left Eye -->
-    <circle cx="80" cy="70" r="6" fill="#0f0f23"/>
-    <circle cx="82" cy="68" r="2.5" fill="#fff"/>
-
-    <!-- Right Eye -->
-    <circle cx="112" cy="70" r="6" fill="#0f0f23"/>
-    <circle cx="114" cy="68" r="2.5" fill="#fff"/>
-
-    <!-- Mouth (stressed) -->
-    <path d="M 85 90 Q 96 85 107 90" stroke="#0f0f23" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-
-    <!-- Stress lines above head -->
-    <line x1="65" y1="35" x2="65" y2="25" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-    <line x1="75" y1="30" x2="75" y2="18" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-    <line x1="117" y1="30" x2="117" y2="18" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-    <line x1="127" y1="35" x2="127" y2="25" stroke="#f39c12" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
-
-    <!-- Brain visualization in chest -->
-    <circle cx="96" cy="130" r="20" fill="#2ecc71" opacity="0.3"/>
-    <path d="M 85 130 Q 96 120 107 130 Q 96 140 85 130" fill="#2ecc71" opacity="0.5"/>
-
-    <!-- Heart rate line (wave) -->
-    <path d="M 65 145 L 75 145 L 78 140 L 82 150 L 85 145 L 92 145 L 96 135 L 100 145 L 107 145 L 110 140 L 114 150 L 117 145 L 127 145"
-          stroke="#e91e63" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192" height="192" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009376;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="url(#grad1)"/>
+  <g transform="translate(256, 256)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    <text x="0" y="0" font-size="180" text-anchor="middle" dominant-baseline="central" fill="white" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" opacity="0.95">😌</text>
+  </g>
+  <g transform="translate(256, 256)">
+    <circle cx="0" cy="0" r="220" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  </g>
 </svg>

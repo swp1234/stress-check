@@ -1,32 +1,20 @@
-<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background -->
-    <rect width="512" height="512" fill="#e74c3c" rx="110"/>
-
-    <!-- Head -->
-    <circle cx="256" cy="210" r="95" fill="#fff" opacity="0.95"/>
-
-    <!-- Left Eye -->
-    <circle cx="210" cy="180" r="18" fill="#0f0f23"/>
-    <circle cx="216" cy="174" r="7" fill="#fff"/>
-
-    <!-- Right Eye -->
-    <circle cx="302" cy="180" r="18" fill="#0f0f23"/>
-    <circle cx="308" cy="174" r="7" fill="#fff"/>
-
-    <!-- Mouth (stressed) -->
-    <path d="M 220 240 Q 256 220 292 240" stroke="#0f0f23" stroke-width="6" fill="none" stroke-linecap="round"/>
-
-    <!-- Stress lines above head -->
-    <line x1="150" y1="70" x2="150" y2="30" stroke="#f39c12" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-    <line x1="190" y1="50" x2="190" y2="5" stroke="#f39c12" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-    <line x1="322" y1="50" x2="322" y2="5" stroke="#f39c12" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-    <line x1="362" y1="70" x2="362" y2="30" stroke="#f39c12" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
-
-    <!-- Brain visualization in chest -->
-    <circle cx="256" cy="350" r="55" fill="#2ecc71" opacity="0.3"/>
-    <path d="M 210 350 Q 256 310 302 350 Q 256 390 210 350" fill="#2ecc71" opacity="0.5"/>
-
-    <!-- Heart rate line (wave) -->
-    <path d="M 140 380 L 195 380 L 205 350 L 220 420 L 235 380 L 277 380 L 288 320 L 299 380 L 314 380 L 324 350 L 339 420 L 354 380 L 372 380"
-          stroke="#e91e63" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00b894;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009376;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="url(#grad1)"/>
+  <g transform="translate(256, 256)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="200" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+    <text x="0" y="0" font-size="180" text-anchor="middle" dominant-baseline="central" fill="white" font-family="system-ui, -apple-system, sans-serif" font-weight="bold" opacity="0.95">😌</text>
+  </g>
+  <g transform="translate(256, 256)">
+    <circle cx="0" cy="0" r="220" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  </g>
 </svg>
