@@ -149,8 +149,20 @@ const STRESS_LEVELS = [
 
 const RECOMMENDED_APPS = [
     {
+        name: 'emotion-temp',
+        icon: '🌡️',
+        label: 'apps.emotionTemp',
+        description: 'apps.emotionTempDesc'
+    },
+    {
+        name: 'affirmation',
+        icon: '💝',
+        label: 'apps.affirmation',
+        description: 'apps.affirmationDesc'
+    },
+    {
         name: 'detox-timer',
-        icon: '⏱️',
+        icon: '📵',
         label: 'apps.detoxTimer',
         description: 'apps.detoxTimerDesc'
     },
@@ -161,16 +173,16 @@ const RECOMMENDED_APPS = [
         description: 'apps.whiteNoiseDesc'
     },
     {
-        name: 'daily-affirmation',
-        icon: '✨',
-        label: 'apps.dailyAffirmation',
-        description: 'apps.dailyAffirmationDesc'
+        name: 'color-personality',
+        icon: '🎨',
+        label: 'apps.colorPersonality',
+        description: 'apps.colorPersonalityDesc'
     },
     {
-        name: 'meditation-guide',
-        icon: '🧘',
-        label: 'apps.meditationGuide',
-        description: 'apps.meditationGuideDesc'
+        name: 'future-self',
+        icon: '🔮',
+        label: 'apps.futureSelf',
+        description: 'apps.futureSelfDesc'
     }
 ];
 
