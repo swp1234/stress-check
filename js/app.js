@@ -40,9 +40,19 @@ class StressCheckApp {
         document.querySelectorAll('.lang-option').forEach(btn => {
             btn.addEventListener('click', (e) => this.changeLanguage(e.target.dataset.lang));
         });
+
+        // Initialize Theme Toggle
+        this.initTheme();
     }
 
     startTest() {
+        // GA4: 테스트 시작
+        if (typeof gtag === 'function') {
+            gtag('event', 'test_start', {
+                app_name: 'stress-check',
+                content_type: 'test'
+            });
+        }
         this.currentQuestion = 0;
         this.answers = {};
         this.totalScore = 0;
@@ -134,6 +144,17 @@ class StressCheckApp {
 
     displayResults() {
         this.showScreen('result-screen');
+
+        // GA4: 테스트 완료
+        if (typeof gtag === 'function') {
+            const percentage = Math.round(((this.totalScore - 15) / (75 - 15)) * 100);
+            gtag('event', 'test_complete', {
+                app_name: 'stress-check',
+                result_type: this.stressLevel.level,
+                score: this.totalScore,
+                percentage: percentage
+            });
+        }
 
         // Update gauge
         const percentage = Math.round(((this.totalScore - 15) / (75 - 15)) * 100);
@@ -269,6 +290,15 @@ class StressCheckApp {
         const text = `내 스트레스 레벨: ${levelName} (${Math.round(((this.totalScore - 15) / (75 - 15)) * 100)}%)`;
         const url = 'https://dopabrain.com/stress-check/';
 
+        // GA4: 공유
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: navigator.share ? 'native' : 'clipboard',
+                app_name: 'stress-check',
+                content_type: 'test_result'
+            });
+        }
+
         if (navigator.share) {
             navigator.share({
                 title: i18n.t('app.title'),
@@ -333,6 +363,14 @@ class StressCheckApp {
             a.download = `stress-check-${new Date().toISOString().slice(0, 10)}.png`;
             a.click();
             URL.revokeObjectURL(url);
+
+            // GA4: 이미지 저장
+            if (typeof gtag === 'function') {
+                gtag('event', 'save_image', {
+                    app_name: 'stress-check',
+                    content_type: 'test_result'
+                });
+            }
         });
     }
 
@@ -393,6 +431,36 @@ class StressCheckApp {
             this.loadQuestion();
         } else if (this.stressLevel) {
             this.displayResults();
+        }
+    }
+
+    // Theme Toggle Function
+    initTheme() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Load theme preference from localStorage
+        const savedTheme = localStorage.getItem('app-theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        this.updateThemeButton(savedTheme);
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme') || 'dark';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('app-theme', newTheme);
+                this.updateThemeButton(newTheme);
+            });
+        }
+    }
+
+    updateThemeButton(theme) {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+            themeToggle.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
         }
     }
 }

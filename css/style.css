@@ -924,6 +924,37 @@ button, a[href], input[type="button"], input[type="submit"], [role="button"] {
     color: #fff;
 }
 
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 76px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(231,76,60,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(231,76,60,0.4);
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-toggle:hover {
+    background: rgba(231,76,60,0.5);
+    transform: scale(1.05);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
 /* Enhanced button accessibility */
 button:focus-visible,
 input[type="button"]:focus-visible,
