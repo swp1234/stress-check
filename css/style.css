@@ -10,6 +10,16 @@
     --text-dim: #5a5a70;
 }
 
+/* Light Mode */
+[data-theme="light"] {
+    --bg: #f5f5fa;
+    --surface: rgba(0,0,0,0.06);
+    --border: rgba(0,0,0,0.08);
+    --text: #1a1a2e;
+    --text-sec: #5a5a70;
+    --text-dim: #a0a0b8;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
