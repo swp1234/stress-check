@@ -287,7 +287,8 @@ class StressCheckApp {
 
     shareResult() {
         const levelName = i18n.t(this.stressLevel.title);
-        const text = `내 스트레스 레벨: ${levelName} (${Math.round(((this.totalScore - 15) / (75 - 15)) * 100)}%)`;
+        const shareTemplate = window.i18n?.t('share.text') || 'My stress level: {level} ({percent}%)';
+        const text = shareTemplate.replace('{level}', levelName).replace('{percent}', Math.round(((this.totalScore - 15) / (75 - 15)) * 100));
         const url = 'https://dopabrain.com/stress-check/';
 
         // GA4: 공유
@@ -328,7 +329,7 @@ class StressCheckApp {
         ctx.fillStyle = '#fff';
         ctx.font = 'bold 40px -apple-system, BlinkMacSystemFont, Segoe UI';
         ctx.textAlign = 'center';
-        ctx.fillText('스트레스 레벨 체크', canvas.width / 2, 60);
+        ctx.fillText(window.i18n?.t('canvas.title') || 'Stress Level Check', canvas.width / 2, 60);
 
         // Emoji
         ctx.font = '120px Arial';
