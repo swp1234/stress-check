@@ -151,6 +151,10 @@
     "watchVideo": "AI विश्लेषण को अनलॉक करने के लिए वीडियो देखें!"
   },
   "message": {
-    "copiedToClipboard": "क्लिपबोर्ड पर कॉपी किया गया!"
+    "copiedToClipboard": "क्लिपबोर्ड पर कॉपी किया गया!",
+    "questionLoading": "प्रश्न लोड हो रहा है..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

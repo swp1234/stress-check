@@ -151,6 +151,10 @@
     "watchVideo": "Tonton video untuk membuka analisis AI!"
   },
   "message": {
-    "copiedToClipboard": "Disalin ke clipboard!"
+    "copiedToClipboard": "Disalin ke clipboard!",
+    "questionLoading": "Memuat pertanyaan..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

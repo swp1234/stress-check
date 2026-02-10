@@ -151,6 +151,10 @@
     "watchVideo": "观看视频来解锁AI分析!"
   },
   "message": {
-    "copiedToClipboard": "已复制到剪贴板!"
+    "copiedToClipboard": "已复制到剪贴板!",
+    "questionLoading": "加载问题中..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

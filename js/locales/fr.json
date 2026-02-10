@@ -151,6 +151,10 @@
     "watchVideo": "Regardez une vidéo pour déverrouiller l'analyse IA!"
   },
   "message": {
-    "copiedToClipboard": "Copié dans le presse-papiers!"
+    "copiedToClipboard": "Copié dans le presse-papiers!",
+    "questionLoading": "Chargement de la question..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

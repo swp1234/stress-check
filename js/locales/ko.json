@@ -151,6 +151,10 @@
     "watchVideo": "영상을 시청하고 AI 분석을 해제하세요!"
   },
   "message": {
-    "copiedToClipboard": "클립보드에 복사되었습니다!"
+    "copiedToClipboard": "클립보드에 복사되었습니다!",
+    "questionLoading": "질문이 로드됩니다..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

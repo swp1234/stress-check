@@ -151,6 +151,10 @@
     "watchVideo": "Посмотрите видео!"
   },
   "message": {
-    "copiedToClipboard": "Скопировано!"
+    "copiedToClipboard": "Скопировано!",
+    "questionLoading": "Загрузка вопроса..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

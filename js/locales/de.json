@@ -151,6 +151,10 @@
     "watchVideo": "Video ansehen, um AI-Analyse freizuschalten!"
   },
   "message": {
-    "copiedToClipboard": "In Zwischenablage kopiert!"
+    "copiedToClipboard": "In Zwischenablage kopiert!",
+    "questionLoading": "Frage wird geladen..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

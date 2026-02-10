@@ -151,6 +151,10 @@
     "watchVideo": "Assista a um vídeo para desbloquear análise de IA!"
   },
   "message": {
-    "copiedToClipboard": "Copiado para a área de transferência!"
+    "copiedToClipboard": "Copiado para a área de transferência!",
+    "questionLoading": "Carregando pergunta..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

@@ -151,6 +151,10 @@
     "watchVideo": "¡Mira un video para desbloquear análisis de IA!"
   },
   "message": {
-    "copiedToClipboard": "¡Copiado al portapapeles!"
+    "copiedToClipboard": "¡Copiado al portapapeles!",
+    "questionLoading": "Cargando pregunta..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

@@ -151,6 +151,10 @@
     "watchVideo": "Watch a video to unlock AI analysis!"
   },
   "message": {
-    "copiedToClipboard": "Copied to clipboard!"
+    "copiedToClipboard": "Copied to clipboard!",
+    "questionLoading": "Loading question..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }

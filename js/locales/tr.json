@@ -151,6 +151,10 @@
     "watchVideo": "AI analizi açmak için video izleyin!"
   },
   "message": {
-    "copiedToClipboard": "Panoya kopyalandı!"
+    "copiedToClipboard": "Panoya kopyalandı!",
+    "questionLoading": "Soru yükleniyor..."
+  },
+  "app": {
+    "skipLink": "Skip to main"
   }
 }
