@@ -15,10 +15,11 @@ class StressCheckApp {
             await i18n.init();
         } catch (e) {
             console.warn('i18n init failed:', e);
+        } finally {
+            this.setupEventListeners();
+            this.hideLoader();
+            document.getElementById('intro-screen').classList.add('active');
         }
-        this.setupEventListeners();
-        this.hideLoader();
-        document.getElementById('intro-screen').classList.add('active');
     }
 
     setupEventListeners() {

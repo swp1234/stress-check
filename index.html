@@ -148,8 +148,8 @@
 
     <!-- Main Container -->
     <div class="container">
-        <!-- Top Ad Banner -->
-        <div class="ad-banner">
+        <!-- Ad Banner - hidden on intro, shown on result -->
+        <div class="ad-banner" id="top-ad" style="display:none">
             <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3600813755953882" data-ad-slot="6470814389" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
@@ -161,15 +161,23 @@
             <p class="intro-subtitle" data-i18n="intro.subtitle">당신의 스트레스 상태를 알아보세요</p>
             <p class="intro-desc" data-i18n="intro.description">15개 질문으로 직장, 인간관계, 건강, 재정, 일상의 스트레스 레벨을 측정하고 맞춤형 해소법을 받으세요!</p>
 
+            <div class="category-preview" style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:16px 0">
+                <span style="background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.2);padding:6px 12px;border-radius:20px;font-size:12px">💼 직장/학업</span>
+                <span style="background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.2);padding:6px 12px;border-radius:20px;font-size:12px">🏥 건강</span>
+                <span style="background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.2);padding:6px 12px;border-radius:20px;font-size:12px">👥 인간관계</span>
+                <span style="background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.2);padding:6px 12px;border-radius:20px;font-size:12px">💰 재정</span>
+                <span style="background:rgba(231,76,60,0.08);border:1px solid rgba(231,76,60,0.2);padding:6px 12px;border-radius:20px;font-size:12px">🏠 일상생활</span>
+            </div>
+
             <div class="intro-meta">
                 <span data-i18n="intro.questions">15개 질문</span>
                 <span data-i18n="intro.time">약 3분</span>
                 <span data-i18n="intro.free">무료</span>
             </div>
 
-            <button class="btn-start" id="btn-start" data-i18n="button.start">시작하기</button>
+            <button class="btn-start" id="btn-start" data-i18n="button.start">스트레스 레벨 측정하기</button>
             <div class="social-proof">
-                <div><span class="count">5,000+</span> <span data-i18n="intro.users">사람이 테스트했습니다</span></div>
+                <div>4,800명이 스트레스를 낮출 방법을 찾았습니다 ✅</div>
             </div>
         </div>
 
