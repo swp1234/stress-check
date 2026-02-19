@@ -2,7 +2,8 @@
   "app": {
     "title": "스트레스 레벨 체크 - 당신의 스트레스 얼마나?",
     "description": "15가지 질문으로 현재 스트레스 레벨을 측정하세요. 직장, 인간관계, 건강, 재정, 일상에서의 스트레스를 분석하고 맞춤형 해소법을 받아보세요!",
-    "loading": "로딩 중..."
+    "loading": "로딩 중...",
+    "skipLink": "본문으로 이동"
   },
   "intro": {
     "title": "스트레스 레벨 체크",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "클립보드에 복사되었습니다!",
     "questionLoading": "질문이 로드됩니다..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 직장/학업",
+    "cat_health": "🏥 건강",
+    "cat_relations": "👥 인간관계",
+    "cat_finance": "💰 재정",
+    "cat_daily": "🏠 일상생활",
+    "socialProof": "4,800명이 스트레스를 낮출 방법을 찾았습니다 ✅"
+  },
+  "ads": {
+    "loading": "광고 로딩 중..."
   }
 }

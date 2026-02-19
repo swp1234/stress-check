@@ -2,7 +2,8 @@
   "app": {
     "title": "ストレスレベルチェック - あなたのストレスは?",
     "description": "15の質問であなたの現在のストレスレベルを測定してください。仕事、人間関係、健康、財務、日常生活からのストレスを分析し、カスタマイズされた軽減ヒントを取得してください!",
-    "loading": "読み込み中..."
+    "loading": "読み込み中...",
+    "skipLink": "メインコンテンツへ"
   },
   "intro": {
     "title": "ストレスレベルチェック",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "クリップボードにコピーされました!",
     "questionLoading": "質問を読み込み中..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 仕事/勉強",
+    "cat_health": "🏥 健康",
+    "cat_relations": "👥 人間関係",
+    "cat_finance": "💰 財務",
+    "cat_daily": "🏠 日常生活",
+    "socialProof": "4,800人がストレス軽減法を発見 ✅"
+  },
+  "ads": {
+    "loading": "広告読み込み中..."
   }
 }

@@ -2,7 +2,8 @@
   "app": {
     "title": "Stressabbau-Check - Wie viel Stress haben Sie?",
     "description": "Messen Sie Ihr aktuelles Stressniveau mit 15 Fragen. Analysieren Sie Stress von Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag, erhalten Sie personalisierte Entspannungstipps!",
-    "loading": "Wird geladen..."
+    "loading": "Wird geladen...",
+    "skipLink": "Zum Hauptinhalt"
   },
   "intro": {
     "title": "Stressabbau-Check",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "In Zwischenablage kopiert!",
     "questionLoading": "Frage wird geladen..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 Arbeit/Studium",
+    "cat_health": "🏥 Gesundheit",
+    "cat_relations": "👥 Beziehungen",
+    "cat_finance": "💰 Finanzen",
+    "cat_daily": "🏠 Alltagsleben",
+    "socialProof": "4.800 Menschen fanden Wege, Stress zu reduzieren ✅"
+  },
+  "ads": {
+    "loading": "Werbung lädt..."
   }
 }

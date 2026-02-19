@@ -2,7 +2,8 @@
   "app": {
     "title": "Stress Level Check - How Stressed Are You?",
     "description": "Measure your current stress level with 15 questions. Analyze stress from work, relationships, health, finance, and daily life, and receive personalized relief tips!",
-    "loading": "Loading..."
+    "loading": "Loading...",
+    "skipLink": "Skip to main"
   },
   "intro": {
     "title": "Stress Level Check",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "Copied to clipboard!",
     "questionLoading": "Loading question..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 Work/Study",
+    "cat_health": "🏥 Health",
+    "cat_relations": "👥 Relationships",
+    "cat_finance": "💰 Finance",
+    "cat_daily": "🏠 Daily Life",
+    "socialProof": "4,800+ people found ways to reduce stress ✅"
+  },
+  "ads": {
+    "loading": "Loading ad..."
   }
 }

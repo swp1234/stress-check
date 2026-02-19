@@ -2,7 +2,8 @@
   "app": {
     "title": "Verificação de Nível de Estresse - Quanto estresse você tem?",
     "description": "Meça seu nível de estresse atual com 15 perguntas. Analise o estresse no trabalho, relacionamentos, saúde, finanças e vida diária, obtenha dicas personalizadas de alívio!",
-    "loading": "Carregando..."
+    "loading": "Carregando...",
+    "skipLink": "Ir para o conteúdo principal"
   },
   "intro": {
     "title": "Verificação de Nível de Estresse",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "Copiado para a área de transferência!",
     "questionLoading": "Carregando pergunta..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 Trabalho/Estudo",
+    "cat_health": "🏥 Saúde",
+    "cat_relations": "👥 Relacionamentos",
+    "cat_finance": "💰 Finanças",
+    "cat_daily": "🏠 Vida diária",
+    "socialProof": "4.800 pessoas encontraram formas de reduzir o estresse ✅"
+  },
+  "ads": {
+    "loading": "Carregando anúncio..."
   }
 }

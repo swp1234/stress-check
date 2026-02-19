@@ -2,7 +2,8 @@
   "app": {
     "title": "Pemeriksaan Tingkat Stres - Berapa banyak stres yang Anda alami?",
     "description": "Ukur tingkat stres Anda saat ini dengan 15 pertanyaan. Analisis stres dari pekerjaan, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari, dapatkan tips relief yang dipersonalisasi!",
-    "loading": "Memuat..."
+    "loading": "Memuat...",
+    "skipLink": "Langsung ke konten utama"
   },
   "intro": {
     "title": "Pemeriksaan Tingkat Stres",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "Disalin ke clipboard!",
     "questionLoading": "Memuat pertanyaan..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 Kerja/Belajar",
+    "cat_health": "🏥 Kesehatan",
+    "cat_relations": "👥 Hubungan",
+    "cat_finance": "💰 Keuangan",
+    "cat_daily": "🏠 Kehidupan sehari-hari",
+    "socialProof": "4.800 orang menemukan cara mengurangi stres ✅"
+  },
+  "ads": {
+    "loading": "Memuat iklan..."
   }
 }

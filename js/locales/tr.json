@@ -2,7 +2,8 @@
   "app": {
     "title": "Stres Seviyesi Kontrolü - Stressiniz Ne Kadar?",
     "description": "15 soru ile mevcut stres seviyenizi ölçün. İş, ilişkiler, sağlık, finans ve günlük yaşamdan kaynaklanan stresi analiz edin, kişiselleştirilmiş rahatlama ipuçları alın!",
-    "loading": "Yükleniyor..."
+    "loading": "Yükleniyor...",
+    "skipLink": "Ana içeriğe geç"
   },
   "intro": {
     "title": "Stres Seviyesi Kontrolü",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "Panoya kopyalandı!",
     "questionLoading": "Soru yükleniyor..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 İş/Okul",
+    "cat_health": "🏥 Sağlık",
+    "cat_relations": "👥 İlişkiler",
+    "cat_finance": "💰 Finans",
+    "cat_daily": "🏠 Günlük yaşam",
+    "socialProof": "4.800 kişi stres azaltma yolları buldu ✅"
+  },
+  "ads": {
+    "loading": "Reklam yükleniyor..."
   }
 }

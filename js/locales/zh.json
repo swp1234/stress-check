@@ -2,7 +2,8 @@
   "app": {
     "title": "压力等级检查 - 你的压力有多大?",
     "description": "通过15个问题测量你目前的压力等级。分析来自工作、人际关系、健康、财务和日常生活的压力,获得个性化的缓解建议!",
-    "loading": "加载中..."
+    "loading": "加载中...",
+    "skipLink": "跳到主内容"
   },
   "intro": {
     "title": "压力等级检查",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "已复制到剪贴板!",
     "questionLoading": "加载问题中..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 工作/学习",
+    "cat_health": "🏥 健康",
+    "cat_relations": "👥 人际关系",
+    "cat_finance": "💰 财务",
+    "cat_daily": "🏠 日常生活",
+    "socialProof": "4,800人找到了减压方法 ✅"
+  },
+  "ads": {
+    "loading": "广告加载中..."
   }
 }

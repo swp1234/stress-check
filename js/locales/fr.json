@@ -2,7 +2,8 @@
   "app": {
     "title": "Vérification du Niveau de Stress - Quel est votre niveau de stress?",
     "description": "Mesurez votre niveau de stress actuel avec 15 questions. Analysez le stress au travail, dans les relations, la santé, les finances et la vie quotidienne, obtenez des conseils de soulagement personnalisés!",
-    "loading": "Chargement..."
+    "loading": "Chargement...",
+    "skipLink": "Aller au contenu principal"
   },
   "intro": {
     "title": "Vérification du Niveau de Stress",
@@ -154,7 +155,15 @@
     "copiedToClipboard": "Copié dans le presse-papiers!",
     "questionLoading": "Chargement de la question..."
   },
-  "app": {
-    "skipLink": "Skip to main"
+  "stress": {
+    "cat_work": "💼 Travail/Études",
+    "cat_health": "🏥 Santé",
+    "cat_relations": "👥 Relations",
+    "cat_finance": "💰 Finances",
+    "cat_daily": "🏠 Vie quotidienne",
+    "socialProof": "4 800 personnes ont trouvé des moyens de réduire le stress ✅"
+  },
+  "ads": {
+    "loading": "Chargement de la pub..."
   }
 }
