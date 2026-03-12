@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Verificação de Nível de Estresse - Quanto estresse você tem?",
-    "description": "Meça seu nível de estresse atual com 15 perguntas. Analise o estresse no trabalho, relacionamentos, saúde, finanças e vida diária, obtenha dicas personalizadas de alívio!",
+    "title": "Teste de Estresse - Teste Gratuito de Nível de Estresse | DopaBrain",
+    "description": "Faça este teste de estresse gratuito e verifique seu nível em 3 minutos. 15 perguntas, resultados instantâneos e dicas personalizadas de alívio!",
     "loading": "Carregando...",
     "skipLink": "Ir para o conteúdo principal"
   },
   "intro": {
-    "title": "Verificação de Nível de Estresse",
+    "title": "Teste de Estresse",
     "subtitle": "Compreenda seu estado de estresse",
     "description": "Com 15 perguntas sobre trabalho, relacionamentos, saúde, finanças e vida diária, meça seu nível de estresse e obtenha estratégias personalizadas de alívio!",
     "questions": "15 perguntas",

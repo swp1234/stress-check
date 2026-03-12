@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stres Seviyesi Kontrolü - Stressiniz Ne Kadar?",
-    "description": "15 soru ile mevcut stres seviyenizi ölçün. İş, ilişkiler, sağlık, finans ve günlük yaşamdan kaynaklanan stresi analiz edin, kişiselleştirilmiş rahatlama ipuçları alın!",
+    "title": "Stres Testi - Ücretsiz Stres Seviyesi Testi | DopaBrain",
+    "description": "Bu ücretsiz stres testini yapın ve 3 dakikada stres seviyenizi öğrenin. 15 soru, anında sonuç ve kişiselleştirilmiş stres azaltma önerileri!",
     "loading": "Yükleniyor...",
     "skipLink": "Ana içeriğe geç"
   },
   "intro": {
-    "title": "Stres Seviyesi Kontrolü",
+    "title": "Stres Testi",
     "subtitle": "Stres durumunuzu anlayın",
     "description": "İş, ilişkiler, sağlık, finans ve günlük yaşam hakkında 15 soru ile stres seviyenizi ölçün ve kişiselleştirilmiş rahatlama stratejileri alın!",
     "questions": "15 soru",

@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Vérification du Niveau de Stress - Quel est votre niveau de stress?",
-    "description": "Mesurez votre niveau de stress actuel avec 15 questions. Analysez le stress au travail, dans les relations, la santé, les finances et la vie quotidienne, obtenez des conseils de soulagement personnalisés!",
+    "title": "Test de Stress - Test Gratuit de Niveau de Stress | DopaBrain",
+    "description": "Faites ce test de stress gratuit et vérifiez votre niveau en 3 minutes. 15 questions, résultats instantanés et conseils personnalisés pour réduire le stress!",
     "loading": "Chargement...",
     "skipLink": "Aller au contenu principal"
   },
   "intro": {
-    "title": "Vérification du Niveau de Stress",
+    "title": "Test de Stress",
     "subtitle": "Comprenez votre état de stress",
     "description": "Avec 15 questions sur le travail, les relations, la santé, les finances et la vie quotidienne, mesurez votre niveau de stress et obtenez des stratégies de soulagement personnalisées!",
     "questions": "15 questions",

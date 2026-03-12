@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stress Level Check - How Stressed Are You?",
-    "description": "Measure your current stress level with 15 questions. Analyze stress from work, relationships, health, finance, and daily life, and receive personalized relief tips!",
+    "title": "Stress Test - Free Stress Level Check Online | DopaBrain",
+    "description": "Take this free stress test to check your stress level in 3 minutes. 15 questions, instant results & personalized relief tips. Test my stress level now!",
     "loading": "Loading...",
     "skipLink": "Skip to main"
   },
   "intro": {
-    "title": "Stress Level Check",
+    "title": "Stress Test",
     "subtitle": "Understand your stress status",
     "description": "With 15 questions about work, relationships, health, finance, and daily life, measure your stress level and get personalized relief strategies!",
     "questions": "15 questions",

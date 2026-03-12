@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stressabbau-Check - Wie viel Stress haben Sie?",
-    "description": "Messen Sie Ihr aktuelles Stressniveau mit 15 Fragen. Analysieren Sie Stress von Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag, erhalten Sie personalisierte Entspannungstipps!",
+    "title": "Stresstest - Kostenloser Stresslevel-Test Online | DopaBrain",
+    "description": "Machen Sie diesen kostenlosen Stresstest und prüfen Sie Ihr Stresslevel in 3 Minuten. 15 Fragen, sofortige Ergebnisse & personalisierte Tipps zur Stressbewältigung!",
     "loading": "Wird geladen...",
     "skipLink": "Zum Hauptinhalt"
   },
   "intro": {
-    "title": "Stressabbau-Check",
+    "title": "Stresstest",
     "subtitle": "Verstehen Sie Ihren Stresszustand",
     "description": "Mit 15 Fragen zu Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag messen Sie Ihr Stressniveau und erhalten personalisierte Entspannungsstrategien!",
     "questions": "15 Fragen",

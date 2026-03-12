@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Verificación de Nivel de Estrés - ¿Cuánto estrés tienes?",
-    "description": "Mide tu nivel de estrés actual con 15 preguntas. Analiza el estrés en el trabajo, relaciones, salud, finanzas y vida diaria, ¡obtén consejos personalizados de alivio!",
+    "title": "Test de Estrés - Prueba Gratuita de Nivel de Estrés | DopaBrain",
+    "description": "Haz este test de estrés gratuito y mide tu nivel en 3 minutos. 15 preguntas, resultados instantáneos y consejos personalizados para aliviar el estrés!",
     "loading": "Cargando...",
     "skipLink": "Ir al contenido principal"
   },
   "intro": {
-    "title": "Verificación de Nivel de Estrés",
+    "title": "Test de Estrés",
     "subtitle": "Comprende tu estado de estrés",
     "description": "Con 15 preguntas sobre trabajo, relaciones, salud, finanzas y vida diaria, mide tu nivel de estrés y obtén estrategias personalizadas de alivio!",
     "questions": "15 preguntas",
