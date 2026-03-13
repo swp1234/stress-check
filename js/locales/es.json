@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Test de Estrés - Prueba Gratuita de Nivel de Estrés | DopaBrain",
-    "description": "Haz este test de estrés gratuito y mide tu nivel en 3 minutos. 15 preguntas, resultados instantáneos y consejos personalizados para aliviar el estrés!",
+    "title": "Test de Estrés Gratis Online - Autoevaluación del Nivel de Estrés en 3 Minutos | DopaBrain",
+    "description": "Autoevaluación de estrés gratis online. 15 preguntas, resultados al instante y consejos personalizados. ¡Empieza ahora!",
     "loading": "Cargando...",
     "skipLink": "Ir al contenido principal"
   },
   "intro": {
-    "title": "Test de Estrés",
+    "title": "Test Gratuito de Nivel de Estrés - Autoevaluación",
     "subtitle": "Comprende tu estado de estrés",
     "description": "Con 15 preguntas sobre trabajo, relaciones, salud, finanzas y vida diaria, mide tu nivel de estrés y obtén estrategias personalizadas de alivio!",
     "questions": "15 preguntas",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Iceberg Emocional",
     "emotionTemp": "Temperatura Emocional",
     "socialBattery": "Batería Social"
+  },
+  "seo": {
+    "understandingTitle": "Comprende tu nivel de estrés",
+    "understandingText": "El estrés es la respuesta natural del cuerpo ante desafíos y demandas. Mientras que el estrés a corto plazo puede mejorar la concentración y el rendimiento, el estrés crónico afecta la salud física, el bienestar mental y la productividad diaria. Esta autoevaluación gratuita de estrés mide tu estrés percibido en 5 áreas clave: trabajo/estudios, relaciones, salud, finanzas y vida diaria. Al identificar qué áreas causan más tensión, puedes tomar medidas específicas para restaurar el equilibrio.",
+    "tipsTitle": "Consejos para manejar el estrés",
+    "tip1": "Haz ejercicio regularmente -- incluso una caminata de 20 minutos puede reducir los niveles de cortisol y mejorar el ánimo.",
+    "tip2": "Practica respiración profunda o meditación durante 5-10 minutos diarios para activar tu respuesta de relajación.",
+    "tip3": "Prioriza el sueño -- apunta a 7-8 horas de descanso de calidad cada noche.",
+    "tip4": "Establece límites saludables en el trabajo y en las relaciones para prevenir el agotamiento.",
+    "tip5": "Habla con alguien de confianza o busca asesoramiento profesional cuando el estrés se sienta abrumador."
   }
 }

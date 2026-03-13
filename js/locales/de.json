@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stresstest - Kostenloser Stresslevel-Test Online | DopaBrain",
-    "description": "Machen Sie diesen kostenlosen Stresstest und prüfen Sie Ihr Stresslevel in 3 Minuten. 15 Fragen, sofortige Ergebnisse & personalisierte Tipps zur Stressbewältigung!",
+    "title": "Kostenloser Online-Stresstest - Stresslevel-Selbsteinschätzung in 3 Minuten | DopaBrain",
+    "description": "Kostenlose Online-Stress-Selbsteinschätzung. 15 Fragen, sofortige Ergebnisse und persönliche Tipps. Jetzt starten!",
     "loading": "Wird geladen...",
     "skipLink": "Zum Hauptinhalt"
   },
   "intro": {
-    "title": "Stresstest",
+    "title": "Kostenloser Stresslevel-Test - Selbsteinschätzung",
     "subtitle": "Verstehen Sie Ihren Stresszustand",
     "description": "Mit 15 Fragen zu Arbeit, Beziehungen, Gesundheit, Finanzen und Alltag messen Sie Ihr Stressniveau und erhalten personalisierte Entspannungsstrategien!",
     "questions": "15 Fragen",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Emotions-Eisberg",
     "emotionTemp": "Emotionstemperatur",
     "socialBattery": "Soziale Batterie"
+  },
+  "seo": {
+    "understandingTitle": "Verstehen Sie Ihr Stresslevel",
+    "understandingText": "Stress ist die natürliche Reaktion des Körpers auf Herausforderungen und Anforderungen. Kurzfristiger Stress kann Fokus und Leistung steigern, aber chronischer Stress beeinträchtigt die körperliche Gesundheit, das psychische Wohlbefinden und die tägliche Produktivität. Diese kostenlose Stress-Selbsteinschätzung misst Ihren wahrgenommenen Stress in 5 Lebensbereichen: Arbeit/Studium, Beziehungen, Gesundheit, Finanzen und Alltag. Indem Sie erkennen, welche Bereiche die größte Anspannung verursachen, können Sie gezielte Maßnahmen ergreifen, um das Gleichgewicht wiederherzustellen.",
+    "tipsTitle": "Tipps zur Stressbewältigung",
+    "tip1": "Treiben Sie regelmäßig Sport -- schon ein 20-minütiger Spaziergang kann den Cortisolspiegel senken und die Stimmung verbessern.",
+    "tip2": "Praktizieren Sie täglich 5-10 Minuten tiefes Atmen oder Meditation, um Ihre Entspannungsreaktion zu aktivieren.",
+    "tip3": "Priorisieren Sie den Schlaf -- streben Sie jede Nacht 7-8 Stunden qualitativen Schlaf an.",
+    "tip4": "Setzen Sie gesunde Grenzen bei der Arbeit und in Beziehungen, um Burnout vorzubeugen.",
+    "tip5": "Sprechen Sie mit jemandem, dem Sie vertrauen, oder suchen Sie professionelle Beratung, wenn Stress überwältigend wird."
   }
 }

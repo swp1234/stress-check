@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Test de Stress - Test Gratuit de Niveau de Stress | DopaBrain",
-    "description": "Faites ce test de stress gratuit et vérifiez votre niveau en 3 minutes. 15 questions, résultats instantanés et conseils personnalisés pour réduire le stress!",
+    "title": "Test de Stress Gratuit en Ligne - Auto-évaluation du Niveau de Stress en 3 Minutes | DopaBrain",
+    "description": "Auto-évaluation du stress gratuite en ligne. 15 questions, résultats instantanés et conseils personnalisés. Commencez maintenant!",
     "loading": "Chargement...",
     "skipLink": "Aller au contenu principal"
   },
   "intro": {
-    "title": "Test de Stress",
+    "title": "Test Gratuit de Niveau de Stress - Auto-évaluation",
     "subtitle": "Comprenez votre état de stress",
     "description": "Avec 15 questions sur le travail, les relations, la santé, les finances et la vie quotidienne, mesurez votre niveau de stress et obtenez des stratégies de soulagement personnalisées!",
     "questions": "15 questions",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Iceberg Émotionnel",
     "emotionTemp": "Température Émotionnelle",
     "socialBattery": "Batterie Sociale"
+  },
+  "seo": {
+    "understandingTitle": "Comprendre votre niveau de stress",
+    "understandingText": "Le stress est la réponse naturelle du corps aux défis et aux exigences. Si le stress à court terme peut améliorer la concentration et les performances, le stress chronique affecte la santé physique, le bien-être mental et la productivité quotidienne. Cette auto-évaluation gratuite du stress mesure votre stress perçu dans 5 domaines clés : travail/études, relations, santé, finances et vie quotidienne. En identifiant les domaines qui causent le plus de tension, vous pouvez prendre des mesures ciblées pour rétablir l'équilibre.",
+    "tipsTitle": "Conseils pour gérer le stress",
+    "tip1": "Faites de l'exercice régulièrement -- même une marche de 20 minutes peut réduire le cortisol et améliorer l'humeur.",
+    "tip2": "Pratiquez la respiration profonde ou la méditation pendant 5 à 10 minutes par jour pour activer votre réponse de relaxation.",
+    "tip3": "Priorisez le sommeil -- visez 7 à 8 heures de repos de qualité chaque nuit.",
+    "tip4": "Fixez des limites saines au travail et dans vos relations pour prévenir l'épuisement.",
+    "tip5": "Parlez à quelqu'un de confiance ou consultez un professionnel quand le stress devient accablant."
   }
 }

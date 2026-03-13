@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Tes Stres - Tes Tingkat Stres Gratis Online | DopaBrain",
-    "description": "Ikuti tes stres gratis ini dan cek tingkat stres Anda dalam 3 menit. 15 pertanyaan, hasil instan & tips pereda stres yang dipersonalisasi!",
+    "title": "Tes Stres Gratis Online - Penilaian Mandiri Tingkat Stres dalam 3 Menit | DopaBrain",
+    "description": "Penilaian mandiri stres gratis online. 15 pertanyaan, hasil instan & tips personal. Mulai sekarang!",
     "loading": "Memuat...",
     "skipLink": "Langsung ke konten utama"
   },
   "intro": {
-    "title": "Tes Stres",
+    "title": "Tes Tingkat Stres Gratis - Penilaian Mandiri",
     "subtitle": "Pahami kondisi stres Anda",
     "description": "Dengan 15 pertanyaan tentang pekerjaan, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari, ukur tingkat stres Anda dan dapatkan strategi relief yang dipersonalisasi!",
     "questions": "15 pertanyaan",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Gunung Es Emosi",
     "emotionTemp": "Suhu Emosi",
     "socialBattery": "Baterai Sosial"
+  },
+  "seo": {
+    "understandingTitle": "Memahami Tingkat Stres Anda",
+    "understandingText": "Stres adalah respons alami tubuh terhadap tantangan dan tuntutan. Stres jangka pendek dapat meningkatkan fokus dan kinerja, tetapi stres kronis memengaruhi kesehatan fisik, kesejahteraan mental, dan produktivitas harian. Penilaian mandiri stres gratis ini mengukur stres yang Anda rasakan di 5 area kehidupan utama: pekerjaan/studi, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari. Dengan mengidentifikasi area mana yang menyebabkan ketegangan terbesar, Anda dapat mengambil tindakan tepat sasaran untuk memulihkan keseimbangan.",
+    "tipsTitle": "Tips Mengelola Stres",
+    "tip1": "Berolahraga secara teratur -- bahkan jalan kaki 20 menit dapat menurunkan kadar kortisol dan memperbaiki suasana hati.",
+    "tip2": "Praktikkan pernapasan dalam atau meditasi selama 5-10 menit setiap hari untuk mengaktifkan respons relaksasi.",
+    "tip3": "Prioritaskan tidur -- targetkan 7-8 jam istirahat berkualitas setiap malam.",
+    "tip4": "Tetapkan batasan sehat di tempat kerja dan dalam hubungan untuk mencegah kelelahan.",
+    "tip5": "Bicaralah dengan seseorang yang Anda percaya atau cari konseling profesional ketika stres terasa luar biasa."
   }
 }

@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stres Testi - Ücretsiz Stres Seviyesi Testi | DopaBrain",
-    "description": "Bu ücretsiz stres testini yapın ve 3 dakikada stres seviyenizi öğrenin. 15 soru, anında sonuç ve kişiselleştirilmiş stres azaltma önerileri!",
+    "title": "Ücretsiz Online Stres Testi - 3 Dakikada Stres Seviyesi Öz Değerlendirmesi | DopaBrain",
+    "description": "Ücretsiz online stres öz değerlendirmesi. 15 soru, anında sonuç ve kişisel öneriler. Hemen başlayın!",
     "loading": "Yükleniyor...",
     "skipLink": "Ana içeriğe geç"
   },
   "intro": {
-    "title": "Stres Testi",
+    "title": "Ücretsiz Stres Seviyesi Testi - Öz Değerlendirme",
     "subtitle": "Stres durumunuzu anlayın",
     "description": "İş, ilişkiler, sağlık, finans ve günlük yaşam hakkında 15 soru ile stres seviyenizi ölçün ve kişiselleştirilmiş rahatlama stratejileri alın!",
     "questions": "15 soru",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Duygu Buzdağı",
     "emotionTemp": "Duygu Sıcaklığı",
     "socialBattery": "Sosyal Batarya"
+  },
+  "seo": {
+    "understandingTitle": "Stres Seviyenizi Anlayın",
+    "understandingText": "Stres, vücudun zorluklar ve taleplere karşı doğal tepkisidir. Kısa süreli stres odaklanmayı ve performansı artırabilirken, kronik stres fiziksel sağlığı, ruhsal iyiliği ve günlük üretkenliği etkiler. Bu ücretsiz stres öz değerlendirmesi, iş/eğitim, ilişkiler, sağlık, finans ve günlük yaşam olmak üzere 5 temel yaşam alanında algılanan stresinizi ölçer. Hangi alanların en çok gerilim yarattığını belirleyerek dengeyi yeniden sağlamak için hedefli adımlar atabilirsiniz.",
+    "tipsTitle": "Stres Yönetimi İpuçları",
+    "tip1": "Düzenli egzersiz yapın -- 20 dakikalık bir yürüyüş bile kortizol seviyelerini düşürebilir ve ruh halini iyileştirebilir.",
+    "tip2": "Gevşeme tepkisini aktive etmek için günde 5-10 dakika derin nefes veya meditasyon yapın.",
+    "tip3": "Uykuyu önceliklendirin -- her gece 7-8 saat kaliteli dinlenmeyi hedefleyin.",
+    "tip4": "Tükenmişliği önlemek için iş ve ilişkilerde sağlıklı sınırlar belirleyin.",
+    "tip5": "Stres bunaltıcı hissettirdiğinde güvendiğiniz biriyle konuşun veya profesyonel danışmanlık alın."
   }
 }

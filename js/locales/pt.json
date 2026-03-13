@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Teste de Estresse - Teste Gratuito de Nível de Estresse | DopaBrain",
-    "description": "Faça este teste de estresse gratuito e verifique seu nível em 3 minutos. 15 perguntas, resultados instantâneos e dicas personalizadas de alívio!",
+    "title": "Teste de Estresse Grátis Online - Autoavaliação do Nível de Estresse em 3 Minutos | DopaBrain",
+    "description": "Autoavaliação de estresse grátis online. 15 perguntas, resultados instantâneos e dicas personalizadas. Comece agora!",
     "loading": "Carregando...",
     "skipLink": "Ir para o conteúdo principal"
   },
   "intro": {
-    "title": "Teste de Estresse",
+    "title": "Teste Gratuito de Nível de Estresse - Autoavaliação",
     "subtitle": "Compreenda seu estado de estresse",
     "description": "Com 15 perguntas sobre trabalho, relacionamentos, saúde, finanças e vida diária, meça seu nível de estresse e obtenha estratégias personalizadas de alívio!",
     "questions": "15 perguntas",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Iceberg Emocional",
     "emotionTemp": "Temperatura Emocional",
     "socialBattery": "Bateria Social"
+  },
+  "seo": {
+    "understandingTitle": "Entenda seu nível de estresse",
+    "understandingText": "O estresse é a resposta natural do corpo a desafios e demandas. Enquanto o estresse de curto prazo pode aumentar o foco e o desempenho, o estresse crônico afeta a saúde física, o bem-estar mental e a produtividade diária. Esta autoavaliação gratuita de estresse mede seu estresse percebido em 5 áreas-chave: trabalho/estudos, relacionamentos, saúde, finanças e vida diária. Ao identificar quais áreas causam mais tensão, você pode tomar ações direcionadas para restaurar o equilíbrio.",
+    "tipsTitle": "Dicas para gerenciar o estresse",
+    "tip1": "Exercite-se regularmente -- mesmo uma caminhada de 20 minutos pode reduzir os níveis de cortisol e melhorar o humor.",
+    "tip2": "Pratique respiração profunda ou meditação por 5-10 minutos diariamente para ativar sua resposta de relaxamento.",
+    "tip3": "Priorize o sono -- busque 7-8 horas de descanso de qualidade todas as noites.",
+    "tip4": "Estabeleça limites saudáveis no trabalho e nos relacionamentos para prevenir o esgotamento.",
+    "tip5": "Converse com alguém de confiança ou procure aconselhamento profissional quando o estresse parecer insuportável."
   }
 }

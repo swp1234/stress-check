@@ -1,12 +1,12 @@
 {
   "app": {
-    "title": "Stress Test - Free Stress Level Check Online | DopaBrain",
-    "description": "Take this free stress test to check your stress level in 3 minutes. 15 questions, instant results & personalized relief tips. Test my stress level now!",
+    "title": "Free Online Stress Test - Check Your Stress Level in 3 Minutes | DopaBrain",
+    "description": "Take this free online stress test to check your stress level. 15 self-assessment questions, instant results & personalized tips. Start now!",
     "loading": "Loading...",
     "skipLink": "Skip to main"
   },
   "intro": {
-    "title": "Stress Test",
+    "title": "Free Stress Level Test - Self-Assessment",
     "subtitle": "Understand your stress status",
     "description": "With 15 questions about work, relationships, health, finance, and daily life, measure your stress level and get personalized relief strategies!",
     "questions": "15 questions",
@@ -181,5 +181,15 @@
     "emotionIceberg": "Emotion Iceberg",
     "emotionTemp": "Emotion Temperature",
     "socialBattery": "Social Battery"
+  },
+  "seo": {
+    "understandingTitle": "Understanding Your Stress Level",
+    "understandingText": "Stress is your body's natural response to challenges and demands. While short-term stress can boost focus and performance, chronic stress affects your physical health, mental well-being, and daily productivity. This free stress self-assessment measures your perceived stress across 5 key life areas: work/study, relationships, health, finance, and daily life. By identifying which areas cause the most tension, you can take targeted action to restore balance.",
+    "tipsTitle": "Tips to Manage Stress",
+    "tip1": "Exercise regularly -- even a 20-minute walk can lower cortisol levels and improve mood.",
+    "tip2": "Practice deep breathing or meditation for 5-10 minutes daily to activate your relaxation response.",
+    "tip3": "Prioritize sleep -- aim for 7-8 hours of quality rest each night.",
+    "tip4": "Set healthy boundaries at work and in relationships to prevent burnout.",
+    "tip5": "Talk to someone you trust or seek professional counseling when stress feels overwhelming."
   }
 }
