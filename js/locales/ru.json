@@ -60,7 +60,9 @@
     "categoryAnalysis": "Анализ по категориям",
     "reliefTips": "Советы по облегчению",
     "aiAnalysis": "Анализ AI",
-    "recommendedApps": "Рекомендуемые приложения"
+    "recommendedApps": "Рекомендуемые приложения",
+    "moreTests": "Ещё тесты",
+    "percentileStat": "Только <strong>{percent}%</strong> участников имеют такой же профиль стресса"
   },
   "categories": {
     "workStudy": "Работа/учеба",
@@ -173,5 +175,11 @@
     "audio": "Звук недоступен. Можно продолжить.",
     "network": "Проверьте подключение и попробуйте снова.",
     "general": "Что-то пошло не так. Обновите или попробуйте снова."
+  },
+  "related": {
+    "hspTest": "HSP Тест",
+    "emotionIceberg": "Айсберг эмоций",
+    "emotionTemp": "Температура эмоций",
+    "socialBattery": "Социальная батарея"
   }
 }

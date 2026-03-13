@@ -60,7 +60,9 @@
     "categoryAnalysis": "カテゴリ別分析",
     "reliefTips": "ストレス軽減のヒント",
     "aiAnalysis": "AI深層分析",
-    "recommendedApps": "推奨アプリ"
+    "recommendedApps": "推奨アプリ",
+    "moreTests": "もっとテストを見る",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じストレスプロフィールです"
   },
   "categories": {
     "workStudy": "仕事/勉強",
@@ -173,5 +175,11 @@
     "audio": "音声が利用できません。続行できます。",
     "network": "接続を確認して再試行してください。",
     "general": "問題が発生しました。更新するか再試行してください。"
+  },
+  "related": {
+    "hspTest": "HSPテスト",
+    "emotionIceberg": "感情の氷山",
+    "emotionTemp": "感情温度",
+    "socialBattery": "ソーシャルバッテリー"
   }
 }

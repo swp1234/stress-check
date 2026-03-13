@@ -181,6 +181,15 @@ class StressCheckApp {
         // Relief tips
         this.displayReliefTips();
 
+        // Percentile stat
+        const pStat = document.getElementById('percentile-stat');
+        if (pStat) {
+            const levelPcts = { veryLow: 12, low: 28, moderate: 35, high: 18, veryHigh: 7 };
+            const pctVal = levelPcts[this.stressLevel.level] || 20;
+            const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants have your stress profile';
+            pStat.innerHTML = template.replace('{percent}', pctVal);
+        }
+
         // Recommendations
         this.displayRecommendations();
     }

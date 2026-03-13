@@ -60,7 +60,9 @@
     "categoryAnalysis": "Analisis Berdasarkan Kategori",
     "reliefTips": "Tips Relief Stres",
     "aiAnalysis": "Analisis Mendalam AI",
-    "recommendedApps": "Aplikasi yang Direkomendasikan"
+    "recommendedApps": "Aplikasi yang Direkomendasikan",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta memiliki profil stres yang sama"
   },
   "categories": {
     "workStudy": "Pekerjaan/Studi",
@@ -173,5 +175,11 @@
     "audio": "Audio tidak tersedia. Anda dapat melanjutkan.",
     "network": "Periksa koneksi Anda dan coba lagi.",
     "general": "Terjadi kesalahan. Muat ulang atau coba lagi."
+  },
+  "related": {
+    "hspTest": "Tes HSP",
+    "emotionIceberg": "Gunung Es Emosi",
+    "emotionTemp": "Suhu Emosi",
+    "socialBattery": "Baterai Sosial"
   }
 }

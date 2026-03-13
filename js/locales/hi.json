@@ -60,7 +60,9 @@
     "categoryAnalysis": "श्रेणी विश्लेषण",
     "reliefTips": "तनाव राहत सुझाव",
     "aiAnalysis": "AI गहन विश्लेषण",
-    "recommendedApps": "अनुशंसित ऐप्स"
+    "recommendedApps": "अनुशंसित ऐप्स",
+    "moreTests": "और टेस्ट देखें",
+    "percentileStat": "केवल <strong>{percent}%</strong> प्रतिभागियों का आपके जैसा तनाव प्रोफ़ाइल है"
   },
   "categories": {
     "workStudy": "काम/अध्ययन",
@@ -173,5 +175,11 @@
     "audio": "ऑडियो अनुपलब्ध। आप जारी रख सकते हैं।",
     "network": "कृपया अपना कनेक्शन जांचें और पुनः प्रयास करें।",
     "general": "कुछ गलत हो गया। कृपया रीफ्रेश करें या पुनः प्रयास करें।"
+  },
+  "related": {
+    "hspTest": "HSP परीक्षण",
+    "emotionIceberg": "भावना हिमशैल",
+    "emotionTemp": "भावना तापमान",
+    "socialBattery": "सामाजिक बैटरी"
   }
 }

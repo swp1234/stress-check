@@ -60,7 +60,9 @@
     "categoryAnalysis": "Kategori Analizi",
     "reliefTips": "Stres Rahatlama İpuçları",
     "aiAnalysis": "AI Derin Analizi",
-    "recommendedApps": "Önerilen Uygulamalar"
+    "recommendedApps": "Önerilen Uygulamalar",
+    "moreTests": "Daha fazla test keşfet",
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i senin stres profiline sahip"
   },
   "categories": {
     "workStudy": "İş/Çalışma",
@@ -173,5 +175,11 @@
     "audio": "Ses kullanılamıyor. Devam edebilirsiniz.",
     "network": "Bağlantınızı kontrol edip tekrar deneyin.",
     "general": "Bir şeyler ters gitti. Yenileyip tekrar deneyin."
+  },
+  "related": {
+    "hspTest": "HSP Testi",
+    "emotionIceberg": "Duygu Buzdağı",
+    "emotionTemp": "Duygu Sıcaklığı",
+    "socialBattery": "Sosyal Batarya"
   }
 }

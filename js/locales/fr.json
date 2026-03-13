@@ -60,7 +60,9 @@
     "categoryAnalysis": "Analyse par catégorie",
     "reliefTips": "Conseils de soulagement du stress",
     "aiAnalysis": "Analyse approfondie de l'IA",
-    "recommendedApps": "Applications recommandées"
+    "recommendedApps": "Applications recommandées",
+    "moreTests": "Explorer plus de tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants ont votre profil de stress"
   },
   "categories": {
     "workStudy": "Travail/Études",
@@ -173,5 +175,11 @@
     "audio": "Audio indisponible. Vous pouvez continuer.",
     "network": "Vérifiez votre connexion et réessayez.",
     "general": "Un problème est survenu. Rafraîchissez ou réessayez."
+  },
+  "related": {
+    "hspTest": "Test HSP",
+    "emotionIceberg": "Iceberg Émotionnel",
+    "emotionTemp": "Température Émotionnelle",
+    "socialBattery": "Batterie Sociale"
   }
 }

@@ -60,7 +60,9 @@
     "categoryAnalysis": "카테고리별 분석",
     "reliefTips": "스트레스 해소 팁",
     "aiAnalysis": "AI 심층 분석",
-    "recommendedApps": "추천 앱"
+    "recommendedApps": "추천 앱",
+    "moreTests": "더 많은 테스트",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 스트레스 프로필을 가지고 있습니다"
   },
   "categories": {
     "workStudy": "직장/학업",
@@ -173,5 +175,11 @@
     "audio": "음성 기능을 사용할 수 없습니다. 계속 진행하실 수 있습니다.",
     "network": "네트워크 연결을 확인해주세요.",
     "general": "문제가 발생했습니다. 새로고침하거나 다시 시도해주세요."
+  },
+  "related": {
+    "hspTest": "HSP 테스트",
+    "emotionIceberg": "감정 빙산",
+    "emotionTemp": "감정 온도",
+    "socialBattery": "소셜 배터리"
   }
 }

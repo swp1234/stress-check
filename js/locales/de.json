@@ -60,7 +60,9 @@
     "categoryAnalysis": "Kategorieanalyse",
     "reliefTips": "Entspannungstipps",
     "aiAnalysis": "AI-Tiefenanalyse",
-    "recommendedApps": "Empfohlene Apps"
+    "recommendedApps": "Empfohlene Apps",
+    "moreTests": "Mehr Tests entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer haben dein Stressprofil"
   },
   "categories": {
     "workStudy": "Arbeit/Studium",
@@ -173,5 +175,11 @@
     "audio": "Audio nicht verfügbar. Sie können fortfahren.",
     "network": "Bitte Verbindung prüfen und erneut versuchen.",
     "general": "Etwas ist schiefgelaufen. Bitte aktualisieren oder erneut versuchen."
+  },
+  "related": {
+    "hspTest": "HSP-Test",
+    "emotionIceberg": "Emotions-Eisberg",
+    "emotionTemp": "Emotionstemperatur",
+    "socialBattery": "Soziale Batterie"
   }
 }
