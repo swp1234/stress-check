@@ -180,7 +180,8 @@
     "hspTest": "Test HSP",
     "emotionIceberg": "Iceberg Emocional",
     "emotionTemp": "Temperatura Emocional",
-    "socialBattery": "Batería Social"
+    "socialBattery": "Batería Social",
+    "stressResponse": "Respuesta al Estrés"
   },
   "seo": {
     "understandingTitle": "Comprende tu nivel de estrés",

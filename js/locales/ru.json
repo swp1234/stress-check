@@ -180,7 +180,8 @@
     "hspTest": "HSP Тест",
     "emotionIceberg": "Айсберг эмоций",
     "emotionTemp": "Температура эмоций",
-    "socialBattery": "Социальная батарея"
+    "socialBattery": "Социальная батарея",
+    "stressResponse": "Стресс-реакция"
   },
   "seo": {
     "understandingTitle": "Понимание вашего уровня стресса",

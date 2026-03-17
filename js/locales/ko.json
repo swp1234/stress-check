@@ -180,7 +180,8 @@
     "hspTest": "HSP 테스트",
     "emotionIceberg": "감정 빙산",
     "emotionTemp": "감정 온도",
-    "socialBattery": "소셜 배터리"
+    "socialBattery": "소셜 배터리",
+    "stressResponse": "스트레스 반응"
   },
   "seo": {
     "understandingTitle": "스트레스 레벨 이해하기",

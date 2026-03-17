@@ -180,7 +180,8 @@
     "hspTest": "HSP测试",
     "emotionIceberg": "情感冰山",
     "emotionTemp": "情感温度",
-    "socialBattery": "社交电量"
+    "socialBattery": "社交电量",
+    "stressResponse": "压力反应"
   },
   "seo": {
     "understandingTitle": "了解你的压力水平",
