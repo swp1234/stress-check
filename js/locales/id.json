@@ -181,7 +181,8 @@
     "emotionIceberg": "Gunung Es Emosi",
     "emotionTemp": "Suhu Emosi",
     "socialBattery": "Baterai Sosial",
-    "stressResponse": "Respons Stres"
+    "stressResponse": "Respons Stres",
+    "anxietyType": "Tipe Kecemasan"
   },
   "seo": {
     "understandingTitle": "Memahami Tingkat Stres Anda",

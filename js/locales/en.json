@@ -181,7 +181,8 @@
     "emotionIceberg": "Emotion Iceberg",
     "emotionTemp": "Emotion Temperature",
     "socialBattery": "Social Battery",
-    "stressResponse": "Stress Response"
+    "stressResponse": "Stress Response",
+    "anxietyType": "Anxiety Type"
   },
   "seo": {
     "understandingTitle": "Understanding Your Stress Level",

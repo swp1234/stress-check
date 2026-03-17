@@ -181,7 +181,8 @@
     "emotionIceberg": "Iceberg Emocional",
     "emotionTemp": "Temperatura Emocional",
     "socialBattery": "Bateria Social",
-    "stressResponse": "Resposta ao Estresse"
+    "stressResponse": "Resposta ao Estresse",
+    "anxietyType": "Tipo de Ansiedade"
   },
   "seo": {
     "understandingTitle": "Entenda seu nível de estresse",

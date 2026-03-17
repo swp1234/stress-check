@@ -181,7 +181,8 @@
     "emotionIceberg": "भावना हिमशैल",
     "emotionTemp": "भावना तापमान",
     "socialBattery": "सामाजिक बैटरी",
-    "stressResponse": "तनाव प्रतिक्रिया"
+    "stressResponse": "तनाव प्रतिक्रिया",
+    "anxietyType": "चिंता प्रकार"
   },
   "seo": {
     "understandingTitle": "अपने तनाव स्तर को समझें",
