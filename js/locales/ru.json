@@ -182,7 +182,8 @@
     "emotionTemp": "Температура эмоций",
     "socialBattery": "Социальная батарея",
     "stressResponse": "Стресс-реакция",
-    "anxietyType": "Тип тревожности"
+    "anxietyType": "Тип тревожности",
+    "eqTest": "Тест EQ"
   },
   "seo": {
     "understandingTitle": "Понимание вашего уровня стресса",

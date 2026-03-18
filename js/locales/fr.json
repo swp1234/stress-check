@@ -182,7 +182,8 @@
     "emotionTemp": "Température Émotionnelle",
     "socialBattery": "Batterie Sociale",
     "stressResponse": "Réponse au Stress",
-    "anxietyType": "Type d'Anxiété"
+    "anxietyType": "Type d'Anxiété",
+    "eqTest": "Test QE"
   },
   "seo": {
     "understandingTitle": "Comprendre votre niveau de stress",

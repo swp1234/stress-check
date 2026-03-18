@@ -182,7 +182,8 @@
     "emotionTemp": "Duygu Sıcaklığı",
     "socialBattery": "Sosyal Batarya",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "eqTest": "EQ Testi"
   },
   "seo": {
     "understandingTitle": "Stres Seviyenizi Anlayın",

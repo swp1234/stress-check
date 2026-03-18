@@ -182,7 +182,8 @@
     "emotionTemp": "Emotion Temperature",
     "socialBattery": "Social Battery",
     "stressResponse": "Stress Response",
-    "anxietyType": "Anxiety Type"
+    "anxietyType": "Anxiety Type",
+    "eqTest": "EQ Test"
   },
   "seo": {
     "understandingTitle": "Understanding Your Stress Level",

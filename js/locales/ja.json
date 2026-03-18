@@ -182,7 +182,8 @@
     "emotionTemp": "感情温度",
     "socialBattery": "ソーシャルバッテリー",
     "stressResponse": "ストレス反応",
-    "anxietyType": "不安タイプ"
+    "anxietyType": "不安タイプ",
+    "eqTest": "EQテスト"
   },
   "seo": {
     "understandingTitle": "ストレスレベルを理解する",

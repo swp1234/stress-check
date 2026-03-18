@@ -182,7 +182,8 @@
     "emotionTemp": "Emotionstemperatur",
     "socialBattery": "Soziale Batterie",
     "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp"
+    "anxietyType": "Angsttyp",
+    "eqTest": "EQ-Test"
   },
   "seo": {
     "understandingTitle": "Verstehen Sie Ihr Stresslevel",

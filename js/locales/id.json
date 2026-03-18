@@ -182,7 +182,8 @@
     "emotionTemp": "Suhu Emosi",
     "socialBattery": "Baterai Sosial",
     "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan"
+    "anxietyType": "Tipe Kecemasan",
+    "eqTest": "Tes EQ"
   },
   "seo": {
     "understandingTitle": "Memahami Tingkat Stres Anda",
