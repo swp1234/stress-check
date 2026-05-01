@@ -195,6 +195,15 @@ body {
     animation: slideInUp 0.4s ease-out 0.1s both;
 }
 
+.intro-primary-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    animation: slideInUp 0.4s ease-out 0.12s both;
+}
+
 .intro-meta {
     display: flex;
     gap: 12px;
@@ -202,7 +211,6 @@ body {
     font-size: 13px;
     justify-content: center;
     flex-wrap: wrap;
-    animation: slideInUp 0.4s ease-out 0.12s both;
 }
 
 .intro-meta span {
@@ -249,7 +257,6 @@ body {
 .btn-start:active { transform: scale(0.98); }
 
 .social-proof {
-    animation: slideInUp 0.4s ease-out 0.15s both;
     font-size: 13px;
     color: var(--text-sec);
 }
@@ -257,6 +264,84 @@ body {
 .social-proof .count {
     color: var(--primary-light);
     font-weight: 700;
+}
+
+.about-test {
+    width: 100%;
+    max-width: 480px;
+    margin: 6px auto 0;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    text-align: left;
+    overflow: hidden;
+    animation: slideInUp 0.4s ease-out 0.16s both;
+}
+
+.about-test summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 13px 18px;
+    color: var(--primary-light);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.about-test summary::-webkit-details-marker {
+    display: none;
+}
+
+.about-test summary::after {
+    content: '\25BC';
+    margin-left: auto;
+    color: var(--text-sec);
+    font-size: 11px;
+    transition: transform 0.25s ease;
+}
+
+.about-test[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.about-test-body {
+    padding: 0 18px 16px;
+}
+
+.about-test-body p {
+    margin: 0 0 10px;
+    color: var(--text-sec);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.about-test-body .about-test-note {
+    margin-bottom: 0;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.category-preview {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+    animation: slideInUp 0.4s ease-out 0.18s both;
+}
+
+.category-preview span {
+    padding: 6px 12px;
+    border: 1px solid rgba(231,76,60,0.2);
+    border-radius: 20px;
+    background: rgba(231,76,60,0.08);
+    color: var(--text-sec);
+    font-size: 12px;
 }
 
 /* === QUESTION SCREEN === */

@@ -19,6 +19,9 @@ class StressCheckApp {
             this.setupEventListeners();
             this.hideLoader();
             document.getElementById('intro-screen').classList.add('active');
+            this.track('stress_intro_view', { surface: 'intro_screen' });
+            this.observeIntroCta();
+            this.observeAdSurfaces();
         }
     }
 
@@ -46,18 +49,81 @@ class StressCheckApp {
             btn.addEventListener('click', (e) => this.changeLanguage(e.target.dataset.lang));
         });
 
+        const aboutTest = document.querySelector('.about-test');
+        if (aboutTest) {
+            aboutTest.addEventListener('toggle', () => {
+                if (aboutTest.open) {
+                    this.track('stress_about_open', { surface: 'intro_about_test' });
+                }
+            });
+        }
+
         // Initialize Theme Toggle
         this.initTheme();
     }
 
-    startTest() {
-        // GA4: 테스트 시작
-        if (typeof gtag === 'function') {
-            gtag('event', 'test_start', {
-                app_name: 'stress-check',
-                content_type: 'test'
-            });
+    track(eventName, params = {}) {
+        if (typeof gtag !== 'function') return;
+        gtag('event', eventName, Object.assign({
+            app_name: 'stress-check',
+            content_group: 'stress_check'
+        }, params));
+    }
+
+    observeIntroCta() {
+        const startButton = document.getElementById('btn-start');
+        if (!startButton || startButton.dataset.viewTracked === '1') return;
+
+        const sendView = () => {
+            if (startButton.dataset.viewTracked === '1') return;
+            startButton.dataset.viewTracked = '1';
+            this.track('stress_intro_cta_view', { surface: 'intro_primary_cta' });
+        };
+
+        if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(entries => {
+                if (entries.some(entry => entry.isIntersecting)) {
+                    sendView();
+                    observer.disconnect();
+                }
+            }, { threshold: 0.6 });
+            observer.observe(startButton);
+        } else {
+            sendView();
         }
+    }
+
+    trackAdSurface(adBanner) {
+        if (!adBanner || adBanner.dataset.trackedImpression === '1') return;
+        const slot = adBanner.querySelector('.adsbygoogle');
+        adBanner.dataset.trackedImpression = '1';
+        this.track('stress_ad_impression', {
+            ad_surface: adBanner.dataset.adSurface || 'stress_ad',
+            ad_slot: slot ? slot.getAttribute('data-ad-slot') || 'unknown' : 'missing'
+        });
+    }
+
+    observeAdSurfaces() {
+        document.querySelectorAll('.ad-banner[data-ad-surface]').forEach(adBanner => {
+            if (window.getComputedStyle(adBanner).display === 'none') return;
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver(entries => {
+                    if (entries.some(entry => entry.isIntersecting)) {
+                        this.trackAdSurface(adBanner);
+                        observer.disconnect();
+                    }
+                }, { threshold: 0.2 });
+                observer.observe(adBanner);
+            } else {
+                this.trackAdSurface(adBanner);
+            }
+        });
+    }
+
+    startTest() {
+        this.track('stress_intro_start_click', { surface: 'intro_primary_cta' });
+        this.track('test_start', { content_type: 'test' });
         this.currentQuestion = 0;
         this.answers = {};
         this.totalScore = 0;
@@ -403,6 +469,13 @@ class StressCheckApp {
     showScreen(screenId) {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById(screenId).classList.add('active');
+        const topAd = document.getElementById('top-ad');
+        if (topAd) {
+            topAd.style.display = screenId === 'result-screen' ? 'block' : 'none';
+            if (screenId === 'result-screen') {
+                this.trackAdSurface(topAd);
+            }
+        }
         window.scrollTo(0, 0);
     }
 
