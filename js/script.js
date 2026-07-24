@@ -69,7 +69,16 @@
         }
     };
 
+    window.BOUNDARY_SCRIPT_TRANSLATIONS = translations;
+    if (!document.getElementById('builder-main')) return;
+
     const fallback = translations.en;
+    const libraryLabelByLocale = {
+        ko:'복사 가능한 예문 보기 →',en:'Browse copyable phrase examples →',zh:'浏览可复制的表达示例 →',
+        hi:'कॉपी करने योग्य वाक्य देखें →',ru:'Посмотреть готовые примеры →',ja:'コピーできる例文を見る →',
+        es:'Ver ejemplos para copiar →',pt:'Ver exemplos para copiar →',id:'Lihat contoh yang bisa disalin →',
+        tr:'Kopyalanabilir örnekleri gör →',de:'Kopierbare Beispiele ansehen →',fr:'Voir des exemples à copier →'
+    };
     const t = key => translations[language]?.[key] ?? fallback[key] ?? key;
     const contextKeys = ['work', 'relationship', 'family', 'school'];
     const toneKeys = ['warm', 'clear', 'firm'];
@@ -116,6 +125,8 @@
         elements.boundary.placeholder = t('placeholders').boundary;
         document.getElementById('back-link').href = `plan.html?lang=${language}&focus=${context === 'relationship' || context === 'work' ? context : 'daily'}&source=boundary_script`;
         document.getElementById('plan-link').href = `plan.html?lang=${language}&focus=${context === 'relationship' || context === 'work' ? context : 'daily'}&source=boundary_script`;
+        document.getElementById('library-link').textContent = libraryLabelByLocale[language] || libraryLabelByLocale.en;
+        document.getElementById('library-link').href = `library.html?lang=${language}&context=${context}&tone=${tone}&source=boundary_script`;
     }
 
     function fillSelects() {
@@ -239,6 +250,10 @@
 
     function init() {
         loadDraft();
+        if (query.get('example') === '1') {
+            const example = t('examples')[context];
+            [elements.situation.value, elements.request.value, elements.boundary.value] = example;
+        }
         translateStatic();
         fillSelects();
         updateCounts();
@@ -282,6 +297,7 @@
         });
         document.getElementById('reset-button').addEventListener('click', resetBuilder);
         document.getElementById('plan-link').addEventListener('click', () => track('boundary_script_plan_click'));
+        document.getElementById('library-link').addEventListener('click', () => track('boundary_script_library_click'));
         document.getElementById('back-link').addEventListener('click', () => track('boundary_script_plan_click', { link_surface: 'header' }));
         const ad = document.querySelector('[data-ad-surface]');
         if (ad && 'IntersectionObserver' in window) {
@@ -293,6 +309,9 @@
             observer.observe(ad);
         }
         track('boundary_script_view');
+        if (query.get('example') === '1') {
+            track('boundary_script_template_load', { template_context: context });
+        }
     }
 
     init();

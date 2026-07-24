@@ -93,6 +93,7 @@
 .script-text { color: #f8fafc; white-space: pre-wrap; overflow-wrap: anywhere; }
 .delivery-tip { color: var(--muted); }
 .inline-plan-link { display: inline-flex; align-items: center; font-weight: 850; }
+.support-links { display: flex; flex-wrap: wrap; gap: 10px 18px; }
 
 [hidden] { display: none !important; }
 
