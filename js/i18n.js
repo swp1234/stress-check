@@ -6,6 +6,11 @@ class I18n {
     }
 
     detectLanguage() {
+        const requested = new URLSearchParams(window.location.search).get('lang');
+        if (requested && this.supportedLanguages.includes(requested)) {
+            return requested;
+        }
+
         const saved = localStorage.getItem('preferredLanguage');
         if (saved && this.supportedLanguages.includes(saved)) {
             return saved;

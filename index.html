@@ -93,7 +93,7 @@
             "worstRating": "1"
         },
         "featureList": "15 questions, 5-level stress measurement, category analysis, personalized relief tips, result image saving, social sharing",
-        "dateModified": "2026-05-01"
+        "dateModified": "2026-07-25"
     }
     </script>
 
@@ -351,14 +351,8 @@
                 <ul id="relief-tips-list"></ul>
             </div>
 
-            <!-- Premium Content Button -->
-            <button class="btn-premium" id="btn-premium-unlock" data-i18n="button.unlockPremium">🔓 AI 심층 분석 보기 (광고 시청 필요)</button>
-            <div id="premium-content" style="display: none; width: 100%; max-width: 480px;">
-                <div class="detail-section">
-                    <h3 data-i18n="result.aiAnalysis">AI 심층 분석</h3>
-                    <p id="ai-analysis-content">AI 분석 결과...</p>
-                </div>
-            </div>
+            <!-- Personalized action-plan content -->
+            <button class="btn-premium" id="btn-premium-unlock" data-i18n="button.unlockPremium">🗓️ 나의 7일 스트레스 리셋 플랜 만들기</button>
 
             <!-- Action Buttons -->
             <div class="action-buttons">
@@ -368,9 +362,6 @@
                 <button class="btn-share" id="btn-share" data-i18n="button.share">📤 공유</button>
                 <button class="btn-retry" id="btn-retry" data-i18n="button.retry">🔄 다시하기</button>
             </div>
-
-            <!-- Percentile Stat -->
-            <p class="percentile-stat" id="percentile-stat"></p>
 
             <!-- Related Tests -->
             <div class="related-tests">
@@ -453,16 +444,6 @@
                 </div>
             </div>
         </section>
-    </div>
-
-    <!-- Ad Overlay -->
-    <div class="ad-overlay" id="ad-overlay">
-        <div class="ad-modal">
-            <p data-i18n="ad.watchVideo">영상을 시청하고 AI 분석을 해제하세요!</p>
-            <div class="ad-placeholder" data-i18n="ads.loading">광고 로딩 중...</div>
-            <div id="ad-countdown">5</div>
-            <button id="ad-close" data-i18n="button.close">닫기</button>
-        </div>
     </div>
 
     <!-- Bottom Ad Banner -->

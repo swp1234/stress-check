@@ -5,8 +5,6 @@ class StressCheckApp {
         this.totalScore = 0;
         this.categoryScores = {};
         this.stressLevel = null;
-        this.adShown = false;
-        this.adCountdown = 5;
         this.init();
     }
 
@@ -38,10 +36,9 @@ class StressCheckApp {
 
         // Action buttons
         document.getElementById('btn-retry').addEventListener('click', () => this.retryTest());
-        document.getElementById('btn-premium-unlock').addEventListener('click', () => this.showAdOverlay());
+        document.getElementById('btn-premium-unlock').addEventListener('click', () => this.openActionPlan());
         document.getElementById('btn-share').addEventListener('click', () => this.shareResult());
         document.getElementById('btn-save-image').addEventListener('click', () => this.saveResultImage());
-        document.getElementById('ad-close').addEventListener('click', () => this.closeAdOverlay());
 
         // Language selector
         document.getElementById('lang-toggle').addEventListener('click', () => this.toggleLanguageMenu());
@@ -247,15 +244,6 @@ class StressCheckApp {
         // Relief tips
         this.displayReliefTips();
 
-        // Percentile stat
-        const pStat = document.getElementById('percentile-stat');
-        if (pStat) {
-            const levelPcts = { veryLow: 12, low: 28, moderate: 35, high: 18, veryHigh: 7 };
-            const pctVal = levelPcts[this.stressLevel.level] || 20;
-            const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants have your stress profile';
-            pStat.innerHTML = template.replace('{percent}', pctVal);
-        }
-
         // Recommendations
         this.displayRecommendations();
     }
@@ -328,41 +316,24 @@ class StressCheckApp {
         });
     }
 
-    showAdOverlay() {
-        this.adShown = false;
-        this.adCountdown = 5;
-        document.getElementById('ad-overlay').classList.add('active');
-        document.getElementById('ad-close').style.display = 'none';
+    openActionPlan() {
+        if (!this.stressLevel) return;
 
-        this.adTimer = setInterval(() => {
-            this.adCountdown--;
-            document.getElementById('ad-countdown').textContent = this.adCountdown;
+        const focus = Object.entries(this.categoryScores)
+            .sort((left, right) => right[1] - left[1])[0]?.[0] || 'daily';
+        const language = i18n.getCurrentLanguage();
+        const target = new URL('plan.html', window.location.href);
+        target.searchParams.set('lang', language);
+        target.searchParams.set('focus', focus);
+        target.searchParams.set('level', this.stressLevel.level);
+        target.searchParams.set('source', 'stress_result');
 
-            if (this.adCountdown <= 0) {
-                clearInterval(this.adTimer);
-                document.getElementById('ad-close').style.display = 'inline-flex';
-                document.getElementById('ad-countdown').style.display = 'none';
-                this.unlockPremium();
-            }
-        }, 1000);
-    }
-
-    closeAdOverlay() {
-        document.getElementById('ad-overlay').classList.remove('active');
-        if (this.adTimer) clearInterval(this.adTimer);
-    }
-
-    unlockPremium() {
-        const premiumContent = document.getElementById('premium-content');
-        const aiAnalysis = document.getElementById('ai-analysis-content');
-
-        const analysisKey = getAIAnalysis(this.stressLevel.level);
-        const analysis = i18n.t(analysisKey);
-
-        aiAnalysis.textContent = analysis;
-        premiumContent.style.display = 'block';
-
-        document.getElementById('btn-premium-unlock').style.display = 'none';
+        this.track('stress_plan_click', {
+            surface: 'result_primary_action',
+            plan_focus: focus,
+            result_type: this.stressLevel.level
+        });
+        window.location.href = target.toString();
     }
 
     shareResult() {
