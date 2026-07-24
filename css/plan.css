@@ -277,6 +277,7 @@ h2 { margin: 0 0 12px; line-height: 1.25; }
 .primary-button { color: #fff; background: linear-gradient(135deg, #e74c3c, #ff7675); border: 0; }
 .secondary-button { color: var(--text); background: var(--surface-strong); border: 1px solid var(--border); }
 .status-message { min-height: 25px; margin-bottom: 0; color: #a7f3d0 !important; }
+.tool-next-link { display: inline-flex; align-items: center; margin-top: 18px; font-weight: 850; }
 
 .evidence p, .safety p { color: var(--muted); }
 .evidence ul { margin: 14px 0 0; padding-left: 20px; }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0f0f23">
+    <title>Free Boundary & Request Script Builder | DopaBrain</title>
+    <meta name="description" content="Turn a stressful work, relationship, family, or school situation into a clear request and boundary script. Private, free, copyable, and printable.">
+    <link rel="canonical" href="https://dopabrain.com/stress-check/script.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dopabrain.com/stress-check/script.html">
+    <meta property="og:title" content="Boundary & Request Script Builder">
+    <meta property="og:description" content="Find calm, clear words for a difficult conversation. Nothing you type is uploaded.">
+    <meta property="og:image" content="https://dopabrain.com/stress-check/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="icon-192.svg">
+    <link rel="stylesheet" href="css/plan.css">
+    <link rel="stylesheet" href="css/script.css">
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J8GSWM40TV');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Boundary and Request Script Builder",
+      "url": "https://dopabrain.com/stress-check/script.html",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Any",
+      "isAccessibleForFree": true,
+      "inLanguage": ["en","ko","zh","hi","ru","ja","es","pt","id","tr","de","fr"],
+      "description": "A private interactive builder for preparing a clear request and boundary before a difficult conversation.",
+      "dateModified": "2026-07-25"
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#builder-main" data-t="skip">Skip to builder</a>
+    <header class="topbar">
+        <a class="back-link" id="back-link" href="plan.html" data-t="back">← Back to 7-day plan</a>
+        <label class="language-label">
+            <span class="sr-only" data-t="language">Language</span>
+            <select id="language-select" aria-label="Language">
+                <option value="en">English</option>
+                <option value="ko">한국어</option>
+                <option value="zh">中文</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ru">Русский</option>
+                <option value="ja">日本語</option>
+                <option value="es">Español</option>
+                <option value="pt">Português</option>
+                <option value="id">Indonesia</option>
+                <option value="tr">Türkçe</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+            </select>
+        </label>
+    </header>
+
+    <main id="builder-main">
+        <section class="hero">
+            <p class="eyebrow" data-t="eyebrow">PRIVATE CONVERSATION TOOL</p>
+            <h1 data-t="title">Boundary & Request Script Builder</h1>
+            <p class="hero-copy" data-t="subtitle">Prepare calm, clear words before a difficult conversation. What you type stays in this browser.</p>
+            <div class="privacy-chip" data-t="privacy">No account · no text uploaded · clear anytime</div>
+        </section>
+
+        <section class="builder-card card" aria-labelledby="builder-title">
+            <div class="section-heading compact-heading">
+                <div>
+                    <p class="eyebrow" data-t="step">BUILD YOUR SCRIPT</p>
+                    <h2 id="builder-title" data-t="builderTitle">Describe the conversation</h2>
+                </div>
+                <button type="button" class="secondary-button" id="example-button" data-t="example">Use an example</button>
+            </div>
+            <div class="control-grid">
+                <label>
+                    <span data-t="contextLabel">Situation</span>
+                    <select id="context-select"></select>
+                </label>
+                <label>
+                    <span data-t="toneLabel">Tone</span>
+                    <select id="tone-select"></select>
+                </label>
+            </div>
+            <div class="field-stack">
+                <label>
+                    <span data-t="situationLabel">What happened? Use observable facts.</span>
+                    <textarea id="situation-input" rows="3" maxlength="240"></textarea>
+                    <small><span data-t="factHint">Avoid labels or guessing motives.</span> <span class="char-count" data-count-for="situation-input">0 / 240</span></small>
+                </label>
+                <label>
+                    <span data-t="requestLabel">What specific change are you asking for?</span>
+                    <textarea id="request-input" rows="3" maxlength="240"></textarea>
+                    <small><span data-t="requestHint">Choose one realistic, observable action.</span> <span class="char-count" data-count-for="request-input">0 / 240</span></small>
+                </label>
+                <label>
+                    <span data-t="boundaryLabel">What will you do if that cannot happen?</span>
+                    <textarea id="boundary-input" rows="3" maxlength="240"></textarea>
+                    <small><span data-t="boundaryHint">Name your next action, not a punishment.</span> <span class="char-count" data-count-for="boundary-input">0 / 240</span></small>
+                </label>
+            </div>
+            <p class="validation-message" id="validation-message" aria-live="polite"></p>
+            <button type="button" class="primary-button generate-button" id="generate-button" data-t="generate">Build my script</button>
+        </section>
+
+        <section class="result-card card" id="result-card" aria-labelledby="result-title" hidden>
+            <p class="eyebrow" data-t="resultEyebrow">YOUR DRAFT</p>
+            <h2 id="result-title" data-t="resultTitle">A script you can edit before using</h2>
+            <div class="script-output" id="script-output" tabindex="0"></div>
+            <p class="delivery-tip" data-t="deliveryTip">Tip: choose a calm moment, read it aloud once, and shorten any sentence that does not sound like you.</p>
+            <div class="action-row">
+                <button type="button" class="primary-button" id="copy-button" data-t="copy">Copy script</button>
+                <button type="button" class="secondary-button" id="print-button" data-t="print">Print</button>
+                <button type="button" class="secondary-button" id="reset-button" data-t="reset">Start over</button>
+            </div>
+            <p class="status-message" id="status-message" aria-live="polite"></p>
+        </section>
+
+        <aside class="ad-card" data-ad-surface="boundary_script_mid">
+            <span class="ad-label" data-t="ad">Advertisement</span>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-3600813755953882"
+                 data-ad-slot="3295820393"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                try {
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                } catch (_) {}
+            </script>
+        </aside>
+
+        <section class="evidence card">
+            <h2 data-t="whyTitle">What this builder is—and is not</h2>
+            <p data-t="whyCopy">It helps organize observable facts, one request, and your own next action. It cannot predict another person’s response and is not legal, medical, workplace, or relationship-safety advice.</p>
+            <a class="inline-plan-link" id="plan-link" href="plan.html" data-t="planLink">Add this conversation to your 7-day stress plan →</a>
+        </section>
+
+        <section class="safety card">
+            <h2 data-t="safetyTitle">Safety comes before a script</h2>
+            <p data-t="safetyCopy">Do not use a confrontation script if you fear violence, stalking, coercion, retaliation, or immediate danger. Seek support from a trusted local professional, workplace representative, or emergency service appropriate to your situation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <a href="/privacy-policy.html" data-t="privacyPolicy">Privacy</a>
+        <span>·</span>
+        <a href="/portal/tools/" data-t="moreTools">More DopaBrain tools</a>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+    <script src="/portal/js/cross-promo.js" defer></script>
+</body>
+</html>

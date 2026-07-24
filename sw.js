@@ -1,14 +1,17 @@
-const CACHE_NAME = 'stress-check-v3';
+const CACHE_NAME = 'stress-check-v4';
 const urlsToCache = [
     './',
     './index.html',
     './plan.html',
+    './script.html',
     './css/style.css',
     './css/plan.css',
+    './css/script.css',
     './js/i18n.js',
     './js/data.js',
     './js/app.js',
     './js/plan.js',
+    './js/script.js',
     './manifest.json',
     './icon-192.svg',
     './icon-512.svg',

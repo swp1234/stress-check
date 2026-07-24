@@ -90,6 +90,20 @@
 
     const fallback = translations.en;
     const t = key => translations[language]?.[key] ?? fallback[key] ?? key;
+    const scriptCta = {
+        en: 'Need words for day 4? Build a boundary & request script →',
+        ko: '4일차에 쓸 말이 필요한가요? 경계·요청 문장 만들기 →',
+        zh: '第4天不知道怎么说？生成界限与请求话术 →',
+        hi: 'दिन 4 के लिए शब्द चाहिए? सीमा और अनुरोध स्क्रिप्ट बनाएँ →',
+        ru: 'Нужны слова для дня 4? Создайте просьбу и границу →',
+        ja: '4日目の言葉に迷ったら、境界線・お願い文を作る →',
+        es: '¿Necesitas palabras para el día 4? Crea un guión de límites →',
+        pt: 'Precisa de palavras para o dia 4? Crie um roteiro de limites →',
+        id: 'Perlu kata-kata untuk hari 4? Buat skrip batas dan permintaan →',
+        tr: '4. gün için sözcük mü lazım? Sınır ve istek metni oluştur →',
+        de: 'Fehlen dir Worte für Tag 4? Grenze und Bitte formulieren →',
+        fr: 'Besoin de mots pour le jour 4 ? Créez un script de limites →'
+    };
     const focusKeys = ['work', 'relationship', 'health', 'finance', 'daily'];
     const levelKeys = ['veryLow', 'low', 'moderate', 'high', 'veryHigh'];
     let focus = focusKeys.includes(query.get('focus')) ? query.get('focus') : 'daily';
@@ -125,6 +139,9 @@
         document.querySelector('meta[name="description"]').content = t('subtitle');
         document.getElementById('language-select').value = language;
         document.getElementById('back-link').href = `./?lang=${language}`;
+        const scriptLink = document.getElementById('script-builder-link');
+        scriptLink.textContent = scriptCta[language] || scriptCta.en;
+        scriptLink.href = `script.html?lang=${language}&context=${focus === 'work' || focus === 'relationship' ? focus : 'family'}&tone=clear&source=stress_plan`;
     }
 
     function fillSelects() {
@@ -257,6 +274,9 @@
             window.print();
         });
         document.getElementById('back-link').addEventListener('click', () => track('stress_plan_return'));
+        document.getElementById('script-builder-link').addEventListener('click', () => {
+            track('stress_plan_script_click', { destination: document.getElementById('script-builder-link').href });
+        });
 
         const ad = document.querySelector('[data-ad-surface]');
         if (ad && 'IntersectionObserver' in window) {
