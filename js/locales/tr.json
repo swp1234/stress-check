@@ -19,8 +19,8 @@
     "retry": "🔄 Tekrar Dene",
     "share": "📤 Paylaş",
     "saveImage": "📥 Görüntüyü Kaydet",
-    "unlockPremium": "🗓️ 7 günlük stres sıfırlama planımı oluştur",
-    "close": "Kapat"
+    "close": "Kapat",
+    "actionPlan": "7 günlük planımı aç"
   },
   "questions": {
     "workStudy": "İş/Çalışma",
@@ -59,10 +59,8 @@
     "stressLevel": "Stres Seviyesi",
     "categoryAnalysis": "Kategori Analizi",
     "reliefTips": "Stres Rahatlama İpuçları",
-    "aiAnalysis": "AI Derin Analizi",
     "recommendedApps": "Önerilen Uygulamalar",
-    "moreTests": "Daha fazla test keşfet",
-    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i senin stres profiline sahip"
+    "moreTests": "Daha fazla test keşfet"
   },
   "categories": {
     "workStudy": "İş/Çalışma",
@@ -133,13 +131,6 @@
       "Günde derin nefes alıştırması yapın"
     ]
   },
-  "analysis": {
-    "veryLow": "Stres yönetim yeteneğiniz mükemmeldir. Bu durumu korumaya devam edin.",
-    "low": "Stres seviyeniz yönetilebilir. Pozitif stratejiler kullanın.",
-    "moderate": "Stres belirli alanlarda birikıyor. Çözüm bulun.",
-    "high": "Önemli miktarda stres yaşıyorsunuz. Profesyonel yardım alın.",
-    "veryHigh": "Stres seviyeniz kritiktir. Bir uzmanın yardımını alın."
-  },
   "apps": {
     "detoxTimer": "Dijital Detoks Zamanlayıcı",
     "detoxTimerDesc": "Akıllı telefon kullanım sürenizi yönetin",
@@ -150,9 +141,7 @@
     "meditationGuide": "Meditasyon Rehberi",
     "meditationGuideDesc": "İç huzuru bulun"
   },
-  "ad": {
-    "watchVideo": "AI analizi açmak için video izleyin!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "Panoya kopyalandı!",
     "questionLoading": "Soru yükleniyor..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Sağlık",
     "cat_relations": "👥 İlişkiler",
     "cat_finance": "💰 Finans",
-    "cat_daily": "🏠 Günlük yaşam",
-    "socialProof": "4.800 kişi stres azaltma yolları buldu ✅"
+    "cat_daily": "🏠 Günlük yaşam"
   },
   "ads": {
     "loading": "Reklam yükleniyor..."
@@ -185,14 +173,9 @@
     "anxietyType": "Kaygı Tipi",
     "eqTest": "EQ Testi"
   },
-  "seo": {
-    "understandingTitle": "Stres Seviyenizi Anlayın",
-    "understandingText": "Stres, vücudun zorluklar ve taleplere karşı doğal tepkisidir. Kısa süreli stres odaklanmayı ve performansı artırabilirken, kronik stres fiziksel sağlığı, ruhsal iyiliği ve günlük üretkenliği etkiler. Bu ücretsiz stres öz değerlendirmesi, iş/eğitim, ilişkiler, sağlık, finans ve günlük yaşam olmak üzere 5 temel yaşam alanında algılanan stresinizi ölçer. Hangi alanların en çok gerilim yarattığını belirleyerek dengeyi yeniden sağlamak için hedefli adımlar atabilirsiniz.",
-    "tipsTitle": "Stres Yönetimi İpuçları",
-    "tip1": "Düzenli egzersiz yapın -- 20 dakikalık bir yürüyüş bile kortizol seviyelerini düşürebilir ve ruh halini iyileştirebilir.",
-    "tip2": "Gevşeme tepkisini aktive etmek için günde 5-10 dakika derin nefes veya meditasyon yapın.",
-    "tip3": "Uykuyu önceliklendirin -- her gece 7-8 saat kaliteli dinlenmeyi hedefleyin.",
-    "tip4": "Tükenmişliği önlemek için iş ve ilişkilerde sağlıklı sınırlar belirleyin.",
-    "tip5": "Stres bunaltıcı hissettirdiğinde güvendiğiniz biriyle konuşun veya profesyonel danışmanlık alın."
+  "trust": {
+    "rule": "Bu düşünme aracı 15 yanıtı sabit bir kuralla toplar ve beş ortalama gösterir. Aralıklar yalnızca DopaBrain gösterimidir; doğrulanmış klinik ölçek veya nüfus karşılaştırması değildir.",
+    "boundary": "Tanı veya tedavi sağlamaz. Yanıtlar bu sayfada kalır ve analitiğe gönderilmez. Sıkıntı şiddetli, kalıcı, günlük işlevi etkileyen düzeydeyse veya güvende değilseniz uzman ya da yerel acil servisle iletişime geçin.",
+    "resultBoundary": "Bu bir yanıt özetidir; tanı, şiddet ölçeği veya nüfus karşılaştırması değildir."
   }
 }

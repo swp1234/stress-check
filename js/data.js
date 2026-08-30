@@ -231,14 +231,3 @@ function getReliefTips(stressLevel) {
     };
     return tipsMap[stressLevel];
 }
-
-function getAIAnalysis(stressLevel) {
-    const analysisMap = {
-        'veryLow': 'analysis.veryLow',
-        'low': 'analysis.low',
-        'moderate': 'analysis.moderate',
-        'high': 'analysis.high',
-        'veryHigh': 'analysis.veryHigh'
-    };
-    return analysisMap[stressLevel];
-}

@@ -20,10 +20,6 @@
     --text-dim: #a0a0b8;
 }
 
-[data-theme="light"] .ad-banner {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.08);
-}
 [data-theme="light"] .option-btn {
     background: rgba(0,0,0,0.04);
     border-color: rgba(0,0,0,0.1);
@@ -119,20 +115,6 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-}
-
-/* Ad Banner */
-.ad-banner {
-    width: 100%;
-    max-width: 480px;
-    padding: 12px;
-    text-align: center;
-    background: rgba(255,255,255,0.02);
-    border-radius: 12px;
-    color: var(--text-dim);
-    font-size: 12px;
-    margin: 10px 0;
-    border: 1px solid var(--border);
 }
 
 /* Animations */
@@ -255,16 +237,6 @@ body {
 }
 
 .btn-start:active { transform: scale(0.98); }
-
-.social-proof {
-    font-size: 13px;
-    color: var(--text-sec);
-}
-
-.social-proof .count {
-    color: var(--primary-light);
-    font-weight: 700;
-}
 
 .about-test {
     width: 100%;
@@ -693,7 +665,7 @@ body {
 }
 
 /* Premium button */
-.btn-premium {
+.btn-action-plan {
     width: 100%;
     max-width: 480px;
     padding: 16px;
@@ -712,7 +684,7 @@ body {
     animation: slideInUp 0.6s ease-out 0.2s both;
 }
 
-.btn-premium::before {
+.btn-action-plan::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -724,13 +696,13 @@ body {
     transition: opacity 0.3s;
 }
 
-.btn-premium:hover::before { opacity: 1; }
-.btn-premium:hover {
+.btn-action-plan:hover::before { opacity: 1; }
+.btn-action-plan:hover {
     transform: scale(1.04);
     box-shadow: 0 10px 35px rgba(243,156,18,0.5);
 }
 
-.btn-premium:active { transform: scale(0.98); }
+.btn-action-plan:active { transform: scale(0.98); }
 
 /* Action buttons */
 .action-buttons {

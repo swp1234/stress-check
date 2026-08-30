@@ -19,8 +19,8 @@
     "retry": "🔄 Réessayer",
     "share": "📤 Partager",
     "saveImage": "📥 Enregistrer l'image",
-    "unlockPremium": "🗓️ Créer mon plan anti-stress sur 7 jours",
-    "close": "Fermer"
+    "close": "Fermer",
+    "actionPlan": "Ouvrir mon plan de 7 jours"
   },
   "questions": {
     "workStudy": "Travail/Études",
@@ -59,10 +59,8 @@
     "stressLevel": "Niveau de stress",
     "categoryAnalysis": "Analyse par catégorie",
     "reliefTips": "Conseils de soulagement du stress",
-    "aiAnalysis": "Analyse approfondie de l'IA",
     "recommendedApps": "Applications recommandées",
-    "moreTests": "Explorer plus de tests",
-    "percentileStat": "Seulement <strong>{percent}%</strong> des participants ont votre profil de stress"
+    "moreTests": "Explorer plus de tests"
   },
   "categories": {
     "workStudy": "Travail/Études",
@@ -133,13 +131,6 @@
       "Pratiquez la respiration profonde quotidiennement"
     ]
   },
-  "analysis": {
-    "veryLow": "Votre capacité à gérer le stress est excellente. Continuez à maintenir cet état.",
-    "low": "Votre niveau de stress est gérable. Utilisez des stratégies positives.",
-    "moderate": "Le stress s'accumule dans certains domaines. Trouvez des solutions.",
-    "high": "Vous éprouvez un stress considérable. Cherchez une aide professionnelle.",
-    "veryHigh": "Votre niveau de stress est critique. Cherchez l'aide d'un spécialiste."
-  },
   "apps": {
     "detoxTimer": "Minuteur de Détox Numérique",
     "detoxTimerDesc": "Gérez votre temps d'écran",
@@ -150,9 +141,7 @@
     "meditationGuide": "Guide de Méditation",
     "meditationGuideDesc": "Trouvez la paix intérieure"
   },
-  "ad": {
-    "watchVideo": "Regardez une vidéo pour déverrouiller l'analyse IA!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "Copié dans le presse-papiers!",
     "questionLoading": "Chargement de la question..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Santé",
     "cat_relations": "👥 Relations",
     "cat_finance": "💰 Finances",
-    "cat_daily": "🏠 Vie quotidienne",
-    "socialProof": "4 800 personnes ont trouvé des moyens de réduire le stress ✅"
+    "cat_daily": "🏠 Vie quotidienne"
   },
   "ads": {
     "loading": "Chargement de la pub..."
@@ -185,14 +173,9 @@
     "anxietyType": "Type d'Anxiété",
     "eqTest": "Test QE"
   },
-  "seo": {
-    "understandingTitle": "Comprendre votre niveau de stress",
-    "understandingText": "Le stress est la réponse naturelle du corps aux défis et aux exigences. Si le stress à court terme peut améliorer la concentration et les performances, le stress chronique affecte la santé physique, le bien-être mental et la productivité quotidienne. Cette auto-évaluation gratuite du stress mesure votre stress perçu dans 5 domaines clés : travail/études, relations, santé, finances et vie quotidienne. En identifiant les domaines qui causent le plus de tension, vous pouvez prendre des mesures ciblées pour rétablir l'équilibre.",
-    "tipsTitle": "Conseils pour gérer le stress",
-    "tip1": "Faites de l'exercice régulièrement -- même une marche de 20 minutes peut réduire le cortisol et améliorer l'humeur.",
-    "tip2": "Pratiquez la respiration profonde ou la méditation pendant 5 à 10 minutes par jour pour activer votre réponse de relaxation.",
-    "tip3": "Priorisez le sommeil -- visez 7 à 8 heures de repos de qualité chaque nuit.",
-    "tip4": "Fixez des limites saines au travail et dans vos relations pour prévenir l'épuisement.",
-    "tip5": "Parlez à quelqu'un de confiance ou consultez un professionnel quand le stress devient accablant."
+  "trust": {
+    "rule": "Cette réflexion additionne 15 réponses selon une règle fixe et affiche cinq moyennes. Les paliers servent uniquement à l’affichage DopaBrain ; ce n’est ni une échelle clinique validée ni une comparaison de population.",
+    "boundary": "Elle ne diagnostique ni ne traite. Les réponses restent sur cette page et ne sont pas envoyées aux analyses. Si la détresse est forte, durable, gêne le quotidien ou si vous ne vous sentez pas en sécurité, contactez un professionnel qualifié ou les urgences locales.",
+    "resultBoundary": "Il s’agit d’un résumé des réponses, pas d’un diagnostic, d’une échelle de gravité ni d’une comparaison de population."
   }
 }

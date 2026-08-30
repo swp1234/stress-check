@@ -19,8 +19,8 @@
     "retry": "🔄 Coba Lagi",
     "share": "📤 Bagikan",
     "saveImage": "📥 Simpan Gambar",
-    "unlockPremium": "🗓️ Buat rencana reset stres 7 hari saya",
-    "close": "Tutup"
+    "close": "Tutup",
+    "actionPlan": "Buka rencana 7 hari saya"
   },
   "questions": {
     "workStudy": "Pekerjaan/Studi",
@@ -59,10 +59,8 @@
     "stressLevel": "Tingkat Stres",
     "categoryAnalysis": "Analisis Berdasarkan Kategori",
     "reliefTips": "Tips Relief Stres",
-    "aiAnalysis": "Analisis Mendalam AI",
     "recommendedApps": "Aplikasi yang Direkomendasikan",
-    "moreTests": "Jelajahi tes lainnya",
-    "percentileStat": "Hanya <strong>{percent}%</strong> peserta memiliki profil stres yang sama"
+    "moreTests": "Jelajahi tes lainnya"
   },
   "categories": {
     "workStudy": "Pekerjaan/Studi",
@@ -133,13 +131,6 @@
       "Praktikkan pernapasan dalam setiap hari"
     ]
   },
-  "analysis": {
-    "veryLow": "Kemampuan manajemen stres Anda sangat baik. Terus pertahankan kondisi ini.",
-    "low": "Tingkat stres Anda dapat dikelola. Gunakan strategi positif.",
-    "moderate": "Stres menumpuk di area tertentu. Temukan solusinya.",
-    "high": "Anda mengalami stres yang cukup. Cari bantuan profesional.",
-    "veryHigh": "Tingkat stres Anda kritis. Cari bantuan dari spesialis."
-  },
   "apps": {
     "detoxTimer": "Timer Detoks Digital",
     "detoxTimerDesc": "Kelola waktu penggunaan ponsel Anda",
@@ -150,9 +141,7 @@
     "meditationGuide": "Panduan Meditasi",
     "meditationGuideDesc": "Temukan kedamaian batin"
   },
-  "ad": {
-    "watchVideo": "Tonton video untuk membuka analisis AI!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "Disalin ke clipboard!",
     "questionLoading": "Memuat pertanyaan..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Kesehatan",
     "cat_relations": "👥 Hubungan",
     "cat_finance": "💰 Keuangan",
-    "cat_daily": "🏠 Kehidupan sehari-hari",
-    "socialProof": "4.800 orang menemukan cara mengurangi stres ✅"
+    "cat_daily": "🏠 Kehidupan sehari-hari"
   },
   "ads": {
     "loading": "Memuat iklan..."
@@ -185,14 +173,9 @@
     "anxietyType": "Tipe Kecemasan",
     "eqTest": "Tes EQ"
   },
-  "seo": {
-    "understandingTitle": "Memahami Tingkat Stres Anda",
-    "understandingText": "Stres adalah respons alami tubuh terhadap tantangan dan tuntutan. Stres jangka pendek dapat meningkatkan fokus dan kinerja, tetapi stres kronis memengaruhi kesehatan fisik, kesejahteraan mental, dan produktivitas harian. Penilaian mandiri stres gratis ini mengukur stres yang Anda rasakan di 5 area kehidupan utama: pekerjaan/studi, hubungan, kesehatan, keuangan, dan kehidupan sehari-hari. Dengan mengidentifikasi area mana yang menyebabkan ketegangan terbesar, Anda dapat mengambil tindakan tepat sasaran untuk memulihkan keseimbangan.",
-    "tipsTitle": "Tips Mengelola Stres",
-    "tip1": "Berolahraga secara teratur -- bahkan jalan kaki 20 menit dapat menurunkan kadar kortisol dan memperbaiki suasana hati.",
-    "tip2": "Praktikkan pernapasan dalam atau meditasi selama 5-10 menit setiap hari untuk mengaktifkan respons relaksasi.",
-    "tip3": "Prioritaskan tidur -- targetkan 7-8 jam istirahat berkualitas setiap malam.",
-    "tip4": "Tetapkan batasan sehat di tempat kerja dan dalam hubungan untuk mencegah kelelahan.",
-    "tip5": "Bicaralah dengan seseorang yang Anda percaya atau cari konseling profesional ketika stres terasa luar biasa."
+  "trust": {
+    "rule": "Refleksi ini menjumlahkan 15 jawaban dengan aturan tetap dan menampilkan lima rata-rata. Rentang hanya untuk tampilan DopaBrain, bukan skala klinis tervalidasi atau perbandingan populasi.",
+    "boundary": "Alat ini tidak mendiagnosis atau mengobati. Jawaban tetap di halaman ini dan tidak dikirim ke analitik. Jika tekanan berat, menetap, mengganggu keseharian, atau Anda merasa tidak aman, hubungi tenaga profesional atau layanan darurat setempat.",
+    "resultBoundary": "Ini ringkasan jawaban, bukan diagnosis, skala keparahan, atau perbandingan populasi."
   }
 }

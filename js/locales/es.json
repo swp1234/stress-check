@@ -19,8 +19,8 @@
     "retry": "🔄 Intentar de nuevo",
     "share": "📤 Compartir",
     "saveImage": "📥 Guardar imagen",
-    "unlockPremium": "🗓️ Crear mi plan de 7 días para reducir el estrés",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "actionPlan": "Abrir mi plan de 7 días"
   },
   "questions": {
     "workStudy": "Trabajo/Estudio",
@@ -59,10 +59,8 @@
     "stressLevel": "Nivel de estrés",
     "categoryAnalysis": "Análisis por categoría",
     "reliefTips": "Consejos de alivio del estrés",
-    "aiAnalysis": "Análisis profundo de IA",
     "recommendedApps": "Aplicaciones recomendadas",
-    "moreTests": "Explorar más tests",
-    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes tienen tu perfil de estrés"
+    "moreTests": "Explorar más tests"
   },
   "categories": {
     "workStudy": "Trabajo/Estudio",
@@ -133,13 +131,6 @@
       "Practica respiración profunda diariamente"
     ]
   },
-  "analysis": {
-    "veryLow": "Tu capacidad de manejo del estrés es excelente. Continúa manteniendo este estado.",
-    "low": "Tu nivel de estrés es manejable. Usa estrategias positivas.",
-    "moderate": "El estrés se acumula en áreas específicas. Encuentra soluciones.",
-    "high": "Estás experimentando estrés considerable. Busca ayuda profesional.",
-    "veryHigh": "Tu nivel de estrés es crítico. Busca ayuda de un especialista."
-  },
   "apps": {
     "detoxTimer": "Temporizador de Desintoxicación Digital",
     "detoxTimerDesc": "Gestiona tu tiempo de teléfono",
@@ -150,9 +141,7 @@
     "meditationGuide": "Guía de Meditación",
     "meditationGuideDesc": "Encuentra paz interior"
   },
-  "ad": {
-    "watchVideo": "¡Mira un video para desbloquear análisis de IA!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "¡Copiado al portapapeles!",
     "questionLoading": "Cargando pregunta..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Salud",
     "cat_relations": "👥 Relaciones",
     "cat_finance": "💰 Finanzas",
-    "cat_daily": "🏠 Vida cotidiana",
-    "socialProof": "4.800 personas encontraron formas de reducir el estrés ✅"
+    "cat_daily": "🏠 Vida cotidiana"
   },
   "ads": {
     "loading": "Cargando anuncio..."
@@ -185,14 +173,9 @@
     "anxietyType": "Tipo de Ansiedad",
     "eqTest": "Test EQ"
   },
-  "seo": {
-    "understandingTitle": "Comprende tu nivel de estrés",
-    "understandingText": "El estrés es la respuesta natural del cuerpo ante desafíos y demandas. Mientras que el estrés a corto plazo puede mejorar la concentración y el rendimiento, el estrés crónico afecta la salud física, el bienestar mental y la productividad diaria. Esta autoevaluación gratuita de estrés mide tu estrés percibido en 5 áreas clave: trabajo/estudios, relaciones, salud, finanzas y vida diaria. Al identificar qué áreas causan más tensión, puedes tomar medidas específicas para restaurar el equilibrio.",
-    "tipsTitle": "Consejos para manejar el estrés",
-    "tip1": "Haz ejercicio regularmente -- incluso una caminata de 20 minutos puede reducir los niveles de cortisol y mejorar el ánimo.",
-    "tip2": "Practica respiración profunda o meditación durante 5-10 minutos diarios para activar tu respuesta de relajación.",
-    "tip3": "Prioriza el sueño -- apunta a 7-8 horas de descanso de calidad cada noche.",
-    "tip4": "Establece límites saludables en el trabajo y en las relaciones para prevenir el agotamiento.",
-    "tip5": "Habla con alguien de confianza o busca asesoramiento profesional cuando el estrés se sienta abrumador."
+  "trust": {
+    "rule": "Esta reflexión suma 15 respuestas con una regla fija y muestra cinco promedios. Las bandas son solo de presentación de DopaBrain, no una escala clínica validada ni una comparación poblacional.",
+    "boundary": "No diagnostica ni trata. Las respuestas permanecen en esta página y no se envían a analítica. Si el malestar es intenso, persistente, afecta la vida diaria o no te sientes a salvo, contacta con un profesional cualificado o emergencias locales.",
+    "resultBoundary": "Es un resumen de respuestas, no un diagnóstico, escala de gravedad ni comparación poblacional."
   }
 }

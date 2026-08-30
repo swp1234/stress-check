@@ -19,8 +19,8 @@
     "retry": "🔄 Nochmal versuchen",
     "share": "📤 Teilen",
     "saveImage": "📥 Bild speichern",
-    "unlockPremium": "🗓️ Meinen 7-Tage-Stress-Reset-Plan erstellen",
-    "close": "Schließen"
+    "close": "Schließen",
+    "actionPlan": "Meinen 7-Tage-Plan öffnen"
   },
   "questions": {
     "workStudy": "Arbeit/Studium",
@@ -59,10 +59,8 @@
     "stressLevel": "Stressniveau",
     "categoryAnalysis": "Kategorieanalyse",
     "reliefTips": "Entspannungstipps",
-    "aiAnalysis": "AI-Tiefenanalyse",
     "recommendedApps": "Empfohlene Apps",
-    "moreTests": "Mehr Tests entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer haben dein Stressprofil"
+    "moreTests": "Mehr Tests entdecken"
   },
   "categories": {
     "workStudy": "Arbeit/Studium",
@@ -133,13 +131,6 @@
       "Tägliche Atemübungen"
     ]
   },
-  "analysis": {
-    "veryLow": "Ihre Stressbewältigungsfähigkeit ist hervorragend. Bewahren Sie diesen Zustand.",
-    "low": "Ihr Stressniveau ist beherrschbar. Verwenden Sie positive Strategien.",
-    "moderate": "Stress sammelt sich in bestimmten Bereichen an. Finden Sie Lösungen.",
-    "high": "Sie erleben erheblichen Stress. Suchen Sie professionelle Hilfe.",
-    "veryHigh": "Ihr Stressniveau ist kritisch. Suchen Sie Hilfe von einem Spezialisten."
-  },
   "apps": {
     "detoxTimer": "Digital-Detox-Timer",
     "detoxTimerDesc": "Verwalten Sie Ihre Bildschirmzeit",
@@ -150,9 +141,7 @@
     "meditationGuide": "Meditationsleitfaden",
     "meditationGuideDesc": "Finden Sie inneren Frieden"
   },
-  "ad": {
-    "watchVideo": "Video ansehen, um AI-Analyse freizuschalten!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "In Zwischenablage kopiert!",
     "questionLoading": "Frage wird geladen..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Gesundheit",
     "cat_relations": "👥 Beziehungen",
     "cat_finance": "💰 Finanzen",
-    "cat_daily": "🏠 Alltagsleben",
-    "socialProof": "4.800 Menschen fanden Wege, Stress zu reduzieren ✅"
+    "cat_daily": "🏠 Alltagsleben"
   },
   "ads": {
     "loading": "Werbung lädt..."
@@ -185,14 +173,9 @@
     "anxietyType": "Angsttyp",
     "eqTest": "EQ-Test"
   },
-  "seo": {
-    "understandingTitle": "Verstehen Sie Ihr Stresslevel",
-    "understandingText": "Stress ist die natürliche Reaktion des Körpers auf Herausforderungen und Anforderungen. Kurzfristiger Stress kann Fokus und Leistung steigern, aber chronischer Stress beeinträchtigt die körperliche Gesundheit, das psychische Wohlbefinden und die tägliche Produktivität. Diese kostenlose Stress-Selbsteinschätzung misst Ihren wahrgenommenen Stress in 5 Lebensbereichen: Arbeit/Studium, Beziehungen, Gesundheit, Finanzen und Alltag. Indem Sie erkennen, welche Bereiche die größte Anspannung verursachen, können Sie gezielte Maßnahmen ergreifen, um das Gleichgewicht wiederherzustellen.",
-    "tipsTitle": "Tipps zur Stressbewältigung",
-    "tip1": "Treiben Sie regelmäßig Sport -- schon ein 20-minütiger Spaziergang kann den Cortisolspiegel senken und die Stimmung verbessern.",
-    "tip2": "Praktizieren Sie täglich 5-10 Minuten tiefes Atmen oder Meditation, um Ihre Entspannungsreaktion zu aktivieren.",
-    "tip3": "Priorisieren Sie den Schlaf -- streben Sie jede Nacht 7-8 Stunden qualitativen Schlaf an.",
-    "tip4": "Setzen Sie gesunde Grenzen bei der Arbeit und in Beziehungen, um Burnout vorzubeugen.",
-    "tip5": "Sprechen Sie mit jemandem, dem Sie vertrauen, oder suchen Sie professionelle Beratung, wenn Stress überwältigend wird."
+  "trust": {
+    "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",
+    "boundary": "Sie diagnostiziert oder behandelt nicht. Antworten bleiben auf dieser Seite und werden nicht an Analysen gesendet. Bei starker, anhaltender oder alltagsbeeinträchtigender Belastung oder fehlender Sicherheit wenden Sie sich an Fachpersonal oder lokale Notdienste.",
+    "resultBoundary": "Dies ist eine Antwortzusammenfassung, keine Diagnose, Schweregradskala oder Bevölkerungsvergleich."
   }
 }

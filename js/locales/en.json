@@ -19,8 +19,8 @@
     "retry": "🔄 Try Again",
     "share": "📤 Share",
     "saveImage": "📥 Save Image",
-    "unlockPremium": "🗓️ Build My 7-Day Stress Reset Plan",
-    "close": "Close"
+    "close": "Close",
+    "actionPlan": "Open my 7-day reset plan"
   },
   "questions": {
     "workStudy": "Work/Study",
@@ -59,10 +59,8 @@
     "stressLevel": "Stress Level",
     "categoryAnalysis": "Category Analysis",
     "reliefTips": "Stress Relief Tips",
-    "aiAnalysis": "AI Deep Analysis",
     "recommendedApps": "Recommended Apps",
-    "moreTests": "Explore More Tests",
-    "percentileStat": "Only <strong>{percent}%</strong> of participants have your stress profile"
+    "moreTests": "Explore More Tests"
   },
   "categories": {
     "workStudy": "Work/Study",
@@ -133,13 +131,6 @@
       "Practice deep breathing and progressive muscle relaxation daily"
     ]
   },
-  "analysis": {
-    "veryLow": "Your stress management ability is excellent and your daily adaptation is outstanding. Since you're maintaining a stable state, it's important to continue this. Also consider sharing your current stress management methods (exercise, meditation, hobbies) with others.",
-    "low": "Your stress level is within manageable range and you're using positive coping strategies. Maintain your current lifestyle while developing the habit of sensitively detecting and quickly responding to early stress signals.",
-    "moderate": "Stress is currently accumulating in specific areas (work/study, relationships, health, finance, daily life). Refer to the category analysis to systematically address the highest stress factor first. Lifestyle improvements and professional advice will be helpful.",
-    "high": "You're currently experiencing considerable stress. Watch for physical and emotional symptoms. Immediately identify and plan to remove or reduce stress causes. Seeking professional counseling is recommended to develop personalized coping strategies.",
-    "veryHigh": "Your stress level is critical. This level of stress can negatively impact your physical and mental health. Strongly recommend immediate visit to a mental health professional (psychiatry clinic, psychological counseling). Also inform those around you of your situation and ask for support."
-  },
   "apps": {
     "detoxTimer": "Digital Detox Timer",
     "detoxTimerDesc": "Manage your smartphone usage time",
@@ -150,9 +141,7 @@
     "meditationGuide": "Meditation Guide",
     "meditationGuideDesc": "Find inner peace through guided meditation"
   },
-  "ad": {
-    "watchVideo": "Watch a video to unlock AI analysis!"
-  },
+  "ad": {},
   "message": {
     "copiedToClipboard": "Copied to clipboard!",
     "questionLoading": "Loading question..."
@@ -162,8 +151,7 @@
     "cat_health": "🏥 Health",
     "cat_relations": "👥 Relationships",
     "cat_finance": "💰 Finance",
-    "cat_daily": "🏠 Daily Life",
-    "socialProof": "4,800+ people found ways to reduce stress ✅"
+    "cat_daily": "🏠 Daily Life"
   },
   "ads": {
     "loading": "Loading ad..."
@@ -185,14 +173,9 @@
     "anxietyType": "Anxiety Type",
     "eqTest": "EQ Test"
   },
-  "seo": {
-    "understandingTitle": "Understanding Your Stress Level",
-    "understandingText": "Stress is your body's natural response to challenges and demands. While short-term stress can boost focus and performance, chronic stress affects your physical health, mental well-being, and daily productivity. This free stress self-assessment measures your perceived stress across 5 key life areas: work/study, relationships, health, finance, and daily life. By identifying which areas cause the most tension, you can take targeted action to restore balance.",
-    "tipsTitle": "Tips to Manage Stress",
-    "tip1": "Exercise regularly -- even a 20-minute walk can lower cortisol levels and improve mood.",
-    "tip2": "Practice deep breathing or meditation for 5-10 minutes daily to activate your relaxation response.",
-    "tip3": "Prioritize sleep -- aim for 7-8 hours of quality rest each night.",
-    "tip4": "Set healthy boundaries at work and in relationships to prevent burnout.",
-    "tip5": "Talk to someone you trust or seek professional counseling when stress feels overwhelming."
+  "trust": {
+    "rule": "This reflection adds 15 answers using a fixed rule and shows five category averages. The bands are DopaBrain display bands, not a validated clinical scale or population comparison.",
+    "boundary": "It cannot diagnose or treat a condition. Answers stay on this page and are not sent to analytics. If distress is severe, persistent, affects daily functioning, or you feel unsafe, contact a qualified professional or local emergency service.",
+    "resultBoundary": "This is an answer summary, not a diagnosis, severity scale, or population comparison."
   }
 }

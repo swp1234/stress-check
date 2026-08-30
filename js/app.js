@@ -5,6 +5,9 @@ class StressCheckApp {
         this.totalScore = 0;
         this.categoryScores = {};
         this.stressLevel = null;
+        this.entrySurface = this.getAutoStartSurface() || 'direct';
+        this.entryMode = this.entrySurface === 'direct' ? 'manual' : 'linked';
+        this.completionTracked = false;
         this.init();
     }
 
@@ -17,26 +20,36 @@ class StressCheckApp {
             this.setupEventListeners();
             this.hideLoader();
             document.getElementById('intro-screen').classList.add('active');
-            this.track('stress_intro_view', { surface: 'intro_screen' });
+            this.track('stress_intro_view', { surface: 'intro_screen', entry_mode: this.entryMode, cta_surface: this.entrySurface });
             this.observeIntroCta();
-            this.observeAdSurfaces();
+            if (this.entryMode === 'linked') setTimeout(() => this.startTest(this.entrySurface, 'linked'), 80);
         }
+    }
+
+    getUrlParam(name) {
+        try { return new URLSearchParams(window.location.search || '').get(name) || ''; }
+        catch (error) { return ''; }
+    }
+
+    getAutoStartSurface() {
+        if (this.getUrlParam('start') !== '1') return '';
+        const surface = this.getUrlParam('surface');
+        return /^zh_cognitive_distortion_(primary|quick)$/.test(surface) ? surface : '';
     }
 
     setupEventListeners() {
         // Start button
-        document.getElementById('btn-start').addEventListener('click', () => this.startTest());
+        document.getElementById('btn-start').addEventListener('click', () => this.startTest('intro_primary_cta', 'manual'));
 
         // Option buttons
         document.getElementById('q-options').addEventListener('click', (e) => {
-            if (e.target.classList.contains('option-btn')) {
-                this.selectAnswer(e.target);
-            }
+            const button = e.target.closest('.option-btn');
+            if (button) this.selectAnswer(button);
         });
 
         // Action buttons
         document.getElementById('btn-retry').addEventListener('click', () => this.retryTest());
-        document.getElementById('btn-premium-unlock').addEventListener('click', () => this.openActionPlan());
+        document.getElementById('btn-action-plan').addEventListener('click', () => this.openActionPlan());
         document.getElementById('btn-share').addEventListener('click', () => this.shareResult());
         document.getElementById('btn-save-image').addEventListener('click', () => this.saveResultImage());
 
@@ -74,7 +87,7 @@ class StressCheckApp {
         const sendView = () => {
             if (startButton.dataset.viewTracked === '1') return;
             startButton.dataset.viewTracked = '1';
-            this.track('stress_intro_cta_view', { surface: 'intro_primary_cta' });
+            this.track('stress_intro_cta_view', { surface: 'intro_primary_cta', entry_mode: this.entryMode, cta_surface: this.entrySurface });
         };
 
         if ('IntersectionObserver' in window) {
@@ -90,20 +103,15 @@ class StressCheckApp {
         }
     }
 
-    trackAdSurface(adBanner) {
-        // Auto Ads owns paid-impression measurement.
-    }
-
-    observeAdSurfaces() {
-        // Auto Ads owns placement and paid-impression measurement.
-    }
-
-    startTest() {
-        this.track('stress_intro_start_click', { surface: 'intro_primary_cta' });
-        this.track('test_start', { content_type: 'test' });
+    startTest(ctaSurface = 'intro_primary_cta', entryMode = 'manual') {
+        this.entryMode = entryMode;
+        this.entrySurface = ctaSurface;
+        this.track('stress_intro_start_click', { surface: ctaSurface, entry_mode: entryMode, cta_surface: ctaSurface });
+        this.track('test_start', { content_type: 'reflection', entry_mode: entryMode, cta_surface: ctaSurface });
         this.currentQuestion = 0;
         this.answers = {};
         this.totalScore = 0;
+        this.completionTracked = false;
         this.showScreen('question-screen');
         this.loadQuestion();
     }
@@ -177,11 +185,7 @@ class StressCheckApp {
 
     finishTest() {
         this.calculateResults();
-        this.showLoading();
-
-        setTimeout(() => {
-            this.displayResults();
-        }, 2000);
+        this.displayResults();
     }
 
     calculateResults() {
@@ -193,15 +197,9 @@ class StressCheckApp {
     displayResults() {
         this.showScreen('result-screen');
 
-        // GA4: 테스트 완료
-        if (typeof gtag === 'function') {
-            const percentage = Math.round(((this.totalScore - 15) / (75 - 15)) * 100);
-            gtag('event', 'test_complete', {
-                app_name: 'stress-check',
-                result_type: this.stressLevel.level,
-                score: this.totalScore,
-                percentage: percentage
-            });
+        if (!this.completionTracked) {
+            this.completionTracked = true;
+            this.track('test_complete', { content_type: 'reflection', entry_mode: this.entryMode, cta_surface: this.entrySurface });
         }
 
         // Update gauge
@@ -299,46 +297,32 @@ class StressCheckApp {
     openActionPlan() {
         if (!this.stressLevel) return;
 
-        const focus = Object.entries(this.categoryScores)
-            .sort((left, right) => right[1] - left[1])[0]?.[0] || 'daily';
         const language = i18n.getCurrentLanguage();
         const target = new URL('plan.html', window.location.href);
         target.searchParams.set('lang', language);
-        target.searchParams.set('focus', focus);
-        target.searchParams.set('level', this.stressLevel.level);
         target.searchParams.set('source', 'stress_result');
 
-        this.track('stress_plan_click', {
-            surface: 'result_primary_action',
-            plan_focus: focus,
-            result_type: this.stressLevel.level
-        });
+        this.track('stress_plan_click', { surface: 'result_primary_action' });
         window.location.href = target.toString();
     }
 
-    shareResult() {
+    async shareResult() {
         const levelName = i18n.t(this.stressLevel.title);
         const shareTemplate = window.i18n?.t('share.text') || 'My stress level: {level} ({percent}%)';
         const text = shareTemplate.replace('{level}', levelName).replace('{percent}', Math.round(((this.totalScore - 15) / (75 - 15)) * 100));
         const url = 'https://dopabrain.com/stress-check/';
 
-        // GA4: 공유
-        if (typeof gtag === 'function') {
-            gtag('event', 'share', {
-                method: navigator.share ? 'native' : 'clipboard',
-                app_name: 'stress-check',
-                content_type: 'test_result'
-            });
-        }
-
         if (navigator.share) {
-            navigator.share({
-                title: i18n.t('app.title'),
-                text: text,
-                url: url
-            }).catch(() => {});
+            try {
+                await navigator.share({ title: i18n.t('app.title'), text, url });
+                this.track('share', { method: 'native', content_type: 'reflection' });
+            } catch (error) {}
         } else {
-            this.copyToClipboard(`${text}\n${url}`);
+            try {
+                await navigator.clipboard.writeText(`${text}\n${url}`);
+                alert(i18n.t('message.copiedToClipboard'));
+                this.track('share', { method: 'clipboard', content_type: 'reflection' });
+            } catch (error) {}
         }
     }
 
@@ -420,13 +404,6 @@ class StressCheckApp {
     showScreen(screenId) {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById(screenId).classList.add('active');
-        const topAd = document.getElementById('top-ad');
-        if (topAd) {
-            topAd.style.display = screenId === 'result-screen' ? 'block' : 'none';
-            if (screenId === 'result-screen') {
-                this.trackAdSurface(topAd);
-            }
-        }
         window.scrollTo(0, 0);
     }
 
