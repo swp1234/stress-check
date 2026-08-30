@@ -34,7 +34,8 @@ class StressCheckApp {
     getAutoStartSurface() {
         if (this.getUrlParam('start') !== '1') return '';
         const surface = this.getUrlParam('surface');
-        return /^zh_cognitive_distortion_(primary|quick)$/.test(surface) ? surface : '';
+        if (/^zh_cognitive_distortion_(primary|quick)$/.test(surface)) return surface;
+        return /^fr_cognitive_distortion_(primary|quick)$/.test(surface) ? surface : '';
     }
 
     setupEventListeners() {
