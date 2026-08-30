@@ -299,15 +299,6 @@
         document.getElementById('plan-link').addEventListener('click', () => track('boundary_script_plan_click'));
         document.getElementById('library-link').addEventListener('click', () => track('boundary_script_library_click'));
         document.getElementById('back-link').addEventListener('click', () => track('boundary_script_plan_click', { link_surface: 'header' }));
-        const ad = document.querySelector('[data-ad-surface]');
-        if (ad && 'IntersectionObserver' in window) {
-            const observer = new IntersectionObserver(entries => {
-                if (!entries.some(entry => entry.isIntersecting)) return;
-                track('boundary_script_ad_impression', { ad_surface: ad.dataset.adSurface });
-                observer.disconnect();
-            }, { threshold: 0.2 });
-            observer.observe(ad);
-        }
         track('boundary_script_view');
         if (query.get('example') === '1') {
             track('boundary_script_template_load', { template_context: context });

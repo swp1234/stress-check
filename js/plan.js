@@ -278,15 +278,6 @@
             track('stress_plan_script_click', { destination: document.getElementById('script-builder-link').href });
         });
 
-        const ad = document.querySelector('[data-ad-surface]');
-        if (ad && 'IntersectionObserver' in window) {
-            const observer = new IntersectionObserver(entries => {
-                if (!entries.some(entry => entry.isIntersecting)) return;
-                track('stress_plan_ad_impression', { ad_surface: ad.dataset.adSurface });
-                observer.disconnect();
-            }, { threshold: 0.2 });
-            observer.observe(ad);
-        }
         track('stress_plan_view', { entry_source: query.get('source') || 'direct' });
     }
 

@@ -91,31 +91,11 @@ class StressCheckApp {
     }
 
     trackAdSurface(adBanner) {
-        if (!adBanner || adBanner.dataset.trackedImpression === '1') return;
-        const slot = adBanner.querySelector('.adsbygoogle');
-        adBanner.dataset.trackedImpression = '1';
-        this.track('stress_ad_impression', {
-            ad_surface: adBanner.dataset.adSurface || 'stress_ad',
-            ad_slot: slot ? slot.getAttribute('data-ad-slot') || 'unknown' : 'missing'
-        });
+        // Auto Ads owns paid-impression measurement.
     }
 
     observeAdSurfaces() {
-        document.querySelectorAll('.ad-banner[data-ad-surface]').forEach(adBanner => {
-            if (window.getComputedStyle(adBanner).display === 'none') return;
-
-            if ('IntersectionObserver' in window) {
-                const observer = new IntersectionObserver(entries => {
-                    if (entries.some(entry => entry.isIntersecting)) {
-                        this.trackAdSurface(adBanner);
-                        observer.disconnect();
-                    }
-                }, { threshold: 0.2 });
-                observer.observe(adBanner);
-            } else {
-                this.trackAdSurface(adBanner);
-            }
-        });
+        // Auto Ads owns placement and paid-impression measurement.
     }
 
     startTest() {

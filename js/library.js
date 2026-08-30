@@ -316,15 +316,6 @@
         document.getElementById('builder-back-link').addEventListener('click', () => track('boundary_library_builder_click', { link_surface: 'header' }));
         document.getElementById('builder-link').addEventListener('click', () => track('boundary_library_builder_click', { link_surface: 'footer' }));
         document.getElementById('plan-link').addEventListener('click', () => track('boundary_library_plan_click'));
-        const ad = document.querySelector('[data-ad-surface]');
-        if (ad && 'IntersectionObserver' in window) {
-            const observer = new IntersectionObserver(entries => {
-                if (!entries.some(entry => entry.isIntersecting)) return;
-                track('boundary_library_ad_impression', { ad_surface: ad.dataset.adSurface });
-                observer.disconnect();
-            }, { threshold: 0.2 });
-            observer.observe(ad);
-        }
         track('boundary_library_view');
     }
 
