@@ -35,7 +35,8 @@ class StressCheckApp {
         if (this.getUrlParam('start') !== '1') return '';
         const surface = this.getUrlParam('surface');
         if (/^zh_cognitive_distortion_(primary|quick)$/.test(surface)) return surface;
-        return /^fr_cognitive_distortion_(primary|quick)$/.test(surface) ? surface : '';
+        if (/^fr_cognitive_distortion_(primary|quick)$/.test(surface)) return surface;
+        return /^es_cognitive_distortion_(primary|quick)$/.test(surface) ? surface : '';
     }
 
     setupEventListeners() {
