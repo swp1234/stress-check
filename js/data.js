@@ -147,45 +147,6 @@ const STRESS_LEVELS = [
     }
 ];
 
-const RECOMMENDED_APPS = [
-    {
-        name: 'emotion-temp',
-        icon: '🌡️',
-        label: 'apps.emotionTemp',
-        description: 'apps.emotionTempDesc'
-    },
-    {
-        name: 'affirmation',
-        icon: '💝',
-        label: 'apps.affirmation',
-        description: 'apps.affirmationDesc'
-    },
-    {
-        name: 'detox-timer',
-        icon: '📵',
-        label: 'apps.detoxTimer',
-        description: 'apps.detoxTimerDesc'
-    },
-    {
-        name: 'white-noise',
-        icon: '🎵',
-        label: 'apps.whiteNoise',
-        description: 'apps.whiteNoiseDesc'
-    },
-    {
-        name: 'color-personality',
-        icon: '🎨',
-        label: 'apps.colorPersonality',
-        description: 'apps.colorPersonalityDesc'
-    },
-    {
-        name: 'future-self',
-        icon: '🔮',
-        label: 'apps.futureSelf',
-        description: 'apps.futureSelfDesc'
-    }
-];
-
 // Helper functions
 function calculateStressLevel(totalScore) {
     for (const level of STRESS_LEVELS) {

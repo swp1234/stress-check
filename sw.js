@@ -1,4 +1,5 @@
-const CACHE_NAME = 'stress-check-v5';
+const CACHE_NAME = 'stress-check-v6';
+const SCOPE = '/stress-check/';
 const urlsToCache = [
     './',
     './index.html',
@@ -55,10 +56,14 @@ self.addEventListener('activate', event => {
 });
 
 self.addEventListener('fetch', e => {
+    const url = new URL(e.request.url);
+    if (e.request.method !== 'GET' || url.origin !== self.location.origin || !url.pathname.startsWith(SCOPE)) return;
     e.respondWith(
         fetch(e.request).then(r => {
-            const c = r.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(e.request, c));
+            if (r.ok) {
+                const c = r.clone();
+                caches.open(CACHE_NAME).then(cache => cache.put(e.request, c));
+            }
             return r;
         }).catch(() => caches.match(e.request))
     );

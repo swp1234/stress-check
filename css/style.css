@@ -704,6 +704,25 @@ body {
 
 .btn-action-plan:active { transform: scale(0.98); }
 
+.result-primary-action {
+    max-width: 520px;
+    margin: 24px auto 30px;
+    padding: 18px;
+    border: 1px solid rgba(0, 184, 148, 0.42);
+    border-radius: 16px;
+    background: rgba(0, 184, 148, 0.09);
+}
+
+.result-primary-action .btn-action-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 52px;
+    margin: 0;
+    text-decoration: none;
+}
+
 /* Action buttons */
 .action-buttons {
     display: flex;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" data-stress-check-contract="2026-08-30">
+<html lang="ko" data-stress-check-contract="2026-09-03">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,19 @@
     <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 
     <title data-i18n="app.title">Free Online Stress Test - Check Your Stress Level in 3 Minutes | DopaBrain</title>
+    <script>
+        (() => {
+            const languages = new Set(['ko','en','zh','hi','ru','ja','es','pt','id','tr','de','fr']);
+            const surfaces = new Set(['zh_cognitive_distortion_primary','zh_cognitive_distortion_quick','fr_cognitive_distortion_primary','fr_cognitive_distortion_quick','es_cognitive_distortion_primary','es_cognitive_distortion_quick']);
+            const sources = new Set(['doomscroll_guide_primary','doomscroll_guide_quick','doomscroll_guide_footer']);
+            const incoming = new URL(location.href), clean = new URL(location.pathname, location.origin);
+            const lang = incoming.searchParams.get('lang'), surface = incoming.searchParams.get('surface'), source = incoming.searchParams.get('source');
+            if (languages.has(lang)) clean.searchParams.set('lang', lang);
+            if (sources.has(source)) clean.searchParams.set('source', source);
+            if (incoming.searchParams.get('start') === '1' && surfaces.has(surface)) { clean.searchParams.set('start','1'); clean.searchParams.set('surface',surface); }
+            history.replaceState({}, '', clean.pathname + clean.search);
+        })();
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
     <meta name="description" data-i18n="app.description" content="Take this free online stress test to check your stress level. 15 self-assessment questions, instant results & personalized tips. Start now!">
     <meta name="keywords" content="stress test, stress test free, stress level test, online stress test, am I stressed, test my stress level, stress self-assessment, stress check, stress quiz free, free stress test online, burnout stress test, work stress test, anxiety stress test, mental health stress quiz, how stressed am I, stress score, psychological stress test, stress assessment tool, stress meter, daily stress check">
@@ -85,8 +98,8 @@
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
         },
-        "featureList": "15-question reflection, visible scoring rule, category summary, local action plan, result image saving, social sharing",
-        "dateModified": "2026-08-30"
+        "featureList": "15-question reflection, visible scoring rule, category summary, private seven-day action plan",
+        "dateModified": "2026-09-03"
     }
     </script>
 
@@ -234,21 +247,15 @@
         <div class="screen result-screen" id="result-screen">
             <h2 class="result-title" data-i18n="result.title">당신의 스트레스 레벨</h2>
 
-            <!-- Stress Level Gauge -->
-            <div class="gauge-area">
-                <div id="gauge-fill" class="gauge-ring">
-                    <div class="gauge-inner">
-                        <div class="gauge-percent">0%</div>
-                        <div class="gauge-label" data-i18n="result.stressLevel">스트레스 레벨</div>
-                    </div>
-                </div>
-            </div>
-
             <div class="result-emoji" id="result-emoji">😰</div>
             <div class="result-level-title" id="result-level-title">보통</div>
             <div class="result-level-subtitle" id="result-level-subtitle">스트레스 설명</div>
             <div class="result-desc" id="result-desc">스트레스 분석 결과</div>
             <p class="about-test-note" data-i18n="trust.resultBoundary">This is an answer summary, not a diagnosis, severity scale, or population comparison.</p>
+
+            <div class="result-primary-action" id="result-primary-action">
+                <a class="btn-action-plan" id="btn-action-plan" href="plan.html?lang=en&amp;source=stress_result" data-i18n="button.actionPlan">Build my private 7-day plan</a>
+            </div>
 
             <!-- Category Analysis -->
             <div class="detail-section">
@@ -262,15 +269,8 @@
                 <ul id="relief-tips-list"></ul>
             </div>
 
-            <!-- Personalized action-plan content -->
-            <button class="btn-action-plan" id="btn-action-plan" data-i18n="button.actionPlan">🗓️ 나의 7일 스트레스 리셋 플랜 만들기</button>
-
             <!-- Action Buttons -->
             <div class="action-buttons">
-                <!-- Canvas for image generation -->
-                <canvas id="result-canvas" width="1080" height="1080" style="display:none;"></canvas>
-                <button class="btn-save-image" id="btn-save-image" data-i18n="button.saveImage">📥 이미지 저장</button>
-                <button class="btn-share" id="btn-share" data-i18n="button.share">📤 공유</button>
                 <button class="btn-retry" id="btn-retry" data-i18n="button.retry">🔄 다시하기</button>
             </div>
 
@@ -282,56 +282,13 @@
                   <span class="related-emoji">🧠</span>
                   <span class="related-name" data-i18n="related.hspTest">HSP Test</span>
                 </a>
-                <a href="/emotion-iceberg/" class="related-card" style="--card-color: #2E86AB">
-                  <span class="related-emoji">🧊</span>
-                  <span class="related-name" data-i18n="related.emotionIceberg">Emotion Iceberg</span>
-                </a>
-                <a href="/emotion-temp/" class="related-card" style="--card-color: #e74c3c">
-                  <span class="related-emoji">🌡️</span>
-                  <span class="related-name" data-i18n="related.emotionTemp">Emotion Temperature</span>
-                </a>
-                <a href="/social-battery/" class="related-card" style="--card-color: #2ecc71">
-                  <span class="related-emoji">🔋</span>
-                  <span class="related-name" data-i18n="related.socialBattery">Social Battery</span>
-                </a>
-                <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
-                  <span class="related-emoji">&#9889;</span>
-                  <span class="related-name">Dopamine Type</span>
-                </a>
-                <a href="/burnout-test/" class="related-card" style="--card-color: #ef4444">
-                  <span class="related-emoji">&#128293;</span>
-                  <span class="related-name">Burnout Test</span>
-                </a>
                 <a href="/stress-response/" class="related-card" style="--card-color: #6366f1">
                   <span class="related-emoji">&#9889;</span>
                   <span class="related-name" data-i18n="related.stressResponse">Stress Response</span>
                 </a>
-                <a href="/anxiety-type/" class="related-card" style="--card-color: #10b981">
-                  <span class="related-emoji">&#127744;</span>
-                  <span class="related-name" data-i18n="related.anxietyType">Anxiety Type</span>
-                </a>
-                <a href="/eq-test/" class="related-card" style="--card-color: #00bcd4">
-                  <span class="related-emoji">&#x1F9E0;</span>
-                  <span class="related-name" data-i18n="related.eqTest">EQ Test</span>
-                </a>
               </div>
             </div>
 
-            <div class="seo-links" style="max-width:480px;margin:20px auto;padding:16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:12px;">
-              <h3 style="font-size:15px;color:var(--text-secondary,#a0a0b8);margin-bottom:10px;">Stress Resources</h3>
-              <ul style="list-style:none;padding:0;margin:0;font-size:14px;">
-                <li style="margin-bottom:8px;"><a href="/portal/blog/en/stress-management-techniques-guide.html" style="color:var(--primary-light,#a78bfa);text-decoration:none;">10 Stress Management Techniques That Actually Work</a></li>
-                <li style="margin-bottom:8px;"><a href="/portal/blog/en/how-stressed-are-you-test.html" style="color:var(--primary-light,#a78bfa);text-decoration:none;">How Stressed Are You? Complete Guide</a></li>
-                <li style="margin-bottom:8px;"><a href="/portal/blog/stress-relief-tools-2026.html" style="color:var(--primary-light,#a78bfa);text-decoration:none;">Top Stress Relief Tools & Techniques</a></li>
-                <li><a href="/portal/tests/" style="color:var(--primary-light,#a78bfa);text-decoration:none;">Browse All Wellness Tests</a></li>
-              </ul>
-            </div>
-
-            <!-- Recommendations -->
-            <div class="recommendations-section">
-                <div class="rec-title" data-i18n="result.recommendations">Recommended Apps</div>
-                <div class="rec-grid" id="rec-grid"></div>
-            </div>
         </div>
 
     </div>
@@ -348,6 +305,5 @@
     <script src="js/data.js" defer></script>
     <script src="js/app.js" defer></script>
 
-    <script src="/portal/js/cross-promo.js" defer></script>
 </body>
 </html>

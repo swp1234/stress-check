@@ -8,6 +8,9 @@ class StressCheckApp {
         this.entrySurface = this.getAutoStartSurface() || 'direct';
         this.entryMode = this.entrySurface === 'direct' ? 'manual' : 'linked';
         this.completionTracked = false;
+        this.testRunning = false;
+        this.resultActionTracked = false;
+        this.planClickTracked = false;
         this.init();
     }
 
@@ -51,9 +54,7 @@ class StressCheckApp {
 
         // Action buttons
         document.getElementById('btn-retry').addEventListener('click', () => this.retryTest());
-        document.getElementById('btn-action-plan').addEventListener('click', () => this.openActionPlan());
-        document.getElementById('btn-share').addEventListener('click', () => this.shareResult());
-        document.getElementById('btn-save-image').addEventListener('click', () => this.saveResultImage());
+        document.getElementById('btn-action-plan').addEventListener('click', event => this.openActionPlan(event));
 
         // Language selector
         document.getElementById('lang-toggle').addEventListener('click', () => this.toggleLanguageMenu());
@@ -106,6 +107,8 @@ class StressCheckApp {
     }
 
     startTest(ctaSurface = 'intro_primary_cta', entryMode = 'manual') {
+        if (this.testRunning) return;
+        this.testRunning = true;
         this.entryMode = entryMode;
         this.entrySurface = ctaSurface;
         this.track('stress_intro_start_click', { surface: ctaSurface, entry_mode: entryMode, cta_surface: ctaSurface });
@@ -114,6 +117,8 @@ class StressCheckApp {
         this.answers = {};
         this.totalScore = 0;
         this.completionTracked = false;
+        this.resultActionTracked = false;
+        this.planClickTracked = false;
         this.showScreen('question-screen');
         this.loadQuestion();
     }
@@ -125,6 +130,7 @@ class StressCheckApp {
         const qOptions = document.getElementById('q-options');
 
         qText.textContent = i18n.t(question.text);
+        qText.setAttribute('tabindex', '-1');
         qCategory.textContent = i18n.t(question.categoryLabel);
 
         qOptions.innerHTML = '';
@@ -150,6 +156,7 @@ class StressCheckApp {
         });
 
         this.updateProgress();
+        qText.focus({ preventScroll: true });
     }
 
     getEmoji(value) {
@@ -198,19 +205,12 @@ class StressCheckApp {
 
     displayResults() {
         this.showScreen('result-screen');
+        this.testRunning = false;
 
         if (!this.completionTracked) {
             this.completionTracked = true;
             this.track('test_complete', { content_type: 'reflection', entry_mode: this.entryMode, cta_surface: this.entrySurface });
         }
-
-        // Update gauge
-        const percentage = Math.round(((this.totalScore - 15) / (75 - 15)) * 100);
-        const angle = (percentage / 100) * 360;
-
-        document.getElementById('gauge-fill').style.background = `conic-gradient(${this.stressLevel.color} 0deg, ${this.stressLevel.color} ${angle}deg, rgba(255,255,255,0.08) ${angle}deg)`;
-        document.querySelector('.gauge-percent').textContent = percentage + '%';
-        document.querySelector('.gauge-label').textContent = i18n.t('result.stressLevel');
 
         // Result info
         document.getElementById('result-emoji').textContent = this.stressLevel.emoji;
@@ -224,8 +224,8 @@ class StressCheckApp {
         // Relief tips
         this.displayReliefTips();
 
-        // Recommendations
-        this.displayRecommendations();
+        this.updatePlanLink();
+        this.observeResultAction();
     }
 
     displayCategoryAnalysis() {
@@ -277,128 +277,40 @@ class StressCheckApp {
         }
     }
 
-    displayRecommendations() {
-        const recGrid = document.getElementById('rec-grid');
-        recGrid.innerHTML = '';
+    observeResultAction() {
+        const action = document.getElementById('result-primary-action');
+        if (!action || this.resultActionTracked) return;
+        let timer = 0;
+        const observer = new IntersectionObserver(entries => {
+            const visible = entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= 0.5);
+            clearTimeout(timer);
+            if (visible && !this.resultActionTracked) timer = setTimeout(() => {
+                this.resultActionTracked = true;
+                this.track('stress_result_action_view', { surface: 'result_primary_action' });
+                observer.disconnect();
+            }, 500);
+        }, { threshold: [0.5] });
+        observer.observe(action);
+    }
 
-        RECOMMENDED_APPS.forEach(app => {
-            const card = document.createElement('a');
-            card.className = 'rec-card';
-            card.href = `https://dopabrain.com/${app.name}/`;
-            card.innerHTML = `
-                <div class="rec-icon">${app.icon}</div>
-                <div class="rec-info">
-                    <div class="rec-name">${i18n.t(app.label)}</div>
-                    <div class="rec-desc">${i18n.t(app.description)}</div>
-                </div>
-            `;
-            recGrid.appendChild(card);
-        });
+    updatePlanLink() {
+        const target = new URL('plan.html', window.location.href);
+        target.searchParams.set('lang', i18n.getCurrentLanguage());
+        target.searchParams.set('source', 'stress_result');
+        document.getElementById('btn-action-plan').href = target.toString();
     }
 
     openActionPlan() {
         if (!this.stressLevel) return;
-
-        const language = i18n.getCurrentLanguage();
-        const target = new URL('plan.html', window.location.href);
-        target.searchParams.set('lang', language);
-        target.searchParams.set('source', 'stress_result');
-
-        this.track('stress_plan_click', { surface: 'result_primary_action' });
-        window.location.href = target.toString();
-    }
-
-    async shareResult() {
-        const levelName = i18n.t(this.stressLevel.title);
-        const shareTemplate = window.i18n?.t('share.text') || 'My stress level: {level} ({percent}%)';
-        const text = shareTemplate.replace('{level}', levelName).replace('{percent}', Math.round(((this.totalScore - 15) / (75 - 15)) * 100));
-        const url = 'https://dopabrain.com/stress-check/';
-
-        if (navigator.share) {
-            try {
-                await navigator.share({ title: i18n.t('app.title'), text, url });
-                this.track('share', { method: 'native', content_type: 'reflection' });
-            } catch (error) {}
-        } else {
-            try {
-                await navigator.clipboard.writeText(`${text}\n${url}`);
-                alert(i18n.t('message.copiedToClipboard'));
-                this.track('share', { method: 'clipboard', content_type: 'reflection' });
-            } catch (error) {}
+        this.updatePlanLink();
+        if (!this.planClickTracked) {
+            this.planClickTracked = true;
+            this.track('stress_plan_click', { surface: 'result_primary_action' });
         }
     }
 
-    saveResultImage() {
-        const canvas = document.createElement('canvas');
-        canvas.width = 512;
-        canvas.height = 768;
-
-        const ctx = canvas.getContext('2d');
-
-        // Background
-        const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-        gradient.addColorStop(0, '#0f0f23');
-        gradient.addColorStop(1, '#1a1a3a');
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-        // Title
-        ctx.fillStyle = '#fff';
-        ctx.font = 'bold 40px -apple-system, BlinkMacSystemFont, Segoe UI';
-        ctx.textAlign = 'center';
-        ctx.fillText(window.i18n?.t('canvas.title') || 'Stress Level Check', canvas.width / 2, 60);
-
-        // Emoji
-        ctx.font = '120px Arial';
-        ctx.fillText(this.stressLevel.emoji, canvas.width / 2, 200);
-
-        // Result
-        ctx.fillStyle = this.stressLevel.color;
-        ctx.font = 'bold 48px -apple-system, BlinkMacSystemFont, Segoe UI';
-        ctx.fillText(i18n.t(this.stressLevel.title), canvas.width / 2, 320);
-
-        // Percentage
-        ctx.fillStyle = '#fff';
-        ctx.font = 'bold 36px -apple-system, BlinkMacSystemFont, Segoe UI';
-        const percentage = Math.round(((this.totalScore - 15) / (75 - 15)) * 100);
-        ctx.fillText(`${percentage}%`, canvas.width / 2, 400);
-
-        // Date
-        ctx.fillStyle = '#a0a0b8';
-        ctx.font = '16px -apple-system, BlinkMacSystemFont, Segoe UI';
-        ctx.fillText(new Date().toLocaleDateString(), canvas.width / 2, 450);
-
-        // Footer
-        ctx.fillStyle = '#5a5a70';
-        ctx.font = '14px -apple-system, BlinkMacSystemFont, Segoe UI';
-        ctx.fillText('dopabrain.com/stress-check/', canvas.width / 2, canvas.height - 30);
-
-        // Download
-        canvas.toBlob(blob => {
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `stress-check-${new Date().toISOString().slice(0, 10)}.png`;
-            a.click();
-            URL.revokeObjectURL(url);
-
-            // GA4: 이미지 저장
-            if (typeof gtag === 'function') {
-                gtag('event', 'save_image', {
-                    app_name: 'stress-check',
-                    content_type: 'test_result'
-                });
-            }
-        });
-    }
-
-    copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(() => {
-            alert(i18n.t('message.copiedToClipboard'));
-        });
-    }
-
     retryTest() {
+        this.testRunning = false;
         this.showScreen('intro-screen');
         window.scrollTo(0, 0);
     }
