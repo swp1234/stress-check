@@ -71,6 +71,15 @@ class StressCheckApp {
             });
         }
 
+        // Related tests click telemetry
+        document.querySelectorAll('.related-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const targetPath = card.getAttribute('href') || '';
+                const key = targetPath.includes('hsp-test') ? 'hsp-test' : targetPath.includes('stress-response') ? 'stress-response' : 'other';
+                this.track('stress_related_click', { related_target: key, cta_surface: 'stress_result_related' });
+            });
+        });
+
         // Initialize Theme Toggle
         this.initTheme();
     }
@@ -294,10 +303,21 @@ class StressCheckApp {
     }
 
     updatePlanLink() {
+        const currentLang = i18n.getCurrentLanguage();
         const target = new URL('plan.html', window.location.href);
-        target.searchParams.set('lang', i18n.getCurrentLanguage());
+        target.searchParams.set('lang', currentLang);
         target.searchParams.set('source', 'stress_result');
         document.getElementById('btn-action-plan').href = target.toString();
+
+        document.querySelectorAll('.related-card').forEach(card => {
+            const rawHref = card.getAttribute('href');
+            if (rawHref && rawHref.startsWith('/')) {
+                const url = new URL(rawHref, window.location.origin);
+                url.searchParams.set('lang', currentLang);
+                url.searchParams.set('source', 'stress_result');
+                card.href = url.pathname + url.search;
+            }
+        });
     }
 
     openActionPlan() {

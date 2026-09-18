@@ -104,6 +104,34 @@
         de: 'Fehlen dir Worte für Tag 4? Grenze und Bitte formulieren →',
         fr: 'Besoin de mots pour le jour 4 ? Créez un script de limites →'
     };
+    const sensoryResetCta = {
+        en: 'Need a 5-minute sensory pause? Open the sensory reset card →',
+        ko: '5분간 감각 과부하를 비우고 싶다면? 감각 리셋 카드 열기 →',
+        zh: '需要5分钟感官暂停？打开感官重置卡片 →',
+        hi: '5 मिनट का संवेदी ठहराव चाहिए? सेंसरी रीसेट कार्ड खोलें →',
+        ru: 'Нужна 5-минутная пауза? Откройте карточку сенсорного сброса →',
+        ja: '5分間の感覚リセットが必要なら、リセットカードを開く →',
+        es: '¿Necesitas una pausa sensorial de 5 minutos? Abre la tarjeta de reinicio →',
+        pt: 'Precisa de uma pausa sensorial de 5 minutos? Abra o cartão de reset →',
+        id: 'Perlu jeda sensorik 5 menit? Buka kartu reset sensorik →',
+        tr: '5 dakikalık duyusal molaya mı ihtiyacın var? Sıfırlama kartını aç →',
+        de: 'Brauchst du 5 Minuten sensorische Pause? Sensorik-Reset-Karte öffnen →',
+        fr: 'Besoin d’une pause sensorielle de 5 minutes ? Ouvrez la carte de réinitialisation →'
+    };
+    const doomscrollCta = {
+        en: 'Stuck in bedtime screen scrolling? Read the doomscrolling guide →',
+        ko: '잠들기 전 끝없는 스크롤을 멈추고 싶다면? 둠스크롤링 탈출 가이드 →',
+        zh: '睡前停不下刷手机？阅读停止过度刷屏指南 →',
+        hi: 'सोने से पहले स्क्रीन स्क्रॉलिंग में फंसे हैं? डूमस्क्रॉलिंग गाइड पढ़ें →',
+        ru: 'Зависли в ночном скроллинге экрана? Читайте гид по думскроллингу →',
+        ja: '就寝前の画面スクロールが止まらないなら、ドゥームスクロール対策ガイドへ →',
+        es: '¿Atrapado en el scroll antes de dormir? Lee la guía contra el doomscrolling →',
+        pt: 'Preso na rolagem de tela antes de dormir? Leia o guia contra o doomscrolling →',
+        id: 'Terjebak scrolling layar sebelum tidur? Baca panduan doomscrolling →',
+        tr: 'Uyumadan önce ekranda kayboluyor musun? Doomscrolling rehberini oku →',
+        de: 'Im nächtlichen Bildschirm-Scrollen gefangen? Doomscrolling-Guide lesen →',
+        fr: 'Bloqué dans le défilement nocturne ? Lisez le guide sur le doomscrolling →'
+    };
     const focusKeys = ['work', 'relationship', 'health', 'finance', 'daily'];
     const levelKeys = ['veryLow', 'low', 'moderate', 'high', 'veryHigh'];
     let focus = focusKeys.includes(query.get('focus')) ? query.get('focus') : 'daily';
@@ -142,6 +170,16 @@
         const scriptLink = document.getElementById('script-builder-link');
         scriptLink.textContent = scriptCta[language] || scriptCta.en;
         scriptLink.href = `script.html?lang=${language}&context=${focus === 'work' || focus === 'relationship' ? focus : 'family'}&tone=clear&source=stress_plan`;
+        const sensoryResetLink = document.getElementById('sensory-reset-link');
+        if (sensoryResetLink) {
+            sensoryResetLink.textContent = sensoryResetCta[language] || sensoryResetCta.en;
+            sensoryResetLink.href = `/hsp-test/reset.html?lang=${language}&source=stress_plan`;
+        }
+        const doomscrollLink = document.getElementById('doomscroll-guide-link');
+        if (doomscrollLink) {
+            doomscrollLink.textContent = doomscrollCta[language] || doomscrollCta.en;
+            doomscrollLink.href = `/portal/blog/${language}/doom-scrolling-mental-health-effects.html`;
+        }
     }
 
     function fillSelects() {
@@ -277,6 +315,18 @@
         document.getElementById('script-builder-link').addEventListener('click', () => {
             track('stress_plan_script_click', { destination: document.getElementById('script-builder-link').href });
         });
+        const sensoryResetLink = document.getElementById('sensory-reset-link');
+        if (sensoryResetLink) {
+            sensoryResetLink.addEventListener('click', () => {
+                track('stress_plan_sensory_reset_click', { destination: sensoryResetLink.href });
+            });
+        }
+        const doomscrollLink = document.getElementById('doomscroll-guide-link');
+        if (doomscrollLink) {
+            doomscrollLink.addEventListener('click', () => {
+                track('stress_plan_doomscroll_click', { destination: doomscrollLink.href });
+            });
+        }
 
         track('stress_plan_view', { entry_source: query.get('source') || 'direct' });
     }
