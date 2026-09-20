@@ -171,7 +171,8 @@
     "socialBattery": "Baterai Sosial",
     "stressResponse": "Respons Stres",
     "anxietyType": "Tipe Kecemasan",
-    "eqTest": "Tes EQ"
+    "eqTest": "Tes EQ",
+    "futureSelf": "Tes Diri Masa Depan"
   },
   "trust": {
     "rule": "Refleksi ini menjumlahkan 15 jawaban dengan aturan tetap dan menampilkan lima rata-rata. Rentang hanya untuk tampilan DopaBrain, bukan skala klinis tervalidasi atau perbandingan populasi.",

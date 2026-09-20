@@ -75,7 +75,7 @@ class StressCheckApp {
         document.querySelectorAll('.related-card').forEach(card => {
             card.addEventListener('click', () => {
                 const targetPath = card.getAttribute('href') || '';
-                const key = targetPath.includes('hsp-test') ? 'hsp-test' : targetPath.includes('stress-response') ? 'stress-response' : 'other';
+                const key = targetPath.includes('future-self') ? 'future-self' : targetPath.includes('hsp-test') ? 'hsp-test' : targetPath.includes('stress-response') ? 'stress-response' : 'other';
                 this.track('stress_related_click', { related_target: key, cta_surface: 'stress_result_related' });
             });
         });

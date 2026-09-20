@@ -171,7 +171,8 @@
     "socialBattery": "社交电量",
     "stressResponse": "压力反应",
     "anxietyType": "焦虑类型",
-    "eqTest": "EQ测试"
+    "eqTest": "EQ测试",
+    "futureSelf": "未来自我测试"
   },
   "trust": {
     "rule": "本自查按固定规则汇总15个回答，并显示5个领域的平均值。分段仅用于DopaBrain页面展示，不是经过验证的临床量表或人群比较。",

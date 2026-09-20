@@ -171,7 +171,8 @@
     "socialBattery": "Batterie Sociale",
     "stressResponse": "Réponse au Stress",
     "anxietyType": "Type d'Anxiété",
-    "eqTest": "Test QE"
+    "eqTest": "Test QE",
+    "futureSelf": "Test du Moi Futur"
   },
   "trust": {
     "rule": "Cette réflexion additionne 15 réponses selon une règle fixe et affiche cinq moyennes. Les paliers servent uniquement à l’affichage DopaBrain ; ce n’est ni une échelle clinique validée ni une comparaison de population.",

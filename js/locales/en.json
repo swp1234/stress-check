@@ -171,7 +171,8 @@
     "socialBattery": "Social Battery",
     "stressResponse": "Stress Response",
     "anxietyType": "Anxiety Type",
-    "eqTest": "EQ Test"
+    "eqTest": "EQ Test",
+    "futureSelf": "Future Self"
   },
   "trust": {
     "rule": "This reflection adds 15 answers using a fixed rule and shows five category averages. The bands are DopaBrain display bands, not a validated clinical scale or population comparison.",

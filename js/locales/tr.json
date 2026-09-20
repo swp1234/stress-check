@@ -171,7 +171,8 @@
     "socialBattery": "Sosyal Batarya",
     "stressResponse": "Stres Tepkisi",
     "anxietyType": "Kaygı Tipi",
-    "eqTest": "EQ Testi"
+    "eqTest": "EQ Testi",
+    "futureSelf": "Gelecek Ben Testi"
   },
   "trust": {
     "rule": "Bu düşünme aracı 15 yanıtı sabit bir kuralla toplar ve beş ortalama gösterir. Aralıklar yalnızca DopaBrain gösterimidir; doğrulanmış klinik ölçek veya nüfus karşılaştırması değildir.",

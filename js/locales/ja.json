@@ -171,7 +171,8 @@
     "socialBattery": "ソーシャルバッテリー",
     "stressResponse": "ストレス反応",
     "anxietyType": "不安タイプ",
-    "eqTest": "EQテスト"
+    "eqTest": "EQテスト",
+    "futureSelf": "未来の自分テスト"
   },
   "trust": {
     "rule": "この振り返りは15の回答を固定ルールで合計し、5領域の平均を表示します。区分はDopaBrainの表示用で、検証済み臨床尺度や母集団比較ではありません。",

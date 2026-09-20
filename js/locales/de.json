@@ -171,7 +171,8 @@
     "socialBattery": "Soziale Batterie",
     "stressResponse": "Stressreaktion",
     "anxietyType": "Angsttyp",
-    "eqTest": "EQ-Test"
+    "eqTest": "EQ-Test",
+    "futureSelf": "Zukunfts-Ich Test"
   },
   "trust": {
     "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",

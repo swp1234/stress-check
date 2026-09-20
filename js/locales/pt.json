@@ -171,7 +171,8 @@
     "socialBattery": "Bateria Social",
     "stressResponse": "Resposta ao Estresse",
     "anxietyType": "Tipo de Ansiedade",
-    "eqTest": "Teste EQ"
+    "eqTest": "Teste EQ",
+    "futureSelf": "Teste do Eu Futuro"
   },
   "trust": {
     "rule": "Esta reflexão soma 15 respostas por uma regra fixa e mostra cinco médias. As faixas servem apenas à exibição DopaBrain, não são escala clínica validada nem comparação populacional.",
