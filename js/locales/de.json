@@ -177,6 +177,34 @@
   "trust": {
     "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",
     "boundary": "Sie diagnostiziert oder behandelt nicht. Antworten bleiben auf dieser Seite und werden nicht an Analysen gesendet. Bei starker, anhaltender oder alltagsbeeinträchtigender Belastung oder fehlender Sicherheit wenden Sie sich an Fachpersonal oder lokale Notdienste.",
-    "resultBoundary": "Dies ist eine Antwortzusammenfassung, keine Diagnose, Schweregradskala oder Bevölkerungsvergleich."
+    "resultBoundary": "Dies ist eine Antwortzusammenfassung, keine Diagnose, Schweregradskala oder Bevölkerungsvergleich.",
+    "summaryTitle": "About this assessment: method, score bands & FAQ"
+  },
+  "guide": {
+    "methodologyTitle": "Assessment Framework & Purpose",
+    "methodologyDesc": "This self-assessment explores perceived subjective tension across 5 core life dimensions: Work & Study, Health & Sleep, Personal Relationships, Financial Strain, and Daily Routine. Question weighting is structured around perceived situational burden (informed by Cohen's Perceived Stress Scale framework) to help users identify their single highest-friction domain rather than assign a diagnostic label.",
+    "bandsTitle": "Understanding Score Tiers & Next Actions",
+    "bandLowTitle": "Low Stress (0–15):",
+    "bandLowDesc": "Manageable background tension. Focus on maintaining current recovery routines and healthy cognitive boundaries.",
+    "bandModerateTitle": "Moderate Stress (16–30):",
+    "bandModerateDesc": "Accumulating strain in one or two domains. Prioritize targeted micro-breaks, daily task triage, and emotional offloading.",
+    "bandHighTitle": "High Stress (31–45):",
+    "bandHighDesc": "Significant friction affecting focus or physical energy. We suggest taking our structured 7-day reset plan and adjusting daily workload demands.",
+    "bandSevereTitle": "Severe Overwhelm (46–60):",
+    "bandSevereDesc": "Acute chronic fatigue or emotional exhaustion. We strongly recommend speaking with a licensed healthcare provider, counselor, or trusted medical support.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Q: Is this test a formal medical diagnosis?",
+    "faq1A": "A: No. It is an educational self-reflection tool designed for personal awareness and lifestyle planning. Only licensed clinical professionals can evaluate or diagnose medical disorders.",
+    "faq2Q": "Q: Are my answers stored or shared?",
+    "faq2A": "A: Never. All calculations are executed 100% locally in your browser. No answers, scores, or categories are ever collected, logged, or sent to external servers.",
+    "faq3Q": "Q: How often should I take this assessment?",
+    "faq3A": "A: Once every 2 to 4 weeks, or whenever you experience significant life transitions, shifts in workload, or changes in personal routine.",
+    "faq4Q": "Q: How can I immediately reduce acute stress?",
+    "faq4A": "A: Physiological interventions such as cyclic physiological sighing (two quick inhales, slow extended exhale for 2 minutes) or brief 5-minute outdoor walking have been shown to rapidly downregulate autonomic arousal.",
+    "faq5Q": "Q: What should I do if my stress score is high?",
+    "faq5A": "A: Review your category breakdown to locate your primary friction source, use our private 7-day action plan to reduce cognitive overload, and consult healthcare professionals if distress interferes with basic daily tasks.",
+    "referencesTitle": "References & Empirical Frameworks",
+    "reviewDate": "Editorial Review: October 2026",
+    "reviewTeam": "DopaBrain Behavioral Science & Health Team"
   }
 }
