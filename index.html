@@ -19,7 +19,7 @@
             const sources = new Set(['doomscroll_guide_primary','doomscroll_guide_quick','doomscroll_guide_footer']);
             const incoming = new URL(location.href), clean = new URL(location.pathname, location.origin);
             const lang = incoming.searchParams.get('lang'), surface = incoming.searchParams.get('surface'), source = incoming.searchParams.get('source');
-            if (languages.has(lang)) clean.searchParams.set('lang', lang);
+            if (languages.has(lang)) { clean.searchParams.set('lang', lang); document.documentElement.lang = lang; }
             if (sources.has(source)) clean.searchParams.set('source', source);
             if (incoming.searchParams.get('start') === '1' && surfaces.has(surface)) { clean.searchParams.set('start','1'); clean.searchParams.set('surface',surface); }
             history.replaceState({}, '', clean.pathname + clean.search);
