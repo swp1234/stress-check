@@ -166,13 +166,9 @@
   },
   "related": {
     "hspTest": "Tes HSP",
-    "emotionIceberg": "Gunung Es Emosi",
-    "emotionTemp": "Suhu Emosi",
-    "socialBattery": "Baterai Sosial",
-    "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan",
-    "eqTest": "Tes EQ",
-    "futureSelf": "Tes Diri Masa Depan"
+    "futureSelf": "Tes Diri Masa Depan",
+    "stressType": "Tipe Stres",
+    "attachmentStyle": "Gaya Kelekatan"
   },
   "trust": {
     "rule": "Refleksi ini menjumlahkan 15 jawaban dengan aturan tetap dan menampilkan lima rata-rata. Rentang hanya untuk tampilan DopaBrain, bukan skala klinis tervalidasi atau perbandingan populasi.",

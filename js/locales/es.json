@@ -166,13 +166,9 @@
   },
   "related": {
     "hspTest": "Test HSP",
-    "emotionIceberg": "Iceberg Emocional",
-    "emotionTemp": "Temperatura Emocional",
-    "socialBattery": "Batería Social",
-    "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad",
-    "eqTest": "Test EQ",
-    "futureSelf": "Test del Yo Futuro"
+    "futureSelf": "Test del Yo Futuro",
+    "stressType": "Tipo de Estrés",
+    "attachmentStyle": "Estilo de Apego"
   },
   "trust": {
     "rule": "Esta reflexión suma 15 respuestas con una regla fija y muestra cinco promedios. Las bandas son solo de presentación de DopaBrain, no una escala clínica validada ni una comparación poblacional.",

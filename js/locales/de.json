@@ -166,13 +166,9 @@
   },
   "related": {
     "hspTest": "HSP-Test",
-    "emotionIceberg": "Emotions-Eisberg",
-    "emotionTemp": "Emotionstemperatur",
-    "socialBattery": "Soziale Batterie",
-    "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp",
-    "eqTest": "EQ-Test",
-    "futureSelf": "Zukunfts-Ich Test"
+    "futureSelf": "Zukunfts-Ich Test",
+    "stressType": "Stress-Typ",
+    "attachmentStyle": "Bindungsstil"
   },
   "trust": {
     "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",
