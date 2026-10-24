@@ -344,7 +344,6 @@ class StressCheckApp {
             nextCta.addEventListener('click', () => {
                 this.track('stress_hero_cta_click', {
                     target_key: rec.key,
-                    stress_score: this.totalScore,
                     surface: 'result_hero_funnel'
                 });
             });
