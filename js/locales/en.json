@@ -60,7 +60,8 @@
     "categoryAnalysis": "Category Analysis",
     "reliefTips": "Stress Relief Tips",
     "recommendedApps": "Recommended Apps",
-    "moreTests": "Explore More Tests"
+    "moreTests": "Explore More Tests",
+    "recommendedNext": "Recommended Next Step"
   },
   "categories": {
     "workStudy": "Work/Study",
@@ -168,7 +169,8 @@
     "hspTest": "HSP Test",
     "futureSelf": "Future Self",
     "stressType": "Stress Type",
-    "attachmentStyle": "Attachment Style"
+    "attachmentStyle": "Attachment Style",
+    "brainType": "Brain Type"
   },
   "trust": {
     "rule": "This reflection adds 15 answers using a fixed rule and shows five category averages. The bands are DopaBrain display bands, not a validated clinical scale or population comparison.",

@@ -60,7 +60,8 @@
     "categoryAnalysis": "Análisis por categoría",
     "reliefTips": "Consejos de alivio del estrés",
     "recommendedApps": "Aplicaciones recomendadas",
-    "moreTests": "Explorar más tests"
+    "moreTests": "Explorar más tests",
+    "recommendedNext": "Siguiente paso recomendado"
   },
   "categories": {
     "workStudy": "Trabajo/Estudio",
@@ -168,7 +169,8 @@
     "hspTest": "Test HSP",
     "futureSelf": "Test del Yo Futuro",
     "stressType": "Tipo de Estrés",
-    "attachmentStyle": "Estilo de Apego"
+    "attachmentStyle": "Estilo de Apego",
+    "brainType": "Tipo de cerebro"
   },
   "trust": {
     "rule": "Esta reflexión suma 15 respuestas con una regla fija y muestra cinco promedios. Las bandas son solo de presentación de DopaBrain, no una escala clínica validada ni una comparación poblacional.",

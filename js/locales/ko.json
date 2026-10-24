@@ -60,7 +60,8 @@
     "categoryAnalysis": "카테고리별 분석",
     "reliefTips": "스트레스 해소 팁",
     "recommendedApps": "추천 앱",
-    "moreTests": "더 많은 테스트"
+    "moreTests": "더 많은 테스트",
+    "recommendedNext": "추천 다음 단계"
   },
   "categories": {
     "workStudy": "직장/학업",
@@ -168,7 +169,8 @@
     "hspTest": "HSP 테스트",
     "futureSelf": "미래의 나 테스트",
     "stressType": "스트레스 유형",
-    "attachmentStyle": "애착 유형"
+    "attachmentStyle": "애착 유형",
+    "brainType": "뇌 유형"
   },
   "trust": {
     "rule": "이 자가 점검은 15개 응답을 고정 규칙으로 합산하고 5개 영역 평균을 보여줍니다. 구간은 DopaBrain 표시용이며 검증된 임상 척도나 인구 비교가 아닙니다.",

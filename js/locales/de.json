@@ -60,7 +60,8 @@
     "categoryAnalysis": "Kategorieanalyse",
     "reliefTips": "Entspannungstipps",
     "recommendedApps": "Empfohlene Apps",
-    "moreTests": "Mehr Tests entdecken"
+    "moreTests": "Mehr Tests entdecken",
+    "recommendedNext": "Empfohlener nächster Schritt"
   },
   "categories": {
     "workStudy": "Arbeit/Studium",
@@ -168,7 +169,8 @@
     "hspTest": "HSP-Test",
     "futureSelf": "Zukunfts-Ich Test",
     "stressType": "Stress-Typ",
-    "attachmentStyle": "Bindungsstil"
+    "attachmentStyle": "Bindungsstil",
+    "brainType": "Gehirntyp"
   },
   "trust": {
     "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",

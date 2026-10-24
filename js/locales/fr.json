@@ -60,7 +60,8 @@
     "categoryAnalysis": "Analyse par catégorie",
     "reliefTips": "Conseils de soulagement du stress",
     "recommendedApps": "Applications recommandées",
-    "moreTests": "Explorer plus de tests"
+    "moreTests": "Explorer plus de tests",
+    "recommendedNext": "Étape suivante recommandée"
   },
   "categories": {
     "workStudy": "Travail/Études",
@@ -168,7 +169,8 @@
     "hspTest": "Test HSP",
     "futureSelf": "Test du Moi Futur",
     "stressType": "Type de Stress",
-    "attachmentStyle": "Style d'Attachement"
+    "attachmentStyle": "Style d'Attachement",
+    "brainType": "Type de cerveau"
   },
   "trust": {
     "rule": "Cette réflexion additionne 15 réponses selon une règle fixe et affiche cinq moyennes. Les paliers servent uniquement à l’affichage DopaBrain ; ce n’est ni une échelle clinique validée ni une comparaison de population.",

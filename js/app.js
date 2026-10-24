@@ -233,8 +233,122 @@ class StressCheckApp {
         // Relief tips
         this.displayReliefTips();
 
+        this.updateNextStepCard();
         this.updatePlanLink();
         this.observeResultAction();
+    }
+
+    getRecommendedNextStep() {
+        const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : 'en';
+        if (this.totalScore >= 31) {
+            const descs = {
+                ko: '높은 스트레스는 감각 과부하와 민감성에서 비롯될 수 있습니다. 고감각자(HSP) 성향을 확인해보세요.',
+                ja: '高いストレスは感覚の過負荷や敏感さから生じる場合があります。HSP傾向を測定してみましょう。',
+                zh: '高度压力通常源于感觉过载与敏感体质。立即测试您的高敏感(HSP)特征。',
+                es: 'El estrés alto suele deberse a la sobrecarga sensorial. Evalúa tu perfil de sensibilidad.',
+                fr: 'Un stress élevé découle souvent d’une sensibilité sensorielle. Testez votre profil de sensibilité.',
+                de: 'Hoher Stress entsteht oft durch sensorische Reizüberflutung. Testen Sie Ihr Sensibilitätsprofil.'
+            };
+            const ctas = {
+                ko: 'HSP 테스트 시작하기 →',
+                ja: 'HSP診断を始める →',
+                zh: '开始HSP高敏感测试 →',
+                es: 'Realizar test HSP →',
+                fr: 'Commencer le test HSP →',
+                de: 'HSP-Test starten →'
+            };
+            return {
+                key: 'hsp-test',
+                path: '/hsp-test/',
+                source: 'stress_high',
+                emoji: '🧠',
+                title: (window.i18n && i18n.t('related.hspTest')) || 'HSP Test',
+                desc: descs[currentLang] || 'Overwhelm often stems from sensory processing sensitivity. Check your environmental sensitivity profile.',
+                ctaText: ctas[currentLang] || 'Take HSP Test →'
+            };
+        } else if (this.totalScore >= 16) {
+            const descs = {
+                ko: '일상의 스트레스를 줄이고 장기적 관점에서 현명한 결정을 내리는 미래 자아 성향 진단입니다.',
+                ja: '日々の決断疲れを減らし、長期的な視点でメンタルを整える未来の自分診断です。',
+                zh: '减少日常决策疲劳，从长远视角建立心理韧性与目标规划。',
+                es: 'Alinea tus decisiones cotidianas con tu resiliencia a largo plazo para reducir el desgaste mental.',
+                fr: 'Alignez vos choix quotidiens avec votre vision à long terme pour réduire la fatigue mentale.',
+                de: 'Richten Sie tägliche Entscheidungen auf langfristige Resilienz aus, um mentale Erschöpfung zu senken.'
+            };
+            const ctas = {
+                ko: '미래의 나 테스트 시작하기 →',
+                ja: '未来の自分診断を始める →',
+                zh: '开始未来自画像测试 →',
+                es: 'Explorar Yo Futuro →',
+                fr: 'Explorer mon Moi Futur →',
+                de: 'Zukunfts-Ich Test starten →'
+            };
+            return {
+                key: 'future-self',
+                path: '/future-self/',
+                source: 'stress_mod',
+                emoji: '🔮',
+                title: (window.i18n && i18n.t('related.futureSelf')) || 'Future Self',
+                desc: descs[currentLang] || 'Align daily decisions with your long-term resilience to reduce recurring mental fatigue.',
+                ctaText: ctas[currentLang] || 'Explore Future Self →'
+            };
+        } else {
+            const descs = {
+                ko: '안정된 멘탈 상태에서 당신의 고유한 인지 스타일과 최고의 업무 집중 방식을 탐색해보세요.',
+                ja: '安定した心理状態から、あなたの認知スタイルと最適な集中パターンを探求しましょう。',
+                zh: '心理状态良好！探索您的独特认知风格与高效思维专注模式。',
+                es: 'Tienes una base mental saludable. Descubre tu estilo cognitivo y hábitos de enfoque óptimos.',
+                fr: 'Vous disposez d’une base mentale saine. Découvrez votre style cognitif et vos forces d’attention.',
+                de: 'Sie haben eine gesunde mentale Grundlage. Entdecken Sie Ihren kognitiven Stil und Fokus-Stärken.'
+            };
+            const ctas = {
+                ko: '뇌 유형 테스트 시작하기 →',
+                ja: '脳タイプ診断を始める →',
+                zh: '开始大脑类型测试 →',
+                es: 'Descubrir Tipo de Cerebro →',
+                fr: 'Découvrir mon Type de Cerveau →',
+                de: 'Gehirntyp entdecken →'
+            };
+            return {
+                key: 'brain-type',
+                path: '/brain-type/',
+                source: 'stress_low',
+                emoji: '⚡',
+                title: (window.i18n && i18n.t('related.brainType')) || 'Brain Type',
+                desc: descs[currentLang] || 'You have a healthy mental foundation. Discover your cognitive style and optimal focus habits.',
+                ctaText: ctas[currentLang] || 'Discover Brain Type →'
+            };
+        }
+    }
+
+    updateNextStepCard() {
+        const nextCard = document.getElementById('next-step-card');
+        const nextTitle = document.getElementById('next-step-title');
+        const nextDesc = document.getElementById('next-step-desc');
+        const nextEmoji = document.getElementById('next-step-emoji');
+        const nextCta = document.getElementById('next-step-cta');
+        const nextCtaText = document.getElementById('next-step-cta-text');
+        if (!nextCard || !nextTitle || !nextDesc || !nextEmoji || !nextCta || !nextCtaText) return;
+
+        const rec = this.getRecommendedNextStep();
+        const currentLang = (window.i18n && typeof i18n.getCurrentLanguage === 'function') ? i18n.getCurrentLanguage() : 'en';
+        nextTitle.textContent = rec.title;
+        nextDesc.textContent = rec.desc;
+        nextEmoji.textContent = rec.emoji;
+        nextCta.href = `${rec.path}?lang=${encodeURIComponent(currentLang)}&source=${rec.source}`;
+        nextCta.setAttribute('data-related-key', rec.key);
+        nextCtaText.textContent = rec.ctaText;
+
+        if (!nextCta.dataset.clickBound) {
+            nextCta.dataset.clickBound = '1';
+            nextCta.addEventListener('click', () => {
+                this.track('stress_hero_cta_click', {
+                    target_key: rec.key,
+                    stress_score: this.totalScore,
+                    surface: 'result_hero_funnel'
+                });
+            });
+        }
     }
 
     displayCategoryAnalysis() {

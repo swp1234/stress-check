@@ -60,7 +60,8 @@
     "categoryAnalysis": "Analisis Berdasarkan Kategori",
     "reliefTips": "Tips Relief Stres",
     "recommendedApps": "Aplikasi yang Direkomendasikan",
-    "moreTests": "Jelajahi tes lainnya"
+    "moreTests": "Jelajahi tes lainnya",
+    "recommendedNext": "Langkah Selanjutnya yang Disarankan"
   },
   "categories": {
     "workStudy": "Pekerjaan/Studi",
@@ -168,7 +169,8 @@
     "hspTest": "Tes HSP",
     "futureSelf": "Tes Diri Masa Depan",
     "stressType": "Tipe Stres",
-    "attachmentStyle": "Gaya Kelekatan"
+    "attachmentStyle": "Gaya Kelekatan",
+    "brainType": "Tipe Otak"
   },
   "trust": {
     "rule": "Refleksi ini menjumlahkan 15 jawaban dengan aturan tetap dan menampilkan lima rata-rata. Rentang hanya untuk tampilan DopaBrain, bukan skala klinis tervalidasi atau perbandingan populasi.",

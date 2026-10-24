@@ -60,7 +60,8 @@
     "categoryAnalysis": "Kategori Analizi",
     "reliefTips": "Stres Rahatlama İpuçları",
     "recommendedApps": "Önerilen Uygulamalar",
-    "moreTests": "Daha fazla test keşfet"
+    "moreTests": "Daha fazla test keşfet",
+    "recommendedNext": "Önerilen Sonraki Adım"
   },
   "categories": {
     "workStudy": "İş/Çalışma",
@@ -168,7 +169,8 @@
     "hspTest": "HSP Testi",
     "futureSelf": "Gelecek Ben Testi",
     "stressType": "Stres Tipi",
-    "attachmentStyle": "Bağlanma Stili"
+    "attachmentStyle": "Bağlanma Stili",
+    "brainType": "Beyin Tipi"
   },
   "trust": {
     "rule": "Bu düşünme aracı 15 yanıtı sabit bir kuralla toplar ve beş ortalama gösterir. Aralıklar yalnızca DopaBrain gösterimidir; doğrulanmış klinik ölçek veya nüfus karşılaştırması değildir.",

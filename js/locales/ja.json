@@ -60,7 +60,8 @@
     "categoryAnalysis": "カテゴリ別分析",
     "reliefTips": "ストレス軽減のヒント",
     "recommendedApps": "推奨アプリ",
-    "moreTests": "もっとテストを見る"
+    "moreTests": "もっとテストを見る",
+    "recommendedNext": "おすすめの次のステップ"
   },
   "categories": {
     "workStudy": "仕事/勉強",
@@ -168,7 +169,8 @@
     "hspTest": "HSPテスト",
     "futureSelf": "未来の自分テスト",
     "stressType": "ストレスタイプ",
-    "attachmentStyle": "愛着スタイル"
+    "attachmentStyle": "愛着スタイル",
+    "brainType": "脳タイプ"
   },
   "trust": {
     "rule": "この振り返りは15の回答を固定ルールで合計し、5領域の平均を表示します。区分はDopaBrainの表示用で、検証済み臨床尺度や母集団比較ではありません。",
