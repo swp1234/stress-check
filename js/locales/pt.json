@@ -170,7 +170,10 @@
     "futureSelf": "Teste do Eu Futuro",
     "stressType": "Tipo de Estresse",
     "attachmentStyle": "Estilo de Apego",
-    "brainType": "Tipo de cérebro"
+    "brainType": "Tipo de cérebro",
+    "burnoutMatrix": "Burnout vs Estresse",
+    "groundingTool": "Aterramento 5-4-3-2-1",
+    "cognitiveLoad": "Carga Cognitiva"
   },
   "trust": {
     "rule": "Esta reflexão soma 15 respostas por uma regra fixa e mostra cinco médias. As faixas servem apenas à exibição DopaBrain, não são escala clínica validada nem comparação populacional.",

@@ -170,7 +170,10 @@
     "futureSelf": "未来の自分テスト",
     "stressType": "ストレスタイプ",
     "attachmentStyle": "愛着スタイル",
-    "brainType": "脳タイプ"
+    "brainType": "脳タイプ",
+    "burnoutMatrix": "バーンアウトvsストレス",
+    "groundingTool": "5-4-3-2-1 グラウンディング",
+    "cognitiveLoad": "認知負荷計算機"
   },
   "trust": {
     "rule": "この振り返りは15の回答を固定ルールで合計し、5領域の平均を表示します。区分はDopaBrainの表示用で、検証済み臨床尺度や母集団比較ではありません。",

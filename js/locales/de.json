@@ -170,7 +170,10 @@
     "futureSelf": "Zukunfts-Ich Test",
     "stressType": "Stress-Typ",
     "attachmentStyle": "Bindungsstil",
-    "brainType": "Gehirntyp"
+    "brainType": "Gehirntyp",
+    "burnoutMatrix": "Burnout vs Stress",
+    "groundingTool": "5-4-3-2-1 Grounding",
+    "cognitiveLoad": "Kognitive Last Rechner"
   },
   "trust": {
     "rule": "Diese Reflexion addiert 15 Antworten nach einer festen Regel und zeigt fünf Durchschnittswerte. Die Bereiche dienen nur der DopaBrain-Anzeige und sind keine validierte klinische Skala oder Bevölkerungsvergleich.",

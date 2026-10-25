@@ -170,7 +170,10 @@
     "futureSelf": "Gelecek Ben Testi",
     "stressType": "Stres Tipi",
     "attachmentStyle": "Bağlanma Stili",
-    "brainType": "Beyin Tipi"
+    "brainType": "Beyin Tipi",
+    "burnoutMatrix": "Tükenmişlik vs Stres",
+    "groundingTool": "5-4-3-2-1 Topraklama",
+    "cognitiveLoad": "Bilişsel Yük"
   },
   "trust": {
     "rule": "Bu düşünme aracı 15 yanıtı sabit bir kuralla toplar ve beş ortalama gösterir. Aralıklar yalnızca DopaBrain gösterimidir; doğrulanmış klinik ölçek veya nüfus karşılaştırması değildir.",

@@ -170,7 +170,10 @@
     "futureSelf": "Future Self",
     "stressType": "Stress Type",
     "attachmentStyle": "Attachment Style",
-    "brainType": "Brain Type"
+    "brainType": "Brain Type",
+    "burnoutMatrix": "Burnout vs Stress",
+    "groundingTool": "5-4-3-2-1 Grounding",
+    "cognitiveLoad": "Cognitive Load Calc"
   },
   "trust": {
     "rule": "This reflection adds 15 answers using a fixed rule and shows five category averages. The bands are DopaBrain display bands, not a validated clinical scale or population comparison.",

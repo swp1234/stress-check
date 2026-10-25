@@ -170,7 +170,10 @@
     "futureSelf": "Tes Diri Masa Depan",
     "stressType": "Tipe Stres",
     "attachmentStyle": "Gaya Kelekatan",
-    "brainType": "Tipe Otak"
+    "brainType": "Tipe Otak",
+    "burnoutMatrix": "Burnout vs Stres",
+    "groundingTool": "Grounding 5-4-3-2-1",
+    "cognitiveLoad": "Beban Kognitif"
   },
   "trust": {
     "rule": "Refleksi ini menjumlahkan 15 jawaban dengan aturan tetap dan menampilkan lima rata-rata. Rentang hanya untuk tampilan DopaBrain, bukan skala klinis tervalidasi atau perbandingan populasi.",

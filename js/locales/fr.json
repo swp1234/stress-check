@@ -170,7 +170,10 @@
     "futureSelf": "Test du Moi Futur",
     "stressType": "Type de Stress",
     "attachmentStyle": "Style d'Attachement",
-    "brainType": "Type de cerveau"
+    "brainType": "Type de cerveau",
+    "burnoutMatrix": "Burnout vs Stress",
+    "groundingTool": "Ancrage 5-4-3-2-1",
+    "cognitiveLoad": "Charge Cognitive"
   },
   "trust": {
     "rule": "Cette réflexion additionne 15 réponses selon une règle fixe et affiche cinq moyennes. Les paliers servent uniquement à l’affichage DopaBrain ; ce n’est ni une échelle clinique validée ni une comparaison de population.",
