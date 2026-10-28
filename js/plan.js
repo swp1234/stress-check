@@ -118,6 +118,20 @@
         de: 'Brauchst du 5 Minuten sensorische Pause? Sensorik-Reset-Karte öffnen →',
         fr: 'Besoin d’une pause sensorielle de 5 minutes ? Ouvrez la carte de réinitialisation →'
     };
+    const groundingCta = {
+        en: 'Feeling acute anxiety or panic right now? Open the 5-4-3-2-1 grounding tool →',
+        ko: '급성 불안이나 공황감이 느껴진다면? 5-4-3-2-1 오감 그라운딩 도구 열기 →',
+        zh: '感到急性焦虑或恐慌？打开 5-4-3-2-1 五感着陆工具 →',
+        hi: 'तीव्र चिंता या घबराहट महसूस हो रही है? 5-4-3-2-1 ग्राउंडिंग टूल खोलें →',
+        ru: 'Чувствуете острую тревогу или панику? Откройте технику заземления 5-4-3-2-1 →',
+        ja: '急な不安やパニックを感じるなら、5-4-3-2-1五感グラウンディングツールを開く →',
+        es: '¿Sientes ansiedad o pánico agudo? Abre la herramienta de anclaje 5-4-3-2-1 →',
+        pt: 'Sentindo ansiedade aguda ou pânico? Abra a ferramenta de ancoragem 5-4-3-2-1 →',
+        id: 'Merasa cemas atau panik akut saat ini? Buka alat grounding 5-4-3-2-1 →',
+        tr: 'Akut kaygı veya panik mi hissediyorsun? 5-4-3-2-1 topraklama aracını aç →',
+        de: 'Akute Angst oder Panik im Moment? 5-4-3-2-1 Grounding-Tool öffnen →',
+        fr: 'Anxiété aiguë ou panique en ce moment ? Ouvrez l’outil d’ancrage 5-4-3-2-1 →'
+    };
     const doomscrollCta = {
         en: 'Stuck in bedtime screen scrolling? Read the doomscrolling guide →',
         ko: '잠들기 전 끝없는 스크롤을 멈추고 싶다면? 둠스크롤링 탈출 가이드 →',
@@ -174,6 +188,17 @@
         if (sensoryResetLink) {
             sensoryResetLink.textContent = sensoryResetCta[language] || sensoryResetCta.en;
             sensoryResetLink.href = `/hsp-test/reset.html?lang=${language}&source=stress_plan`;
+        }
+        const groundingLink = document.getElementById('grounding-tool-link');
+        if (groundingLink) {
+            groundingLink.textContent = groundingCta[language] || groundingCta.en;
+            groundingLink.href = `/portal/tools/grounding-exercise.html?lang=${encodeURIComponent(language)}&source=stress_plan`;
+        }
+        const groundingLink = document.getElementById('grounding-tool-link');
+        if (groundingLink) {
+            groundingLink.addEventListener('click', () => {
+                track('stress_plan_grounding_click', { destination: groundingLink.href });
+            });
         }
         const doomscrollLink = document.getElementById('doomscroll-guide-link');
         if (doomscrollLink) {
