@@ -296,9 +296,39 @@
             window.print();
         });
         document.getElementById('reset-button').addEventListener('click', resetBuilder);
-        document.getElementById('plan-link').addEventListener('click', () => track('boundary_script_plan_click'));
-        document.getElementById('library-link').addEventListener('click', () => track('boundary_script_library_click'));
-        document.getElementById('back-link').addEventListener('click', () => track('boundary_script_plan_click', { link_surface: 'header' }));
+        document.getElementById('plan-link').addEventListener('click', () => {
+            track('boundary_script_plan_click');
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('plan-link').href,
+                    link_id: 'boundary_script_plan'
+                });
+            }
+        });
+        document.getElementById('library-link').addEventListener('click', () => {
+            track('boundary_script_library_click');
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('library-link').href,
+                    link_id: 'boundary_script_library'
+                });
+            }
+        });
+        document.getElementById('back-link').addEventListener('click', () => {
+            track('boundary_script_plan_click', { link_surface: 'header' });
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('back-link').href,
+                    link_id: 'boundary_script_plan_header'
+                });
+            }
+        });
         track('boundary_script_view');
         if (query.get('example') === '1') {
             track('boundary_script_template_load', { template_context: context });

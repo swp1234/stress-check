@@ -313,9 +313,39 @@
                 track('boundary_library_edit_click', { template_context: edit.dataset.context });
             }
         });
-        document.getElementById('builder-back-link').addEventListener('click', () => track('boundary_library_builder_click', { link_surface: 'header' }));
-        document.getElementById('builder-link').addEventListener('click', () => track('boundary_library_builder_click', { link_surface: 'footer' }));
-        document.getElementById('plan-link').addEventListener('click', () => track('boundary_library_plan_click'));
+        document.getElementById('builder-back-link').addEventListener('click', () => {
+            track('boundary_library_builder_click', { link_surface: 'header' });
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('builder-back-link').href,
+                    link_id: 'boundary_library_builder_header'
+                });
+            }
+        });
+        document.getElementById('builder-link').addEventListener('click', () => {
+            track('boundary_library_builder_click', { link_surface: 'footer' });
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('builder-link').href,
+                    link_id: 'boundary_library_builder_footer'
+                });
+            }
+        });
+        document.getElementById('plan-link').addEventListener('click', () => {
+            track('boundary_library_plan_click');
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('plan-link').href,
+                    link_id: 'boundary_library_plan'
+                });
+            }
+        });
         track('boundary_library_view');
     }
 

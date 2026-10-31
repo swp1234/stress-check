@@ -194,12 +194,6 @@
             groundingLink.textContent = groundingCta[language] || groundingCta.en;
             groundingLink.href = `/portal/tools/grounding-exercise.html?lang=${encodeURIComponent(language)}&source=stress_plan`;
         }
-        const groundingLink = document.getElementById('grounding-tool-link');
-        if (groundingLink) {
-            groundingLink.addEventListener('click', () => {
-                track('stress_plan_grounding_click', { destination: groundingLink.href });
-            });
-        }
         const doomscrollLink = document.getElementById('doomscroll-guide-link');
         if (doomscrollLink) {
             doomscrollLink.textContent = doomscrollCta[language] || doomscrollCta.en;
@@ -339,17 +333,55 @@
         document.getElementById('back-link').addEventListener('click', () => track('stress_plan_return'));
         document.getElementById('script-builder-link').addEventListener('click', () => {
             track('stress_plan_script_click', { destination: document.getElementById('script-builder-link').href });
+            if (typeof gtag === 'function') {
+                gtag('event', 'content_cta_click', {
+                    event_category: 'engagement',
+                    page_path: location.pathname,
+                    target_url: document.getElementById('script-builder-link').href,
+                    link_id: 'stress_plan_script'
+                });
+            }
         });
         const sensoryResetLink = document.getElementById('sensory-reset-link');
         if (sensoryResetLink) {
             sensoryResetLink.addEventListener('click', () => {
                 track('stress_plan_sensory_reset_click', { destination: sensoryResetLink.href });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: sensoryResetLink.href,
+                        link_id: 'stress_plan_sensory_reset'
+                    });
+                }
+            });
+        }
+        const groundingLink = document.getElementById('grounding-tool-link');
+        if (groundingLink) {
+            groundingLink.addEventListener('click', () => {
+                track('stress_plan_grounding_click', { destination: groundingLink.href });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: groundingLink.href,
+                        link_id: 'stress_plan_grounding'
+                    });
+                }
             });
         }
         const doomscrollLink = document.getElementById('doomscroll-guide-link');
         if (doomscrollLink) {
             doomscrollLink.addEventListener('click', () => {
                 track('stress_plan_doomscroll_click', { destination: doomscrollLink.href });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: doomscrollLink.href,
+                        link_id: 'stress_plan_doomscroll'
+                    });
+                }
             });
         }
 
