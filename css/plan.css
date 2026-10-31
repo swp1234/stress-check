@@ -282,6 +282,7 @@ h2 { margin: 0 0 12px; line-height: 1.25; }
 .evidence p, .safety p { color: var(--muted); }
 .evidence ul { margin: 14px 0 0; padding-left: 20px; }
 .evidence li + li { margin-top: 8px; }
+.evidence a { display: inline-flex; align-items: center; min-height: 44px; }
 .safety { border-color: rgba(245,158,11,0.35); }
 
 footer {
@@ -292,6 +293,11 @@ footer {
     padding: 22px 16px 42px;
     color: var(--muted);
     font-size: 0.88rem;
+}
+footer a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
 }
 
 @media (max-width: 640px) {
