@@ -77,6 +77,14 @@ class StressCheckApp {
                 const targetPath = card.getAttribute('href') || '';
                 const key = targetPath.includes('future-self') ? 'future-self' : targetPath.includes('hsp-test') ? 'hsp-test' : targetPath.includes('stress-response') ? 'stress-response' : 'other';
                 this.track('stress_related_click', { related_target: key, cta_surface: 'stress_result_related' });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: card.href,
+                        link_id: 'stress_related_' + (key || 'card')
+                    });
+                }
             });
         });
 
@@ -346,6 +354,14 @@ class StressCheckApp {
                     target_key: rec.key,
                     surface: 'result_hero_funnel'
                 });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: nextCta.href,
+                        link_id: 'stress_hero_' + (rec.key || 'next')
+                    });
+                }
             });
         }
     }
@@ -439,6 +455,14 @@ class StressCheckApp {
         if (!this.planClickTracked) {
             this.planClickTracked = true;
             this.track('stress_plan_click', { surface: 'result_primary_action' });
+        }
+        if (typeof gtag === 'function') {
+            gtag('event', 'content_cta_click', {
+                event_category: 'engagement',
+                page_path: location.pathname,
+                target_url: document.getElementById('btn-action-plan').href,
+                link_id: 'stress_action_plan'
+            });
         }
     }
 
