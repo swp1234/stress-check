@@ -227,10 +227,13 @@ h2 { margin: 0 0 12px; line-height: 1.25; }
 .day-card.done h3, .day-card.done p { text-decoration: line-through; text-decoration-thickness: 1px; }
 
 .day-card input {
-    width: 24px;
-    height: 24px;
-    margin: 2px 0 0;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    margin: 0;
     accent-color: var(--success);
+    cursor: pointer;
 }
 
 .day-number {
