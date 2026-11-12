@@ -20,7 +20,8 @@
     "share": "📤 Teilen",
     "saveImage": "📥 Bild speichern",
     "close": "Schließen",
-    "actionPlan": "Meinen 7-Tage-Plan öffnen"
+    "actionPlan": "Meinen 7-Tage-Plan öffnen",
+    "storyCard": "✨ Diagnose-Karte speichern"
   },
   "questions": {
     "workStudy": "Arbeit/Studium",
@@ -207,5 +208,15 @@
     "referencesTitle": "Wissenschaftliche Referenzen & Grundlagen",
     "reviewDate": "Redaktionelle Überprüfung: November 2026",
     "reviewTeam": "DopaBrain Verhaltenswissenschaft & Health Team"
+  },
+  "curated": {
+    "badge": "EVIDENZBASIERTE LITERATUR",
+    "title": "Ausgewählte Ressourcen zur Stressbewältigung",
+    "book1Title": "Burnout: Der Stress-Kreislauf und wie man ihn durchbricht",
+    "book1Desc": "Dr. Emily Nagoski • Somatische Vollendung biologischer Stressreaktionen.",
+    "book2Title": "Sind Sie hochempfindlich? (HSP)",
+    "book2Desc": "Dr. Elaine N. Aron • Regulation des autonomen Nervensystems bei HSP.",
+    "readPill": "Ressource ansehen ↗",
+    "disclosure": "Redaktioneller Hinweis: Auf wissenschaftlicher Evidenz basierende Empfehlungen."
   }
 }

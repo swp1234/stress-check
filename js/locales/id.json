@@ -20,7 +20,8 @@
     "share": "📤 Bagikan",
     "saveImage": "📥 Simpan Gambar",
     "close": "Tutup",
-    "actionPlan": "Buka rencana 7 hari saya"
+    "actionPlan": "Buka rencana 7 hari saya",
+    "storyCard": "✨ Simpan Kartu Diagnosis"
   },
   "questions": {
     "workStudy": "Pekerjaan/Studi",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "BACAAN BERBASIS BUKTI",
+    "title": "Panduan Pemulihan Stres Pilihan",
+    "book1Title": "Burnout: Kunci Melepaskan Siklus Stres Biologis",
+    "book1Desc": "Oleh Dr. Emily Nagoski • Panduan somatik menenangkan sistem saraf.",
+    "book2Title": "The Highly Sensitive Person (HSP)",
+    "book2Desc": "Oleh Dr. Elaine N. Aron • Menyeimbangkan sensitivitas sistem saraf otonom.",
+    "readPill": "Lihat Buku ↗",
+    "disclosure": "Catatan editorial: Bacaan dikurasi berdasarkan bukti klinis dan neurosains."
   }
 }

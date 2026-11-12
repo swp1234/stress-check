@@ -20,7 +20,8 @@
     "share": "📤 Compartilhar",
     "saveImage": "📥 Salvar imagem",
     "close": "Fechar",
-    "actionPlan": "Abrir meu plano de 7 dias"
+    "actionPlan": "Abrir meu plano de 7 dias",
+    "storyCard": "✨ Salvar cartão de diagnóstico"
   },
   "questions": {
     "workStudy": "Trabalho/Estudo",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "LEITURA BASEADA EM EVIDÊNCIAS",
+    "title": "Recursos Selecionados para Recuperação do Estresse",
+    "book1Title": "Burnout: O segredo para desbloquear o ciclo do estresse",
+    "book1Desc": "Dra. Emily Nagoski • Conclusão somática do ciclo biológico de estresse.",
+    "book2Title": "O dom da sensibilidade (HSP)",
+    "book2Desc": "Dra. Elaine N. Aron • Regulação do sistema nervoso autônomo.",
+    "readPill": "Ver recurso ↗",
+    "disclosure": "Nota editorial: Recursos selecionados com relevância clínica e neurobiológica."
   }
 }

@@ -20,7 +20,8 @@
     "share": "📤 シェア",
     "saveImage": "📥 画像を保存",
     "close": "閉じる",
-    "actionPlan": "7日間のリセット計画を開く"
+    "actionPlan": "7日間のリセット計画を開く",
+    "storyCard": "✨ 診断カードを保存 (Instagram / SNS)"
   },
   "questions": {
     "workStudy": "仕事/勉強",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "科学的根拠に基づく推奨図書",
+    "title": "自律神経とストレス回復のための推薦リソース",
+    "book1Title": "バーンアウト：ストレスサイクルの科学",
+    "book1Desc": "エミリー・ナゴスキー博士著 • 生体ストレスループを完了させる身体的回復法。",
+    "book2Title": "ささいなことにもすぐに「動揺」してしまうあなたへ (HSP)",
+    "book2Desc": "エレイン・N・アーロン博士著 • 自律神経の過覚醒を鎮める高感覚者ガイド。",
+    "readPill": "リソースを見る ↗",
+    "disclosure": "編集ノート：臨床的知見に基づき選定された科学的リソースです。"
   }
 }

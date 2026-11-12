@@ -20,7 +20,8 @@
     "share": "📤 Share",
     "saveImage": "📥 Save Image",
     "close": "Close",
-    "actionPlan": "Open my 7-day reset plan"
+    "actionPlan": "Open my 7-day reset plan",
+    "storyCard": "✨ Save Diagnosis Card"
   },
   "questions": {
     "workStudy": "Work/Study",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "EVIDENCE-BASED READING",
+    "title": "Curated Stress Recovery Resources",
+    "book1Title": "Burnout: The Secret to Unlocking the Stress Cycle",
+    "book1Desc": "By Emily Nagoski, Ph.D. • Somatic completion of the biological stress loop.",
+    "book2Title": "The Highly Sensitive Person: How to Thrive",
+    "book2Desc": "By Elaine N. Aron, Ph.D. • Autonomic nervous system regulation for high sensitivity.",
+    "readPill": "View Resource ↗",
+    "disclosure": "Editorial note: Curated based on clinical relevance. Links support independent research."
   }
 }

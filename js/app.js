@@ -55,6 +55,10 @@ class StressCheckApp {
         // Action buttons
         document.getElementById('btn-retry').addEventListener('click', () => this.retryTest());
         document.getElementById('btn-action-plan').addEventListener('click', event => this.openActionPlan(event));
+        const btnStoryCard = document.getElementById('btn-story-card');
+        if (btnStoryCard) {
+            btnStoryCard.addEventListener('click', () => this.generateAndShareCard());
+        }
 
         // Language selector
         document.getElementById('lang-toggle').addEventListener('click', () => this.toggleLanguageMenu());
@@ -447,6 +451,220 @@ class StressCheckApp {
                 card.href = url.pathname + url.search;
             }
         });
+    }
+
+    generateAndShareCard() {
+        const btn = document.getElementById('btn-story-card');
+        const orig = btn ? btn.textContent : '';
+        if (btn) { btn.textContent = '\u23F3 Rendering...'; btn.disabled = true; }
+
+        try {
+            const canvas = this.renderStoryCardCanvas();
+            if (!canvas) throw new Error('Canvas rendering failed');
+
+            canvas.toBlob(async (blob) => {
+                if (!blob) throw new Error('Blob creation failed');
+                const file = new File([blob], 'stress-diagnosis-card.png', { type: 'image/png' });
+
+                if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                    try {
+                        await navigator.share({
+                            files: [file],
+                            title: 'My Stress Level Profile',
+                            text: 'Check your autonomic stress level on DopaBrain: https://dopabrain.com/stress-check/'
+                        });
+                        this.track('share', { method: 'story_card_native', app_name: 'stress-check' });
+                        if (btn) { btn.textContent = '\u2713 Shared!'; setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 2500); }
+                        return;
+                    } catch (shareErr) {
+                        if (shareErr.name === 'AbortError') {
+                            if (btn) { btn.textContent = orig; btn.disabled = false; }
+                            return;
+                        }
+                    }
+                }
+
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'stress-diagnosis-card.png';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 10000);
+
+                this.track('share', { method: 'story_card_download', app_name: 'stress-check' });
+                if (btn) { btn.textContent = '\u2713 Saved to Photos!'; setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 2500); }
+            }, 'image/png');
+        } catch (err) {
+            console.warn('Stress story card failed:', err);
+            if (btn) { btn.textContent = orig; btn.disabled = false; }
+        }
+    }
+
+    renderStoryCardCanvas() {
+        if (!this.stressLevel) return null;
+        const canvas = document.createElement('canvas');
+        canvas.width = 1080;
+        canvas.height = 1920;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return null;
+
+        const levelTitle = (window.i18n && i18n.t(this.stressLevel.title)) || 'Moderate Stress';
+        const levelSub = (window.i18n && i18n.t(this.stressLevel.subtitle)) || 'Autonomic Strain Profile';
+        const emoji = this.stressLevel.emoji || '\u{1F610}';
+        const themeColor = this.stressLevel.color || '#3b82f6';
+
+        // Background
+        const bgGrad = ctx.createLinearGradient(0, 0, 1080, 1920);
+        bgGrad.addColorStop(0, '#090b14');
+        bgGrad.addColorStop(0.4, '#121024');
+        bgGrad.addColorStop(1, '#07080f');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, 1080, 1920);
+
+        // Glowing orb
+        const glow = ctx.createRadialGradient(540, 560, 50, 540, 560, 460);
+        glow.addColorStop(0, themeColor + '55');
+        glow.addColorStop(0.6, themeColor + '15');
+        glow.addColorStop(1, 'transparent');
+        ctx.fillStyle = glow;
+        ctx.fillRect(60, 120, 960, 900);
+
+        // Inner frame
+        ctx.save();
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+        ctx.lineWidth = 3;
+        this.drawCanvasRoundRect(ctx, 50, 50, 980, 1820, 36);
+        ctx.stroke();
+        ctx.restore();
+
+        // Header
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
+        ctx.font = '600 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('DOPABRAIN  \u2022  AUTONOMIC HEALTH', 540, 150);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '800 44px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('STRESS LEVEL DIAGNOSIS', 540, 220);
+
+        // Central emoji avatar
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(540, 460, 130, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.06)';
+        ctx.fill();
+        ctx.lineWidth = 4;
+        ctx.strokeStyle = themeColor;
+        ctx.stroke();
+
+        ctx.font = '120px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(emoji, 540, 465);
+        ctx.restore();
+
+        // Level title & subtitle
+        ctx.fillStyle = themeColor;
+        ctx.font = '800 60px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText(levelTitle, 540, 680);
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.75)';
+        ctx.font = '500 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText(levelSub, 540, 735);
+
+        // 5 Category Breakdown
+        const categoryLabels = {
+            work: (window.i18n && i18n.t('categories.workStudy')) || 'Work & Study',
+            relationship: (window.i18n && i18n.t('categories.relationships')) || 'Relationships',
+            health: (window.i18n && i18n.t('categories.health')) || 'Health & Body',
+            finance: (window.i18n && i18n.t('categories.finance')) || 'Finance & Security',
+            daily: (window.i18n && i18n.t('categories.dailyLife')) || 'Daily Life'
+        };
+
+        const startY = 820;
+        let idx = 0;
+        Object.entries(this.categoryScores || {}).forEach(([cat, score]) => {
+            const label = categoryLabels[cat] || cat;
+            const pct = Math.round((score / 5) * 100);
+            const y = startY + (idx * 100);
+
+            ctx.save();
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1.5;
+            this.drawCanvasRoundRect(ctx, 120, y, 840, 76, 18);
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.textAlign = 'left';
+            ctx.fillStyle = '#e2e8f0';
+            ctx.font = '600 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+            ctx.fillText(label, 150, y + 48);
+
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+            this.drawCanvasRoundRect(ctx, 520, y + 26, 320, 24, 12);
+            ctx.fill();
+
+            const fillWidth = Math.max(16, (320 * pct) / 100);
+            ctx.fillStyle = themeColor;
+            this.drawCanvasRoundRect(ctx, 520, y + 26, fillWidth, 24, 12);
+            ctx.fill();
+
+            ctx.textAlign = 'right';
+            ctx.fillStyle = '#ffffff';
+            ctx.font = '700 26px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+            ctx.fillText(pct + '%', 920, y + 48);
+
+            ctx.restore();
+            idx++;
+        });
+
+        // Somatic recovery advice box
+        ctx.save();
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.04)';
+        ctx.strokeStyle = themeColor + '55';
+        ctx.lineWidth = 2;
+        this.drawCanvasRoundRect(ctx, 120, 1370, 840, 200, 20);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#38bdf8';
+        ctx.font = '700 26px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('\u26A1 SOMATIC REGULATION PROTOCOL', 540, 1425);
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.88)';
+        ctx.font = '500 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('Take 2 consecutive nasal inhales + 1 long oral exhale', 540, 1485);
+        ctx.fillText('to rapidly signal safety to your amygdala and heart rate.', 540, 1525);
+        ctx.restore();
+
+        // Footer
+        ctx.textAlign = 'center';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+        ctx.font = '500 28px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('Test your autonomic stress level at', 540, 1680);
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = '700 38px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+        ctx.fillText('dopabrain.com/stress-check', 540, 1740);
+
+        return canvas;
+    }
+
+    drawCanvasRoundRect(ctx, x, y, width, height, radius) {
+        ctx.beginPath();
+        ctx.moveTo(x + radius, y);
+        ctx.lineTo(x + width - radius, y);
+        ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+        ctx.lineTo(x + width, y + height - radius);
+        ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+        ctx.lineTo(x + radius, y + height);
+        ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+        ctx.lineTo(x, y + radius);
+        ctx.quadraticCurveTo(x, y, x + radius, y);
+        ctx.closePath();
     }
 
     openActionPlan() {

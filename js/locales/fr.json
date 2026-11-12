@@ -20,7 +20,8 @@
     "share": "📤 Partager",
     "saveImage": "📥 Enregistrer l'image",
     "close": "Fermer",
-    "actionPlan": "Ouvrir mon plan de 7 jours"
+    "actionPlan": "Ouvrir mon plan de 7 jours",
+    "storyCard": "✨ Enregistrer la carte diagnostic"
   },
   "questions": {
     "workStudy": "Travail/Études",
@@ -207,5 +208,15 @@
     "referencesTitle": "Références et fondements empiriques",
     "reviewDate": "Révision éditoriale : Novembre 2026",
     "reviewTeam": "Équipe Sciences du Comportement & Bien-être DopaBrain"
+  },
+  "curated": {
+    "badge": "LECTURES FONDÉES SUR DES PREUVES",
+    "title": "Ressources sélectionnées pour la récupération du stress",
+    "book1Title": "Burnout : Le secret pour briser le cycle du stress",
+    "book1Desc": "Dr Emily Nagoski • Clôture somatique de la boucle biologique du stress.",
+    "book2Title": "Ces gens qui ont peur d'avoir peur (HSP)",
+    "book2Desc": "Dr Elaine N. Aron • Régulation du système nerveux autonome.",
+    "readPill": "Voir la ressource ↗",
+    "disclosure": "Note éditoriale : Ressources sélectionnées selon des critères neurobiologiques."
   }
 }

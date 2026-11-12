@@ -20,7 +20,8 @@
     "share": "📤 Paylaş",
     "saveImage": "📥 Görüntüyü Kaydet",
     "close": "Kapat",
-    "actionPlan": "7 günlük planımı aç"
+    "actionPlan": "7 günlük planımı aç",
+    "storyCard": "✨ Teşhis Kartını Kaydet"
   },
   "questions": {
     "workStudy": "İş/Çalışma",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "KANITA DAYALI OKUMA",
+    "title": "Stres İyileşme Kaynakları",
+    "book1Title": "Tükenmişlik: Stres Döngüsünü Kırma Rehberi",
+    "book1Desc": "Dr. Emily Nagoski • Biyolojik stres döngüsünü tamamlama yöntemleri.",
+    "book2Title": "Hassas İnsanların Gücü (HSP)",
+    "book2Desc": "Dr. Elaine N. Aron • Yüksek duyarlılıkta otonom sinir sistemi dengesi.",
+    "readPill": "Kaynağı İncele ↗",
+    "disclosure": "Editör notu: Klinik ve nörobiyolojik kanıtlara dayalı olarak seçilmiştir."
   }
 }

@@ -20,7 +20,8 @@
     "share": "📤 공유",
     "saveImage": "📥 이미지 저장",
     "close": "닫기",
-    "actionPlan": "나의 7일 리셋 계획 열기"
+    "actionPlan": "나의 7일 리셋 계획 열기",
+    "storyCard": "✨ 진단 카드 저장 (인스타 / SNS)"
   },
   "questions": {
     "workStudy": "직장/학업",
@@ -207,5 +208,15 @@
     "referencesTitle": "참고 문헌 및 이론적 배경",
     "reviewDate": "콘텐츠 검토: 2026년 10월",
     "reviewTeam": "DopaBrain 행동과학 및 웰니스 연구팀"
+  },
+  "curated": {
+    "badge": "근거 기반 추천 도서",
+    "title": "자율신경 및 스트레스 회복 추천 도서",
+    "book1Title": "번아웃: 스트레스 사이클의 생리학적 완결",
+    "book1Desc": "에밀리 나가스키 박사 저 • 투쟁-도피 생체 스트레스 루프를 닫는 신체 회복법.",
+    "book2Title": "고감각자(HSP)를 위한 삶의 기술",
+    "book2Desc": "일레인 아론 박사 저 • 자율신경계 과각성을 낮추는 고감각 회복 전략.",
+    "readPill": "도서 살펴보기 ↗",
+    "disclosure": "편집 안내: 임상 및 생물학적 근거에 기반하여 큐레이션된 도서입니다."
   }
 }

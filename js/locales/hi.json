@@ -20,7 +20,8 @@
     "share": "📤 साझा करें",
     "saveImage": "📥 छवि सहेजें",
     "close": "बंद करें",
-    "actionPlan": "मेरी 7-दिन की योजना खोलें"
+    "actionPlan": "मेरी 7-दिन की योजना खोलें",
+    "storyCard": "✨ निदान कार्ड सहेजें"
   },
   "questions": {
     "workStudy": "काम/अध्ययन",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "प्रमाण आधारित अध्ययन",
+    "title": "तनाव मुक्ति के प्रमुख संसाधन",
+    "book1Title": "बर्नआउट: तनाव चक्र को पूरा करने का विज्ञान",
+    "book1Desc": "डॉ. एमिली नागोस्की • ऑटोनोमिक तंत्रिका तंत्र को शांत करने की विधि।",
+    "book2Title": "द हाईली सेंसिटिव पर्सन (HSP)",
+    "book2Desc": "डॉ. ऐलेन एन. एरॉन • उच्च संवेदनशीलता में मानसिक संतुलन।",
+    "readPill": "संसाधन देखें ↗",
+    "disclosure": "संपादकीय नोट: न्यूरोबायोलॉजिकल और वैज्ञानिक आधार पर चयनित पुस्तकें।"
   }
 }

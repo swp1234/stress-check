@@ -20,7 +20,8 @@
     "share": "📤 分享",
     "saveImage": "📥 保存图片",
     "close": "关闭",
-    "actionPlan": "打开我的7天调整计划"
+    "actionPlan": "打开我的7天调整计划",
+    "storyCard": "✨ 保存诊断卡片 (Instagram / 社交圈)"
   },
   "questions": {
     "workStudy": "工作/学业",
@@ -207,5 +208,15 @@
     "referencesTitle": "References & Empirical Frameworks",
     "reviewDate": "Editorial Review: October 2026",
     "reviewTeam": "DopaBrain Behavioral Science & Health Team"
+  },
+  "curated": {
+    "badge": "循证科学推荐阅读",
+    "title": "自律神经与压力恢复精选读物",
+    "book1Title": "倦怠：解开压力生理循环的科学",
+    "book1Desc": "艾米丽·纳戈斯基博士著 • 完成战斗或逃跑神经回路的身体调节法。",
+    "book2Title": "高敏感族的一生：如何安然自处",
+    "book2Desc": "伊莲·阿伦博士著 • 调节高度敏感体质自律神经的实战方案。",
+    "readPill": "查看读物 ↗",
+    "disclosure": "编辑说明：精选自临床神经科学推荐读物，支持独立健康研究。"
   }
 }
