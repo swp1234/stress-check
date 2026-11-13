@@ -66,7 +66,9 @@ class I18n {
             const key = el.getAttribute('data-i18n');
             const translation = this.t(key);
 
-            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            if (el.tagName === 'META') {
+                el.content = translation;
+            } else if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                 if (el.type === 'text' || el.type === 'email') {
                     el.placeholder = translation;
                 } else {
@@ -82,6 +84,22 @@ class I18n {
         });
 
         document.documentElement.lang = this.currentLang;
+        this.syncSeoState();
+    }
+
+    syncSeoState() {
+        const currentUrl = new URL(window.location.href);
+        const lang = currentUrl.searchParams.has('lang') ? this.currentLang : 'x-default';
+        const link = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]')
+            || document.querySelector('link[rel="alternate"][hreflang="x-default"]');
+        const targetHref = link ? link.href : '';
+        if (!targetHref) return;
+
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.href = targetHref;
+
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.content = targetHref;
     }
 
     async init() {

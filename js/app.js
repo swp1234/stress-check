@@ -305,30 +305,38 @@ class StressCheckApp {
                 ctaText: ctas[currentLang] || 'Explore Future Self →'
             };
         } else {
+            const titles = {
+                ko: 'IQ 스타일 퍼즐',
+                ja: 'IQスタイルパズル',
+                zh: 'IQ 思维挑战',
+                es: 'Reto IQ Visual',
+                fr: 'Défi Logique IQ',
+                de: 'IQ-Logik-Challenge'
+            };
             const descs = {
-                ko: '안정된 멘탈 상태에서 당신의 고유한 인지 스타일과 최고의 업무 집중 방식을 탐색해보세요.',
-                ja: '安定した心理状態から、あなたの認知スタイルと最適な集中パターンを探求しましょう。',
-                zh: '心理状态良好！探索您的独特认知风格与高效思维专注模式。',
-                es: 'Tienes una base mental saludable. Descubre tu estilo cognitivo y hábitos de enfoque óptimos.',
-                fr: 'Vous disposez d’une base mentale saine. Découvrez votre style cognitif et vos forces d’attention.',
-                de: 'Sie haben eine gesunde mentale Grundlage. Entdecken Sie Ihren kognitiven Stil und Fokus-Stärken.'
+                ko: '안정된 멘탈 상태에서 언어중립 10문항 퍼즐로 패턴 추론과 집중력을 가볍게 점검해보세요.',
+                ja: '安定したメンタル状態で、言語に依存しない10問のパズルでパターン推論力を試しましょう。',
+                zh: '心理状态良好！通过10道无语言障碍的图形与数字推理题保持思维敏锐。',
+                es: 'Tienes una base mental saludable. Pon a prueba tu razonamiento lógico con 10 acertijos visuales.',
+                fr: 'Vous disposez d’une base mentale saine. Testez votre logique avec 10 énigmes visuelles.',
+                de: 'Sie haben eine gesunde mentale Grundlage. Testen Sie Ihr logisches Denken mit 10 visuellen Rätseln.'
             };
             const ctas = {
-                ko: '뇌 유형 테스트 시작하기 →',
-                ja: '脳タイプ診断を始める →',
-                zh: '开始大脑类型测试 →',
-                es: 'Descubrir Tipo de Cerebro →',
-                fr: 'Découvrir mon Type de Cerveau →',
-                de: 'Gehirntyp entdecken →'
+                ko: 'IQ 퍼즐 도전하기 →',
+                ja: 'IQパズルに挑戦 →',
+                zh: '开始IQ推理挑战 →',
+                es: 'Probar Reto IQ →',
+                fr: 'Essayer le Défi IQ →',
+                de: 'IQ-Challenge starten →'
             };
             return {
-                key: 'brain-type',
-                path: '/brain-type/',
+                key: 'iq-test',
+                path: '/iq-test/',
                 source: 'stress_low',
-                emoji: '⚡',
-                title: (window.i18n && i18n.t('related.brainType')) || 'Brain Type',
-                desc: descs[currentLang] || 'You have a healthy mental foundation. Discover your cognitive style and optimal focus habits.',
-                ctaText: ctas[currentLang] || 'Discover Brain Type →'
+                emoji: '🧩',
+                title: titles[currentLang] || '10-Puzzle IQ Challenge',
+                desc: descs[currentLang] || 'You have a healthy mental foundation. Keep your focus sharp with 10 language-neutral pattern puzzles.',
+                ctaText: ctas[currentLang] || 'Try 10-Puzzle IQ Challenge →'
             };
         }
     }
@@ -451,6 +459,16 @@ class StressCheckApp {
                 card.href = url.pathname + url.search;
             }
         });
+
+        const nextStepCta = document.getElementById('next-step-cta');
+        if (nextStepCta) {
+            const rawNext = nextStepCta.getAttribute('href');
+            if (rawNext && rawNext.startsWith('/')) {
+                const nextUrl = new URL(rawNext, window.location.origin);
+                nextUrl.searchParams.set('lang', currentLang);
+                nextStepCta.href = nextUrl.pathname + nextUrl.search;
+            }
+        }
     }
 
     generateAndShareCard() {
