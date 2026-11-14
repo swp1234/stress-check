@@ -92,8 +92,122 @@ class StressCheckApp {
             });
         });
 
+        // Initialize curated resource localization & telemetry
+        this.initCuratedResources();
+
         // Initialize Theme Toggle
         this.initTheme();
+    }
+
+    getCuratedHref(key, lang) {
+        const asins = {
+            burnout: '1523508842',
+            hsp: '0553062182'
+        };
+        const koQueries = {
+            burnout: '번아웃 에밀리 나가스키',
+            hsp: '타인보다 민감한 사람 일레인 아론'
+        };
+        const amazonDomains = {
+            en: { domain: 'amazon.com', tag: 'dopabrain-20' },
+            de: { domain: 'amazon.de', tag: '' },
+            fr: { domain: 'amazon.fr', tag: '' },
+            es: { domain: 'amazon.es', tag: '' },
+            pt: { domain: 'amazon.com', tag: 'dopabrain-20' },
+            ja: { domain: 'amazon.co.jp', tag: '' }
+        };
+        const asin = asins[key];
+        if (!asin) return '';
+        if (lang === 'ko') {
+            return 'https://search.kyobobook.co.kr/search?keyword=' + encodeURIComponent(koQueries[key] || key);
+        }
+        const market = amazonDomains[lang] || amazonDomains.en;
+        return 'https://www.' + market.domain + '/dp/' + asin + (market.tag ? ('?tag=' + market.tag) : '');
+    }
+
+    initCuratedResources() {
+        const card = document.getElementById('curated-resources-card');
+        if (!card) return;
+        const items = card.querySelectorAll('.curated-item');
+        const keys = ['burnout', 'hsp'];
+        items.forEach((item, index) => {
+            const key = item.dataset.curatedKey || keys[index] || ('resource_' + (index + 1));
+            item.dataset.curatedKey = key;
+            if (!item.dataset.curatedBound) {
+                item.dataset.curatedBound = '1';
+                item.addEventListener('click', () => {
+                    const lang = (window.i18n && window.i18n.currentLang) || document.documentElement.lang || 'en';
+                    this.track('curated_resource_click', {
+                        resource_key: key,
+                        content_locale: lang,
+                        cta_surface: 'curated_resources'
+                    });
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'content_cta_click', {
+                            event_category: 'engagement',
+                            page_path: location.pathname,
+                            target_url: item.href,
+                            link_id: 'stress_curated_' + key
+                        });
+                    }
+                });
+            }
+        });
+        this.updateCuratedResources((window.i18n && window.i18n.currentLang) || document.documentElement.lang || 'en');
+    }
+
+    updateCuratedResources(lang) {
+        const card = document.getElementById('curated-resources-card');
+        if (!card) return;
+        card.querySelectorAll('.curated-item').forEach((item) => {
+            const nextHref = this.getCuratedHref(item.dataset.curatedKey, lang);
+            if (nextHref) item.href = nextHref;
+        });
+
+        // Dormant high-margin digital workbook slot: set Gumroad/Lemon Squeezy URL to activate
+        const workbookCheckoutUrl = '';
+        if (!/^https?:\/\//i.test(workbookCheckoutUrl)) return;
+        const list = card.querySelector('.curated-list');
+        if (!list) return;
+        let wbLink = list.querySelector('.curated-item[data-curated-key="workbook_pdf"]');
+        if (!wbLink) {
+            wbLink = document.createElement('a');
+            wbLink.className = 'curated-item';
+            wbLink.dataset.curatedKey = 'workbook_pdf';
+            wbLink.target = '_blank';
+            wbLink.rel = 'noopener noreferrer';
+            wbLink.addEventListener('click', () => {
+                const currentLang = (window.i18n && window.i18n.currentLang) || document.documentElement.lang || 'en';
+                this.track('curated_resource_click', {
+                    resource_key: 'workbook_pdf',
+                    content_locale: currentLang,
+                    cta_surface: 'curated_resources'
+                });
+                if (typeof gtag === 'function') {
+                    gtag('event', 'content_cta_click', {
+                        event_category: 'engagement',
+                        page_path: location.pathname,
+                        target_url: wbLink.href,
+                        link_id: 'stress_curated_workbook_pdf'
+                    });
+                }
+            });
+            list.appendChild(wbLink);
+        }
+        wbLink.href = workbookCheckoutUrl;
+        wbLink.innerHTML = '';
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'curated-item-title';
+        titleSpan.textContent = lang === 'ko'
+            ? '30일 자율신경 리셋 워크북 (PDF)'
+            : '30-Day Stress & HSP Reset Workbook (PDF)';
+        const metaSpan = document.createElement('span');
+        metaSpan.className = 'curated-item-meta';
+        metaSpan.textContent = lang === 'ko'
+            ? '프린트용 일지 & 체크리스트 · 즉시 다운로드 ($4.90)'
+            : 'Printable daily tracker & worksheets · Instant PDF ($4.90)';
+        wbLink.appendChild(titleSpan);
+        wbLink.appendChild(metaSpan);
     }
 
     track(eventName, params = {}) {
@@ -748,6 +862,7 @@ class StressCheckApp {
         });
 
         this.toggleLanguageMenu();
+        this.updateCuratedResources(lang);
 
         // Reload current screen content
         if (this.currentQuestion > 0 && this.currentQuestion < STRESS_QUESTIONS.length) {
